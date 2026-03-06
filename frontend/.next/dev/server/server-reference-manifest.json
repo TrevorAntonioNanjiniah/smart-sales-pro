@@ -1,0 +1,66 @@
+{
+  "node": {
+    "004cc2fa704207c7d94237343d60d0fa99c7ae0429": {
+      "workers": {
+        "app/page": {
+          "moduleId": "[project]/Desktop/smart-sales-assistant/frontend/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/Desktop/smart-sales-assistant/frontend/node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/Desktop/smart-sales-assistant/frontend/node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "createOrReadKeylessAction",
+          "filename": "Desktop/smart-sales-assistant/frontend/node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        }
+      },
+      "layer": {
+        "app/page": "action-browser"
+      },
+      "filename": "Desktop/smart-sales-assistant/frontend/node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js",
+      "exportedName": "createOrReadKeylessAction"
+    },
+    "00c8a13c4070ae3857257e63492c6f952f8210e9f8": {
+      "workers": {
+        "app/page": {
+          "moduleId": "[project]/Desktop/smart-sales-assistant/frontend/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/Desktop/smart-sales-assistant/frontend/node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/Desktop/smart-sales-assistant/frontend/node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "deleteKeylessAction",
+          "filename": "Desktop/smart-sales-assistant/frontend/node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        }
+      },
+      "layer": {
+        "app/page": "action-browser"
+      },
+      "filename": "Desktop/smart-sales-assistant/frontend/node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js",
+      "exportedName": "deleteKeylessAction"
+    },
+    "4080a25969de4fe8b78656de7c86e3c9fc38cb945a": {
+      "workers": {
+        "app/page": {
+          "moduleId": "[project]/Desktop/smart-sales-assistant/frontend/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/Desktop/smart-sales-assistant/frontend/node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/Desktop/smart-sales-assistant/frontend/node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "syncKeylessConfigAction",
+          "filename": "Desktop/smart-sales-assistant/frontend/node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        }
+      },
+      "layer": {
+        "app/page": "action-browser"
+      },
+      "filename": "Desktop/smart-sales-assistant/frontend/node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js",
+      "exportedName": "syncKeylessConfigAction"
+    },
+    "00b1df260afa835f8001157d641c827200b3103d42": {
+      "workers": {
+        "app/page": {
+          "moduleId": "[project]/Desktop/smart-sales-assistant/frontend/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/Desktop/smart-sales-assistant/frontend/node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/Desktop/smart-sales-assistant/frontend/node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "invalidateCacheAction",
+          "filename": "Desktop/smart-sales-assistant/frontend/node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js"
+        }
+      },
+      "layer": {
+        "app/page": "action-browser"
+      },
+      "filename": "Desktop/smart-sales-assistant/frontend/node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js",
+      "exportedName": "invalidateCacheAction"
+    }
+  },
+  "edge": {},
+  "encryptionKey": "cSDGzRf1einGPnaMdjO2O2yOILEg23gLiglmkznkm74="
+}
