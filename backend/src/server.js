@@ -1,74 +1,80 @@
+// src/server.js
 import express from 'express';
-import mongoose from 'mongoose';
 import dotenv from 'dotenv';
-import userRoutes from './routes/Users.js';
-import webhookRoutes from './routes/webhooks.js';
+import cors from 'cors';
+import { clerkMiddleware } from '@clerk/express';
+import connectDB from './config/database.js';
+
+// Routes
+import webhookRoutes from './routes/webhook.js';
+import productRoutes from './routes/products.js';
+import leadRoutes from './routes/leads.js';
+import orderRoutes from './routes/orders.js';
+import paymentRoutes from './routes/payments.js';
 
 dotenv.config();
+
+// Check environment variables
+console.log("CLERK_SECRET_KEY:", process.env.CLERK_SECRET_KEY ? "loaded" : "missing");
+console.log("CLERK_WEBHOOK_SECRET:", process.env.CLERK_WEBHOOK_SECRET ? "loaded" : "missing");
+console.log("Mongo URI:", process.env.MONGODB_URI ? "loaded" : "missing");
+
+// Connect to MongoDB
+connectDB().then(() => console.log("MongoDB connected")).catch(err => console.error("MongoDB connection error:", err));
 
 const app = express();
 const port = process.env.PORT || 8080;
 
-// Middleware
-app.use(express.json())
+// CORS — allow Next.js frontend
+app.use(cors({
+  origin: process.env.FRONTEND_URL || 'http://localhost:3000',
+  credentials: true,
+}));
 
-app.use('/api/users', userRoutes);
+// Webhooks FIRST — raw body required
 app.use('/api/webhooks', webhookRoutes);
 
+// JSON middleware
+app.use(express.json());
 
+// Clerk auth middleware with error logging
+try {
+  app.use(clerkMiddleware());
+  console.log("Clerk middleware initialized");
+} catch (err) {
+  console.error("Error initializing Clerk middleware:", err);
+}
+
+// API Routes
+app.use('/api/products', productRoutes);
+app.use('/api/leads', leadRoutes);
+app.use('/api/orders', orderRoutes);
+app.use('/api/payments', paymentRoutes);
 
 // Test route
 app.get('/api/test', (req, res) => {
-  res.json({ 
-    message: 'Backend is working!', 
+  res.json({
+    message: 'Backend is working!',
     timestamp: new Date().toISOString(),
-    port: port
+    port,
   });
 });
 
-// Root route
+// Root
 app.get('/', (req, res) => {
-  res.json({ 
+  res.json({
     message: 'Smart Sales Assistant API',
     status: 'running',
     endpoints: [
-      '/api/test',
-      '/api/users',
-      '/api/users/:clerkId'
-    ]
+      '/api/products',
+      '/api/leads',
+      '/api/orders',
+      '/api/payments',
+      '/api/webhooks/clerk',
+    ],
   });
 });
 
-// MongoDB connection event listeners
-mongoose.connection.on('connected', () => {
-  console.log('🟢 MongoDB connected');
-});
-
-mongoose.connection.on('error', (err) => {
-  console.log('🔴 MongoDB error:', err);
-});
-
-mongoose.connection.on('disconnected', () => {
-  console.log('🟡 MongoDB disconnected');
-});
-
-// Connect to MongoDB
-mongoose.connect(process.env.MONGODB_URI, {
-  dbName: process.env.DB_NAME || 'smart_sales_db',
-})
-.then(() => {
-  console.log('✅ Connected to MongoDB');
-  app.listen(port, () => {
-    console.log(`🚀 Server running on port ${port}`);
-    console.log(`📍 Test endpoint: http://localhost:${port}/api/test`);
-    console.log(`📍 Users endpoint: http://localhost:${port}/api/users`);
-  });
-})
-.catch((err) => {
-  console.error('❌ MongoDB connection error:', err.message);
-  app.listen(port, () => {
-    console.log(`🚀 Server running on port ${port} (without database)`);
-  });
-
-
+app.listen(port, () => {
+  console.log(`🚀 Server running on port ${port}`);
 });

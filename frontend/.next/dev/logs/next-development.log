@@ -1,4 +1,961 @@
-[00:00:03.677] Server  LOG     ✓ Ready in 2.8s
-[21:27:31.431] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[21:27:31.555] Browser WARN    Image with src "http://localhost:3000/vercel.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[21:27:32.047] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:00:22.663] Server  LOG     ✓ Ready in 17.3s
+[00:00:29.144] Server  LOG     ○ Compiling / ...
+[00:00:37.047] Server  LOG     ○ Compiling /dashboard ...
+[00:00:47.360] Server  ERROR   ⨯ ./components/dashboard/sidebar.tsx:175:17
+Ecmascript file had an error
+  173 |                 style={scrollbarStyles}
+  174 |               >
+> 175 |                 <style jsx>{`
+      |                 ^^^^^^^^^^^^^
+> 176 |                   nav::-webkit-scrollbar {
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 177 |                     width: 6px;
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 178 |                   }
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 179 |                   nav::-webkit-scrollbar-thumb {
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 180 |                     background-color: #bfdbfe;
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 181 |                     border-radius: 6px;
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 182 |                   }
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 183 |                   nav::-webkit-scrollbar-track {
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 184 |                     background-color: transparent;
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 185 |                   }
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 186 |                 `}</style>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  187 |                 <ul className="space-y-2">
+  188 |                   {navigationLinks.map((link, index) => {
+  189 |                     const Icon = link.icon;
+
+Detected nested styled-jsx tag.
+Read more: https://nextjs.org/docs/messages/nested-styled-jsx-tags
+
+Import traces:
+  Client Component Browser:
+    ./components/dashboard/sidebar.tsx [Client Component Browser]
+    ./app/dashboard/layout.tsx [Client Component Browser]
+    ./app/dashboard/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/dashboard/sidebar.tsx [Client Component SSR]
+    ./app/dashboard/layout.tsx [Client Component SSR]
+    ./app/dashboard/layout.tsx [Server Component]
+
+
+[00:00:51.097] Server  LOG     ○ Compiling /_error ...
+[00:00:57.939] Browser ERROR   uncaughtError: Error: ./components/dashboard/sidebar.tsx:175:17
+Ecmascript file had an error
+  173 |                 style={scrollbarStyles}
+  174 |               >
+> 175 |                 <style jsx>{`
+      |                 ^^^^^^^^^^^^^
+> 176 |                   nav::-webkit-scrollbar {
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 177 |                     width: 6px;
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 178 |                   }
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 179 |                   nav::-webkit-scrollbar-thumb {
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 180 |                     background-color: #bfdbfe;
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 181 |                     border-radius: 6px;
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 182 |                   }
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 183 |                   nav::-webkit-scrollbar-track {
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 184 |                     background-color: transparent;
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 185 |                   }
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 186 |                 `}</style>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  187 |                 <ul className="space-y-2">
+  188 |                   {navigationLinks.map((link, index) => {
+  189 |                     const Icon = link.icon;
+
+Detected nested styled-jsx tag.
+Read more: https://nextjs.org/docs/messages/nested-styled-jsx-tags
+
+Import traces:
+  Client Component Browser:
+    ./components/dashboard/sidebar.tsx [Client Component Browser]
+    ./app/dashboard/layout.tsx [Client Component Browser]
+    ./app/dashboard/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/dashboard/sidebar.tsx [Client Component SSR]
+    ./app/dashboard/layout.tsx [Client Component SSR]
+    ./app/dashboard/layout.tsx [Server Component]
+
+
+[00:01:00.853] Browser ERROR   ./components/dashboard/sidebar.tsx:175:17
+Ecmascript file had an error
+  173 |                 style={scrollbarStyles}
+  174 |               >
+> 175 |                 <style jsx>{`
+      |                 ^^^^^^^^^^^^^
+> 176 |                   nav::-webkit-scrollbar {
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 177 |                     width: 6px;
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 178 |                   }
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 179 |                   nav::-webkit-scrollbar-thumb {
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 180 |                     background-color: #bfdbfe;
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 181 |                     border-radius: 6px;
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 182 |                   }
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 183 |                   nav::-webkit-scrollbar-track {
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 184 |                     background-color: transparent;
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 185 |                   }
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 186 |                 `}</style>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  187 |                 <ul className="space-y-2">
+  188 |                   {navigationLinks.map((link, index) => {
+  189 |                     const Icon = link.icon;
+
+Detected nested styled-jsx tag.
+Read more: https://nextjs.org/docs/messages/nested-styled-jsx-tags
+
+Import traces:
+  Client Component Browser:
+    ./components/dashboard/sidebar.tsx [Client Component Browser]
+    ./app/dashboard/layout.tsx [Client Component Browser]
+    ./app/dashboard/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/dashboard/sidebar.tsx [Client Component SSR]
+    ./app/dashboard/layout.tsx [Client Component SSR]
+    ./app/dashboard/layout.tsx [Server Component]
+[00:01:00.853] Browser ERROR   ./components/dashboard/sidebar.tsx:175:17
+Ecmascript file had an error
+  173 |                 style={scrollbarStyles}
+  174 |               >
+> 175 |                 <style jsx>{`
+      |                 ^^^^^^^^^^^^^
+> 176 |                   nav::-webkit-scrollbar {
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 177 |                     width: 6px;
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 178 |                   }
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 179 |                   nav::-webkit-scrollbar-thumb {
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 180 |                     background-color: #bfdbfe;
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 181 |                     border-radius: 6px;
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 182 |                   }
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 183 |                   nav::-webkit-scrollbar-track {
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 184 |                     background-color: transparent;
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 185 |                   }
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 186 |                 `}</style>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  187 |                 <ul className="space-y-2">
+  188 |                   {navigationLinks.map((link, index) => {
+  189 |                     const Icon = link.icon;
+
+Detected nested styled-jsx tag.
+Read more: https://nextjs.org/docs/messages/nested-styled-jsx-tags
+
+Import traces:
+  Client Component Browser:
+    ./components/dashboard/sidebar.tsx [Client Component Browser]
+    ./app/dashboard/layout.tsx [Client Component Browser]
+    ./app/dashboard/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/dashboard/sidebar.tsx [Client Component SSR]
+    ./app/dashboard/layout.tsx [Client Component SSR]
+    ./app/dashboard/layout.tsx [Server Component]
+[00:01:04.977] Server  LOG     ✓ Finished writing to filesystem cache in 11.7s
+[00:01:23.750] Server  LOG     ✓ Finished filesystem cache database compaction in 18.8s
+[00:01:24.234] Server  LOG     ✓ Finished writing to filesystem cache in 17.2s
+[00:03:03.346] Server  LOG     ✓ Compiled in 374ms
+[00:03:19.681] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:20.583] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:03:38.194] Browser WARN    'lab(54.1736 13.3368 -74.6839)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:03:44.558] Browser WARN    'lab(54.1736 13.3368 -74.6839)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:03:46.843] Browser WARN    'lab(54.1736 13.3368 -74.6839)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:03:52.288] Browser WARN    'lab(54.1736 13.3368 -74.6839)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:03:53.055] Browser WARN    'lab(54.1736 13.3368 -74.6839)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:04:00.991] Browser WARN    'lab(54.1736 13.3368 -74.6839)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:04:02.005] Browser WARN    'lab(54.1736 13.3368 -74.6839)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:04:04.434] Browser WARN    'lab(54.1736 13.3368 -74.6839)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:07:20.471] Server  LOG     ✓ Compiled in 337ms
+[00:07:58.490] Server  LOG     ✓ Compiled in 2.6s
+[00:08:35.268] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:36.510] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:08:39.192] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:39.502] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:08:47.334] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:48.144] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:08:51.885] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:51.976] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:08:58.290] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:59.564] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:09:02.109] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:02.493] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:09:17.285] Browser WARN    'lab(54.1736 13.3368 -74.6839)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:11:40.237] Server  LOG     ✓ Compiled in 1043ms
+[00:11:46.513] Browser WARN    'lab(54.1736 13.3368 -74.6839)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:11:47.641] Browser WARN    'lab(54.1736 13.3368 -74.6839)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:12:02.451] Browser WARN    'lab(54.1736 13.3368 -74.6839)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:12:02.656] Browser WARN    'lab(54.1736 13.3368 -74.6839)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:12:02.832] Browser WARN    'lab(54.1736 13.3368 -74.6839)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:12:03.055] Browser WARN    'lab(54.1736 13.3368 -74.6839)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:13:38.828] Browser WARN    'oklab(0.969998 -0.00372642 -0.0134743 / 0.5)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:13:40.508] Browser WARN    'oklab(0.969998 -0.00372642 -0.0134743 / 0.5)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:14:00.413] Browser WARN    'lab(54.1736 13.3368 -74.6839)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:14:09.371] Browser WARN    'lab(54.1736 13.3368 -74.6839)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:14:11.763] Browser WARN    'lab(54.1736 13.3368 -74.6839)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:14:12.349] Browser WARN    'lab(54.1736 13.3368 -74.6839)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:14:20.798] Browser WARN    'lab(54.1736 13.3368 -74.6839)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:15:35.780] Browser WARN    'lab(54.1736 13.3368 -74.6839)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:15:39.527] Browser WARN    'lab(54.1736 13.3368 -74.6839)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:17:37.282] Server  LOG     ✓ Compiled in 1824ms
+[00:17:54.566] Server  LOG     ✓ Compiled in 394ms
+[00:17:57.633] Browser WARN    'lab(54.1736 13.3368 -74.6839)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:18:00.562] Browser WARN    'lab(54.1736 13.3368 -74.6839)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:18:03.360] Browser WARN    'lab(54.1736 13.3368 -74.6839)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:18:29.790] Browser WARN    'lab(54.1736 13.3368 -74.6839)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:18:33.875] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:18:36.157] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:18:37.625] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:18:38.094] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:18:42.202] Browser WARN    'lab(54.1736 13.3368 -74.6839)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:18:42.559] Browser WARN    'lab(54.1736 13.3368 -74.6839)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:18:42.728] Browser WARN    'lab(54.1736 13.3368 -74.6839)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:18:42.895] Browser WARN    'lab(54.1736 13.3368 -74.6839)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:21:20.694] Server  LOG     ✓ Compiled in 395ms
+[00:21:59.897] Server  LOG     ✓ Compiled in 1274ms
+[00:24:12.823] Server  LOG     ✓ Compiled in 3.9s
+[00:26:52.786] Server  LOG     ✓ Compiled in 466ms
+[00:28:40.917] Server  LOG     ✓ Compiled in 168ms
+[00:28:53.855] Server  LOG     ✓ Compiled in 340ms
+[00:29:56.377] Server  LOG     ✓ Compiled in 829ms
+[00:30:05.701] Server  LOG     ✓ Compiled in 686ms
+[00:30:17.962] Server  LOG     ✓ Compiled in 1102ms
+[00:30:38.913] Server  LOG     ✓ Compiled in 1649ms
+[00:31:08.138] Server  LOG     ✓ Finished filesystem cache database compaction in 48s
+[00:31:08.466] Server  LOG     ✓ Finished writing to filesystem cache in 27.6s
+[00:33:54.341] Server  ERROR   ⨯ ./app/dashboard/layout.tsx:6:1
+Module not found: Can't resolve '@/components/dashboard/Navbar'
+  4 | import { useState, useEffect } from 'react';
+  5 | import Sidebar from '@/components/dashboard/Sidebar';
+> 6 | import Navbar from '@/components/dashboard/Navbar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Footer from '@/components/dashboard/Footer';
+  8 |
+  9 | export default function DashboardLayout({
+
+Import map: aliased to relative './components/dashboard/Navbar' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/layout.tsx [Client Component Browser]
+    ./app/dashboard/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/layout.tsx [Client Component SSR]
+    ./app/dashboard/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:54.487] Server  ERROR   ⨯ ./app/dashboard/layout.tsx:6:1
+Module not found: Can't resolve '@/components/dashboard/Navbar'
+  4 | import { useState, useEffect } from 'react';
+  5 | import Sidebar from '@/components/dashboard/Sidebar';
+> 6 | import Navbar from '@/components/dashboard/Navbar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Footer from '@/components/dashboard/Footer';
+  8 |
+  9 | export default function DashboardLayout({
+
+Import map: aliased to relative './components/dashboard/Navbar' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/layout.tsx [Client Component Browser]
+    ./app/dashboard/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/layout.tsx [Client Component SSR]
+    ./app/dashboard/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:54.605] Server  ERROR   ⨯ ./app/dashboard/layout.tsx:6:1
+Module not found: Can't resolve '@/components/dashboard/Navbar'
+  4 | import { useState, useEffect } from 'react';
+  5 | import Sidebar from '@/components/dashboard/Sidebar';
+> 6 | import Navbar from '@/components/dashboard/Navbar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Footer from '@/components/dashboard/Footer';
+  8 |
+  9 | export default function DashboardLayout({
+
+Import map: aliased to relative './components/dashboard/Navbar' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/layout.tsx [Client Component Browser]
+    ./app/dashboard/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/layout.tsx [Client Component SSR]
+    ./app/dashboard/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:54.854] Server  ERROR   ⨯ ./app/dashboard/layout.tsx:6:1
+Module not found: Can't resolve '@/components/dashboard/Navbar'
+  4 | import { useState, useEffect } from 'react';
+  5 | import Sidebar from '@/components/dashboard/Sidebar';
+> 6 | import Navbar from '@/components/dashboard/Navbar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Footer from '@/components/dashboard/Footer';
+  8 |
+  9 | export default function DashboardLayout({
+
+Import map: aliased to relative './components/dashboard/Navbar' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/layout.tsx [Client Component Browser]
+    ./app/dashboard/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/layout.tsx [Client Component SSR]
+    ./app/dashboard/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:55.099] Server  ERROR   ⨯ ./app/dashboard/layout.tsx:5:1
+Module not found: Can't resolve '@/components/dashboard/Sidebar'
+  3 |
+  4 | import { useState, useEffect } from 'react';
+> 5 | import Sidebar from '@/components/dashboard/Sidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import Navbar from '@/components/dashboard/Navbar';
+  7 | import Footer from '@/components/dashboard/Footer';
+  8 |
+
+Import map: aliased to relative './components/dashboard/Sidebar' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/layout.tsx [Client Component Browser]
+    ./app/dashboard/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/layout.tsx [Client Component SSR]
+    ./app/dashboard/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:55.392] Server  ERROR   ⨯ ./app/dashboard/layout.tsx:5:1
+Module not found: Can't resolve '@/components/dashboard/Sidebar'
+  3 |
+  4 | import { useState, useEffect } from 'react';
+> 5 | import Sidebar from '@/components/dashboard/Sidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import Navbar from '@/components/dashboard/Navbar';
+  7 | import Footer from '@/components/dashboard/Footer';
+  8 |
+
+Import map: aliased to relative './components/dashboard/Sidebar' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/layout.tsx [Client Component Browser]
+    ./app/dashboard/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/layout.tsx [Client Component SSR]
+    ./app/dashboard/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:55.458] Server  ERROR   ⨯ ./app/dashboard/layout.tsx:5:1
+Module not found: Can't resolve '@/components/dashboard/Sidebar'
+  3 |
+  4 | import { useState, useEffect } from 'react';
+> 5 | import Sidebar from '@/components/dashboard/Sidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import Navbar from '@/components/dashboard/Navbar';
+  7 | import Footer from '@/components/dashboard/Footer';
+  8 |
+
+Import map: aliased to relative './components/dashboard/Sidebar' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/layout.tsx [Client Component Browser]
+    ./app/dashboard/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/layout.tsx [Client Component SSR]
+    ./app/dashboard/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:55.601] Server  ERROR   ⨯ ./app/dashboard/layout.tsx:5:1
+Module not found: Can't resolve '@/components/dashboard/Sidebar'
+  3 |
+  4 | import { useState, useEffect } from 'react';
+> 5 | import Sidebar from '@/components/dashboard/Sidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import Navbar from '@/components/dashboard/Navbar';
+  7 | import Footer from '@/components/dashboard/Footer';
+  8 |
+
+Import map: aliased to relative './components/dashboard/Sidebar' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/layout.tsx [Client Component Browser]
+    ./app/dashboard/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/layout.tsx [Client Component SSR]
+    ./app/dashboard/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:56.526] Server  ERROR   ⨯ ./app/dashboard/layout.tsx:6:1
+Module not found: Can't resolve '@/components/dashboard/Navbar'
+  4 | import { useState, useEffect } from 'react';
+  5 | import Sidebar from '@/components/dashboard/Sidebar';
+> 6 | import Navbar from '@/components/dashboard/Navbar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Footer from '@/components/dashboard/Footer';
+  8 |
+  9 | export default function DashboardLayout({
+
+Import map: aliased to relative './components/dashboard/Navbar' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/layout.tsx [Client Component Browser]
+    ./app/dashboard/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/layout.tsx [Client Component SSR]
+    ./app/dashboard/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:56.588] Server  ERROR   ⨯ ./app/dashboard/layout.tsx:6:1
+Module not found: Can't resolve '@/components/dashboard/Navbar'
+  4 | import { useState, useEffect } from 'react';
+  5 | import Sidebar from '@/components/dashboard/Sidebar';
+> 6 | import Navbar from '@/components/dashboard/Navbar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Footer from '@/components/dashboard/Footer';
+  8 |
+  9 | export default function DashboardLayout({
+
+Import map: aliased to relative './components/dashboard/Navbar' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/layout.tsx [Client Component Browser]
+    ./app/dashboard/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/layout.tsx [Client Component SSR]
+    ./app/dashboard/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:56.738] Server  ERROR   ⨯ ./app/dashboard/layout.tsx:6:1
+Module not found: Can't resolve '@/components/dashboard/Navbar'
+  4 | import { useState, useEffect } from 'react';
+  5 | import Sidebar from '@/components/dashboard/Sidebar';
+> 6 | import Navbar from '@/components/dashboard/Navbar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Footer from '@/components/dashboard/Footer';
+  8 |
+  9 | export default function DashboardLayout({
+
+Import map: aliased to relative './components/dashboard/Navbar' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/layout.tsx [Client Component Browser]
+    ./app/dashboard/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/layout.tsx [Client Component SSR]
+    ./app/dashboard/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:56.859] Server  ERROR   ⨯ ./app/dashboard/layout.tsx:6:1
+Module not found: Can't resolve '@/components/dashboard/Navbar'
+  4 | import { useState, useEffect } from 'react';
+  5 | import Sidebar from '@/components/dashboard/Sidebar';
+> 6 | import Navbar from '@/components/dashboard/Navbar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Footer from '@/components/dashboard/Footer';
+  8 |
+  9 | export default function DashboardLayout({
+
+Import map: aliased to relative './components/dashboard/Navbar' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/layout.tsx [Client Component Browser]
+    ./app/dashboard/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/layout.tsx [Client Component SSR]
+    ./app/dashboard/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:56.976] Server  ERROR   ⨯ ./app/dashboard/layout.tsx:5:1
+Module not found: Can't resolve '@/components/dashboard/Sidebar'
+  3 |
+  4 | import { useState, useEffect } from 'react';
+> 5 | import Sidebar from '@/components/dashboard/Sidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import Navbar from '@/components/dashboard/Navbar';
+  7 | import Footer from '@/components/dashboard/Footer';
+  8 |
+
+Import map: aliased to relative './components/dashboard/Sidebar' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/layout.tsx [Client Component Browser]
+    ./app/dashboard/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/layout.tsx [Client Component SSR]
+    ./app/dashboard/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:57.225] Server  ERROR   ⨯ ./app/dashboard/layout.tsx:5:1
+Module not found: Can't resolve '@/components/dashboard/Sidebar'
+  3 |
+  4 | import { useState, useEffect } from 'react';
+> 5 | import Sidebar from '@/components/dashboard/Sidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import Navbar from '@/components/dashboard/Navbar';
+  7 | import Footer from '@/components/dashboard/Footer';
+  8 |
+
+Import map: aliased to relative './components/dashboard/Sidebar' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/layout.tsx [Client Component Browser]
+    ./app/dashboard/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/layout.tsx [Client Component SSR]
+    ./app/dashboard/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:57.459] Server  ERROR   ⨯ ./app/dashboard/layout.tsx:5:1
+Module not found: Can't resolve '@/components/dashboard/Sidebar'
+  3 |
+  4 | import { useState, useEffect } from 'react';
+> 5 | import Sidebar from '@/components/dashboard/Sidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import Navbar from '@/components/dashboard/Navbar';
+  7 | import Footer from '@/components/dashboard/Footer';
+  8 |
+
+Import map: aliased to relative './components/dashboard/Sidebar' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/layout.tsx [Client Component Browser]
+    ./app/dashboard/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/layout.tsx [Client Component SSR]
+    ./app/dashboard/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:58.108] Server  ERROR   ⨯ ./app/dashboard/layout.tsx:5:1
+Module not found: Can't resolve '@/components/dashboard/Sidebar'
+  3 |
+  4 | import { useState, useEffect } from 'react';
+> 5 | import Sidebar from '@/components/dashboard/Sidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import Navbar from '@/components/dashboard/Navbar';
+  7 | import Footer from '@/components/dashboard/Footer';
+  8 |
+
+Import map: aliased to relative './components/dashboard/Sidebar' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/layout.tsx [Client Component Browser]
+    ./app/dashboard/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/layout.tsx [Client Component SSR]
+    ./app/dashboard/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:58.230] Server  ERROR   ⨯ ./app/dashboard/layout.tsx:6:1
+Module not found: Can't resolve '@/components/dashboard/Navbar'
+  4 | import { useState, useEffect } from 'react';
+  5 | import Sidebar from '@/components/dashboard/Sidebar';
+> 6 | import Navbar from '@/components/dashboard/Navbar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Footer from '@/components/dashboard/Footer';
+  8 |
+  9 | export default function DashboardLayout({
+
+Import map: aliased to relative './components/dashboard/Navbar' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/layout.tsx [Client Component Browser]
+    ./app/dashboard/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/layout.tsx [Client Component SSR]
+    ./app/dashboard/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:58.269] Server  ERROR   ⨯ ./app/dashboard/layout.tsx:6:1
+Module not found: Can't resolve '@/components/dashboard/Navbar'
+  4 | import { useState, useEffect } from 'react';
+  5 | import Sidebar from '@/components/dashboard/Sidebar';
+> 6 | import Navbar from '@/components/dashboard/Navbar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Footer from '@/components/dashboard/Footer';
+  8 |
+  9 | export default function DashboardLayout({
+
+Import map: aliased to relative './components/dashboard/Navbar' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/layout.tsx [Client Component Browser]
+    ./app/dashboard/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/layout.tsx [Client Component SSR]
+    ./app/dashboard/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:58.299] Server  ERROR   ⨯ ./app/dashboard/layout.tsx:6:1
+Module not found: Can't resolve '@/components/dashboard/Navbar'
+  4 | import { useState, useEffect } from 'react';
+  5 | import Sidebar from '@/components/dashboard/Sidebar';
+> 6 | import Navbar from '@/components/dashboard/Navbar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Footer from '@/components/dashboard/Footer';
+  8 |
+  9 | export default function DashboardLayout({
+
+Import map: aliased to relative './components/dashboard/Navbar' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/layout.tsx [Client Component Browser]
+    ./app/dashboard/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/layout.tsx [Client Component SSR]
+    ./app/dashboard/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:58.312] Server  ERROR   ⨯ ./app/dashboard/layout.tsx:6:1
+Module not found: Can't resolve '@/components/dashboard/Navbar'
+  4 | import { useState, useEffect } from 'react';
+  5 | import Sidebar from '@/components/dashboard/Sidebar';
+> 6 | import Navbar from '@/components/dashboard/Navbar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Footer from '@/components/dashboard/Footer';
+  8 |
+  9 | export default function DashboardLayout({
+
+Import map: aliased to relative './components/dashboard/Navbar' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/layout.tsx [Client Component Browser]
+    ./app/dashboard/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/layout.tsx [Client Component SSR]
+    ./app/dashboard/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:58.323] Server  ERROR   ⨯ ./app/dashboard/layout.tsx:5:1
+Module not found: Can't resolve '@/components/dashboard/Sidebar'
+  3 |
+  4 | import { useState, useEffect } from 'react';
+> 5 | import Sidebar from '@/components/dashboard/Sidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import Navbar from '@/components/dashboard/Navbar';
+  7 | import Footer from '@/components/dashboard/Footer';
+  8 |
+
+Import map: aliased to relative './components/dashboard/Sidebar' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/layout.tsx [Client Component Browser]
+    ./app/dashboard/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/layout.tsx [Client Component SSR]
+    ./app/dashboard/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:58.348] Server  ERROR   ⨯ ./app/dashboard/layout.tsx:5:1
+Module not found: Can't resolve '@/components/dashboard/Sidebar'
+  3 |
+  4 | import { useState, useEffect } from 'react';
+> 5 | import Sidebar from '@/components/dashboard/Sidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import Navbar from '@/components/dashboard/Navbar';
+  7 | import Footer from '@/components/dashboard/Footer';
+  8 |
+
+Import map: aliased to relative './components/dashboard/Sidebar' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/layout.tsx [Client Component Browser]
+    ./app/dashboard/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/layout.tsx [Client Component SSR]
+    ./app/dashboard/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:58.365] Server  ERROR   ⨯ ./app/dashboard/layout.tsx:5:1
+Module not found: Can't resolve '@/components/dashboard/Sidebar'
+  3 |
+  4 | import { useState, useEffect } from 'react';
+> 5 | import Sidebar from '@/components/dashboard/Sidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import Navbar from '@/components/dashboard/Navbar';
+  7 | import Footer from '@/components/dashboard/Footer';
+  8 |
+
+Import map: aliased to relative './components/dashboard/Sidebar' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/layout.tsx [Client Component Browser]
+    ./app/dashboard/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/layout.tsx [Client Component SSR]
+    ./app/dashboard/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:58.384] Server  ERROR   ⨯ ./app/dashboard/layout.tsx:5:1
+Module not found: Can't resolve '@/components/dashboard/Sidebar'
+  3 |
+  4 | import { useState, useEffect } from 'react';
+> 5 | import Sidebar from '@/components/dashboard/Sidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import Navbar from '@/components/dashboard/Navbar';
+  7 | import Footer from '@/components/dashboard/Footer';
+  8 |
+
+Import map: aliased to relative './components/dashboard/Sidebar' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/layout.tsx [Client Component Browser]
+    ./app/dashboard/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/layout.tsx [Client Component SSR]
+    ./app/dashboard/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:58.395] Server  LOG     ✓ Compiled in 10.9s
+[00:33:59.076] Browser ERROR   ./app/dashboard/layout.tsx:6:1
+Module not found: Can't resolve '@/components/dashboard/Navbar'
+  4 | import { useState, useEffect } from 'react';
+  5 | import Sidebar from '@/components/dashboard/Sidebar';
+> 6 | import Navbar from '@/components/dashboard/Navbar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Footer from '@/components/dashboard/Footer';
+  8 |
+  9 | export default function DashboardLayout({
+
+Import map: aliased to relative './components/dashboard/Navbar' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/layout.tsx [Client Component Browser]
+    ./app/dashboard/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/layout.tsx [Client Component SSR]
+    ./app/dashboard/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:33:59.076] Browser ERROR   ./app/dashboard/layout.tsx:5:1
+Module not found: Can't resolve '@/components/dashboard/Sidebar'
+  3 |
+  4 | import { useState, useEffect } from 'react';
+> 5 | import Sidebar from '@/components/dashboard/Sidebar';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import Navbar from '@/components/dashboard/Navbar';
+  7 | import Footer from '@/components/dashboard/Footer';
+  8 |
+
+Import map: aliased to relative './components/dashboard/Sidebar' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/layout.tsx [Client Component Browser]
+    ./app/dashboard/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/layout.tsx [Client Component SSR]
+    ./app/dashboard/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:34:09.265] Server  LOG     ✓ Finished writing to filesystem cache in 10.4s
+[00:34:22.487] Server  LOG     ✓ Compiled in 1480ms
+[00:34:37.864] Server  LOG     ✓ Compiled in 853ms
+[00:35:07.595] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:35:10.855] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:35:41.554] Browser WARN    'lab(54.1736 13.3368 -74.6839)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:36:14.469] Browser WARN    'lab(54.1736 13.3368 -74.6839)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:36:15.168] Browser WARN    'lab(54.1736 13.3368 -74.6839)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:41:00.655] Server  LOG     ✓ Compiled in 5.6s
+[00:41:02.167] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:41:02.423] Browser WARN    'lab(96.492 -1.14647 -5.11479)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:41:03.004] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:41:03.407] Browser WARN    'lab(96.492 -1.14647 -5.11479)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:41:03.407] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:41:03.407] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:41:03.407] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:41:04.508] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:41:05.971] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:41:06.864] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:41:08.083] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:41:08.083] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:41:08.418] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:41:08.418] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:41:08.754] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:41:09.377] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:41:10.357] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:41:13.545] Browser WARN    'lab(96.492 -1.14647 -5.11479)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:41:14.110] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:41:15.041] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:41:15.366] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:41:15.672] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:41:16.233] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:41:16.392] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:41:17.352] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:41:21.903] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:41:22.343] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:41:22.573] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:41:22.573] Browser WARN    'lab(96.492 -1.14647 -5.11479)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:41:23.175] Browser WARN    'lab(96.492 -1.14647 -5.11479)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:41:23.175] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:41:23.175] Browser WARN    'lab(96.492 -1.14647 -5.11479)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:41:30.291] Browser WARN    'lab(96.492 -1.14647 -5.11479)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:41:30.504] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:41:31.699] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:41:32.370] Browser WARN    'lab(96.492 -1.14647 -5.11479)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:41:35.311] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:41:35.311] Browser WARN    'lab(96.492 -1.14647 -5.11479)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:41:41.537] Browser WARN    'lab(96.492 -1.14647 -5.11479)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:41:41.907] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:41:42.485] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:42:14.199] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:42:17.218] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:42:17.218] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:42:17.894] Browser WARN    'lab(96.492 -1.14647 -5.11479)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:43:04.663] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:43:04.779] Browser WARN    'lab(96.492 -1.14647 -5.11479)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:43:10.439] Browser WARN    'lab(96.492 -1.14647 -5.11479)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable

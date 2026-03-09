@@ -1,3 +1,7 @@
 node_modules/
 dist/
-.env        
+
+// Ignore environment variable files
+.env.local
+// all of .next folder
+.next/
