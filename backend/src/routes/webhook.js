@@ -1,63 +1,84 @@
-// routes/webhooks.js
 import express from 'express';
 import { Webhook } from 'svix';
 import Seller from '../models/Sellers.js';
 
 const router = express.Router();
 
-// ⚠️ IMPORTANT: This route needs raw body, NOT json-parsed
 router.post('/clerk', express.raw({ type: 'application/json' }), async (req, res) => {
-  const WEBHOOK_SECRET = process.env.CLERK_WEBHOOK_SECRET;
+  const secret = process.env.CLERK_WEBHOOK_SECRET;
 
-  // 1. Verify the webhook signature
-  const svix_id        = req.headers['svix-id'];
-  const svix_timestamp = req.headers['svix-timestamp'];
-  const svix_signature = req.headers['svix-signature'];
-
-  if (!svix_id || !svix_timestamp || !svix_signature) {
-    return res.status(400).json({ error: 'Missing svix headers' });
+  if (!secret) {
+    console.error('CLERK_WEBHOOK_SECRET is missing');
+    return res.status(500).json({ error: 'Webhook secret not configured' });
   }
 
+  // Verify the webhook is genuinely from Clerk
+  const wh = new Webhook(secret);
   let event;
+
   try {
-    const wh = new Webhook(WEBHOOK_SECRET);
     event = wh.verify(req.body, {
-      'svix-id': svix_id,
-      'svix-timestamp': svix_timestamp,
-      'svix-signature': svix_signature,
+      'svix-id': req.headers['svix-id'],
+      'svix-timestamp': req.headers['svix-timestamp'],
+      'svix-signature': req.headers['svix-signature'],
     });
-  } catch {
-    return res.status(400).json({ error: 'Invalid webhook signature' });
+  } catch (err) {
+    console.error('Webhook verification failed:', err.message);
+    return res.status(400).json({ error: 'Webhook verification failed' });
   }
 
-  // 2. Handle the event
-  const { type, data } = event;
+  // Handle user.created event
+  if (event.type === 'user.created') {
+    const { id, email_addresses, first_name, last_name, image_url } = event.data;
 
-  if (type === 'user.created') {
-    await Seller.create({
-      clerkId:  data.id,
-      email:    data.email_addresses[0].email_address,
-      name:     `${data.first_name} ${data.last_name}`.trim(),
-      imageUrl: data.image_url,
-    });
-  }
-
-  if (type === 'user.updated') {
-    await Seller.findOneAndUpdate(
-      { clerkId: data.id },
-      {
-        email:    data.email_addresses[0].email_address,
-        name:     `${data.first_name} ${data.last_name}`.trim(),
-        imageUrl: data.image_url,
+    try {
+      // Check if seller already exists
+      const existing = await Seller.findOne({ clerkId: id });
+      if (!existing) {
+        await Seller.create({
+          clerkId: id,
+          email: email_addresses[0]?.email_address || '',
+          name: `${first_name || ''} ${last_name || ''}`.trim(),
+          imageUrl: image_url || '',
+        });
+        console.log('✅ Seller created for:', id);
       }
-    );
+    } catch (err) {
+      console.error('❌ Failed to create seller:', err.message);
+      return res.status(500).json({ error: 'Failed to create seller' });
+    }
   }
 
-  if (type === 'user.deleted') {
-    await Seller.findOneAndDelete({ clerkId: data.id });
+  // Handle user.updated event
+  if (event.type === 'user.updated') {
+    const { id, email_addresses, first_name, last_name, image_url } = event.data;
+
+    try {
+      await Seller.findOneAndUpdate(
+        { clerkId: id },
+        {
+          email: email_addresses[0]?.email_address || '',
+          name: `${first_name || ''} ${last_name || ''}`.trim(),
+          imageUrl: image_url || '',
+        }
+      );
+      console.log('✅ Seller updated for:', id);
+    } catch (err) {
+      console.error('❌ Failed to update seller:', err.message);
+    }
   }
 
-  res.status(200).json({ received: true });
+  // Handle user.deleted event
+  if (event.type === 'user.deleted') {
+    try {
+      await Seller.findOneAndDelete({ clerkId: event.data.id });
+      console.log('✅ Seller deleted for:', event.data.id);
+    } catch (err) {
+      console.error('❌ Failed to delete seller:', err.message);
+    }
+  }
+
+  res.json({ received: true });
 });
 
 export default router;

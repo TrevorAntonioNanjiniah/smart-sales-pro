@@ -1,9 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-
-    images: {
+  images: {
+    unoptimized: process.env.NODE_ENV === 'development', // ✅ Fixes private IP error in dev
     remotePatterns: [
       {
         protocol: 'https',
@@ -11,12 +10,17 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
-      // Add other domains you need
       {
         protocol: 'https',
         hostname: '**.cloudfront.net',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'http',
+        hostname: 'localhost',
+        port: '8080',
+        pathname: '/uploads/**',
       },
     ],
   },
