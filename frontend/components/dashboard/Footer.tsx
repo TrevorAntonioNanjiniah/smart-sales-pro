@@ -49,12 +49,12 @@ const Footer = () => {
               className="flex items-center space-x-2"
             >
               <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center">
-                <span className="text-white font-bold text-sm">D</span>
+                <span className="text-white font-bold text-sm">S</span>
               </div>
-              <span className="text-base font-semibold text-gray-800">Dashboard</span>
+              <span className="text-base font-semibold text-gray-800">Smart Sales</span>
             </motion.div>
             <p className="text-xs text-gray-500 leading-relaxed max-w-xs">
-              Modern dashboard solution for your business needs.
+              Modern  solution for your business needs.
             </p>
             
             {/* Social Icons */}
@@ -211,19 +211,7 @@ const Footer = () => {
               >
                 <FiHeart className="w-3 h-3 text-red-500" />
               </motion.div>
-              <span>by Dashboard Team</span>
-            </div>
-
-            <div className="flex items-center space-x-3 mt-2 sm:mt-0">
-              <select 
-                className="bg-white border border-gray-200 rounded-md text-xs px-2 py-1 text-gray-600 focus:outline-none focus:border-blue-400 cursor-pointer"
-                defaultValue="en"
-              >
-                <option value="en">English</option>
-                <option value="es">Español</option>
-                <option value="fr">Français</option>
-                <option value="de">Deutsch</option>
-              </select>
+              <span>Smart sales Devs</span>
             </div>
           </div>
         </motion.div>

@@ -12,9 +12,12 @@ const productSchema = new mongoose.Schema(
     price: { type: Number, required: true },
     stock: { type: Number, required: true, default: 0 },
     description: { type: String, trim: true },
-    images: [{ type: String }],           // array of image URLs
-    whatsappLink: { type: String },        // generated deep link
-    qrCode: { type: String },             // base64 or URL
+
+    //  Now references the Image model instead of plain strings
+    images: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Image' }],
+
+    whatsappLink: { type: String },
+    qrCode: { type: String },
     isActive: { type: Boolean, default: true },
   },
   { timestamps: true }

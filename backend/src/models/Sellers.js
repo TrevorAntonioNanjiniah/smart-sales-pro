@@ -7,6 +7,7 @@ const sellerSchema = new mongoose.Schema({
   name:    { type: String },
   imageUrl:{ type: String },
   role:    { type: String, default: 'seller' },
+  phone :   { type: String },
   createdAt:{ type: Date, default: Date.now }
 });
 

@@ -1,8 +1,1810 @@
-[00:00:10.313] Server  LOG     ✓ Ready in 7.9s
-[00:00:16.662] Server  LOG     ○ Compiling /dashboard ...
-[00:00:25.544] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:27.259] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
-[00:03:00.941] Server  LOG     ✓ Compiled in 6.7s
-[00:03:23.191] Server  LOG     ✓ Finished filesystem cache database compaction in 19.0s
-[00:03:57.312] Server  LOG     ✓ Compiled in 532ms
-[00:04:27.207] Server  LOG     ✓ Compiled in 477ms
+[00:00:10.251] Server  LOG     ✓ Ready in 7.5s
+[00:02:47.511] Server  LOG     ○ Compiling / ...
+[00:02:54.327] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:56.951] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:03:02.546] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:03:02.903] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:03:03.098] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:03:03.099] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:03:03.099] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:03:03.682] Browser WARN    'lab(96.492 -1.14647 -5.11479)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:03:03.682] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:03:03.682] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:03:03.682] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:03:03.682] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:03:03.682] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:03:03.682] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:03:05.690] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:03:06.788] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:03:12.309] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:03:12.309] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:03:14.595] Browser WARN    'lab(96.492 -1.14647 -5.11479)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:03:16.233] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:03:16.233] Browser WARN    'lab(96.492 -1.14647 -5.11479)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:03:22.296] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:03:23.129] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:03:23.129] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:03:23.412] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:03:23.413] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:03:23.581] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:03:42.950] Browser WARN    'lab(96.492 -1.14647 -5.11479)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:05:41.667] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:05:43.318] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:06:10.195] Browser WARN    'lab(96.492 -1.14647 -5.11479)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:06:12.203] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:07:38.085] Server  LOG     ○ Compiling proxy ...
+[00:07:38.240] Server  LOG     ✓ Compiled in 3.5s
+[00:12:38.041] Server  LOG     ✓ Compiled in 1172ms
+[00:12:52.668] Server  LOG     ✓ Finished filesystem cache database compaction in 11.9s
+[00:12:54.272] Server  LOG     ○ Compiling /dashboard/products/[id] ...
+[00:13:01.986] Server  ERROR   ⨯ ./app/dashboard/products/[id]/page.tsx:11:1
+Export HiOutlineQrCode doesn't exist in target module
+   9 | import Image from 'next/image';
+  10 | import Link from 'next/link';
+> 11 | import { 
+     | ^^^^^^^^^
+> 12 |   HiOutlineArrowLeft,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 13 |   HiOutlinePencil,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 14 |   HiOutlineTrash,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 15 |   HiOutlineShare,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 16 |   HiOutlineDownload,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 17 |   HiOutlineQrCode,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   HiOutlineShoppingCart,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 19 |   HiOutlineCalendar,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 20 |   HiOutlineUser,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 21 |   HiOutlineTag,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 22 |   HiOutlineExclamation,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 23 |   HiOutlineCheckCircle,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 24 |   HiOutlineXCircle
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 25 | } from 'react-icons/hi';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  26 | import { 
+  27 |   FiPackage, 
+  28 |   FiDollarSign, 
+
+The export HiOutlineQrCode was not found in module [project]/node_modules/react-icons/hi/index.mjs [app-client] (ecmascript).
+Did you mean to import HiOutlineQrcode?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+
+
+./app/dashboard/products/[id]/page.tsx:11:1
+Export HiOutlineQrCode doesn't exist in target module
+   9 | import Image from 'next/image';
+  10 | import Link from 'next/link';
+> 11 | import { 
+     | ^^^^^^^^^
+> 12 |   HiOutlineArrowLeft,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 13 |   HiOutlinePencil,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 14 |   HiOutlineTrash,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 15 |   HiOutlineShare,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 16 |   HiOutlineDownload,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 17 |   HiOutlineQrCode,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   HiOutlineShoppingCart,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 19 |   HiOutlineCalendar,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 20 |   HiOutlineUser,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 21 |   HiOutlineTag,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 22 |   HiOutlineExclamation,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 23 |   HiOutlineCheckCircle,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 24 |   HiOutlineXCircle
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 25 | } from 'react-icons/hi';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  26 | import { 
+  27 |   FiPackage, 
+  28 |   FiDollarSign, 
+
+The export HiOutlineQrCode was not found in module [project]/node_modules/react-icons/hi/index.mjs [app-ssr] (ecmascript).
+Did you mean to import HiOutlineQrcode?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+
+
+./app/dashboard/products/[id]/page.tsx:33:1
+Export getProductById doesn't exist in target module
+  31 |   FiRefreshCw
+  32 | } from 'react-icons/fi';
+> 33 | import { getProductById, deleteProduct, Product } from '@/lib/services/productService';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  34 |
+  35 | export default function ProductDetailPage() {
+  36 |   const params = useParams();
+
+The export getProductById was not found in module [project]/lib/services/productService.ts [app-client] (ecmascript).
+Did you mean to import getProduct?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+
+
+./app/dashboard/products/[id]/page.tsx:33:1
+Export getProductById doesn't exist in target module
+  31 |   FiRefreshCw
+  32 | } from 'react-icons/fi';
+> 33 | import { getProductById, deleteProduct, Product } from '@/lib/services/productService';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  34 |
+  35 | export default function ProductDetailPage() {
+  36 |   const params = useParams();
+
+The export getProductById was not found in module [project]/lib/services/productService.ts [app-ssr] (ecmascript).
+Did you mean to import getProduct?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+
+[00:13:02.409] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:11:1
+Export HiOutlineQrCode doesn't exist in target module
+   9 | import Image from 'next/image';
+  10 | import Link from 'next/link';
+> 11 | import { 
+     | ^^^^^^^^^
+> 12 |   HiOutlineArrowLeft,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 13 |   HiOutlinePencil,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 14 |   HiOutlineTrash,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 15 |   HiOutlineShare,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 16 |   HiOutlineDownload,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 17 |   HiOutlineQrCode,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   HiOutlineShoppingCart,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 19 |   HiOutlineCalendar,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 20 |   HiOutlineUser,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 21 |   HiOutlineTag,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 22 |   HiOutlineExclamation,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 23 |   HiOutlineCheckCircle,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 24 |   HiOutlineXCircle
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 25 | } from 'react-icons/hi';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  26 | import { 
+  27 |   FiPackage, 
+  28 |   FiDollarSign, 
+
+The export HiOutlineQrCode was not found in module [project]/node_modules/react-icons/hi/index.mjs [app-client] (ecmascript).
+Did you mean to import HiOutlineQrcode?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+[00:13:02.409] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:11:1
+Export HiOutlineQrCode doesn't exist in target module
+   9 | import Image from 'next/image';
+  10 | import Link from 'next/link';
+> 11 | import { 
+     | ^^^^^^^^^
+> 12 |   HiOutlineArrowLeft,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 13 |   HiOutlinePencil,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 14 |   HiOutlineTrash,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 15 |   HiOutlineShare,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 16 |   HiOutlineDownload,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 17 |   HiOutlineQrCode,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   HiOutlineShoppingCart,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 19 |   HiOutlineCalendar,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 20 |   HiOutlineUser,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 21 |   HiOutlineTag,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 22 |   HiOutlineExclamation,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 23 |   HiOutlineCheckCircle,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 24 |   HiOutlineXCircle
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 25 | } from 'react-icons/hi';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  26 | import { 
+  27 |   FiPackage, 
+  28 |   FiDollarSign, 
+
+The export HiOutlineQrCode was not found in module [project]/node_modules/react-icons/hi/index.mjs [app-ssr] (ecmascript).
+Did you mean to import HiOutlineQrcode?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+[00:13:02.410] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:33:1
+Export getProductById doesn't exist in target module
+  31 |   FiRefreshCw
+  32 | } from 'react-icons/fi';
+> 33 | import { getProductById, deleteProduct, Product } from '@/lib/services/productService';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  34 |
+  35 | export default function ProductDetailPage() {
+  36 |   const params = useParams();
+
+The export getProductById was not found in module [project]/lib/services/productService.ts [app-client] (ecmascript).
+Did you mean to import getProduct?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+[00:13:02.410] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:33:1
+Export getProductById doesn't exist in target module
+  31 |   FiRefreshCw
+  32 | } from 'react-icons/fi';
+> 33 | import { getProductById, deleteProduct, Product } from '@/lib/services/productService';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  34 |
+  35 | export default function ProductDetailPage() {
+  36 |   const params = useParams();
+
+The export getProductById was not found in module [project]/lib/services/productService.ts [app-ssr] (ecmascript).
+Did you mean to import getProduct?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+[00:13:03.811] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:11:1
+Export HiOutlineQrCode doesn't exist in target module
+   9 | import Image from 'next/image';
+  10 | import Link from 'next/link';
+> 11 | import { 
+     | ^^^^^^^^^
+> 12 |   HiOutlineArrowLeft,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 13 |   HiOutlinePencil,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 14 |   HiOutlineTrash,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 15 |   HiOutlineShare,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 16 |   HiOutlineDownload,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 17 |   HiOutlineQrCode,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   HiOutlineShoppingCart,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 19 |   HiOutlineCalendar,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 20 |   HiOutlineUser,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 21 |   HiOutlineTag,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 22 |   HiOutlineExclamation,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 23 |   HiOutlineCheckCircle,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 24 |   HiOutlineXCircle
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 25 | } from 'react-icons/hi';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  26 | import { 
+  27 |   FiPackage, 
+  28 |   FiDollarSign, 
+
+The export HiOutlineQrCode was not found in module [project]/node_modules/react-icons/hi/index.mjs [app-client] (ecmascript).
+Did you mean to import HiOutlineQrcode?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+[00:13:03.811] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:11:1
+Export HiOutlineQrCode doesn't exist in target module
+   9 | import Image from 'next/image';
+  10 | import Link from 'next/link';
+> 11 | import { 
+     | ^^^^^^^^^
+> 12 |   HiOutlineArrowLeft,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 13 |   HiOutlinePencil,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 14 |   HiOutlineTrash,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 15 |   HiOutlineShare,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 16 |   HiOutlineDownload,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 17 |   HiOutlineQrCode,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   HiOutlineShoppingCart,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 19 |   HiOutlineCalendar,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 20 |   HiOutlineUser,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 21 |   HiOutlineTag,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 22 |   HiOutlineExclamation,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 23 |   HiOutlineCheckCircle,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 24 |   HiOutlineXCircle
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 25 | } from 'react-icons/hi';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  26 | import { 
+  27 |   FiPackage, 
+  28 |   FiDollarSign, 
+
+The export HiOutlineQrCode was not found in module [project]/node_modules/react-icons/hi/index.mjs [app-ssr] (ecmascript).
+Did you mean to import HiOutlineQrcode?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+[00:13:03.811] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:33:1
+Export getProductById doesn't exist in target module
+  31 |   FiRefreshCw
+  32 | } from 'react-icons/fi';
+> 33 | import { getProductById, deleteProduct, Product } from '@/lib/services/productService';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  34 |
+  35 | export default function ProductDetailPage() {
+  36 |   const params = useParams();
+
+The export getProductById was not found in module [project]/lib/services/productService.ts [app-client] (ecmascript).
+Did you mean to import getProduct?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+[00:13:03.811] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:33:1
+Export getProductById doesn't exist in target module
+  31 |   FiRefreshCw
+  32 | } from 'react-icons/fi';
+> 33 | import { getProductById, deleteProduct, Product } from '@/lib/services/productService';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  34 |
+  35 | export default function ProductDetailPage() {
+  36 |   const params = useParams();
+
+The export getProductById was not found in module [project]/lib/services/productService.ts [app-ssr] (ecmascript).
+Did you mean to import getProduct?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+[00:13:03.811] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:11:1
+Export HiOutlineQrCode doesn't exist in target module
+   9 | import Image from 'next/image';
+  10 | import Link from 'next/link';
+> 11 | import { 
+     | ^^^^^^^^^
+> 12 |   HiOutlineArrowLeft,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 13 |   HiOutlinePencil,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 14 |   HiOutlineTrash,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 15 |   HiOutlineShare,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 16 |   HiOutlineDownload,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 17 |   HiOutlineQrCode,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   HiOutlineShoppingCart,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 19 |   HiOutlineCalendar,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 20 |   HiOutlineUser,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 21 |   HiOutlineTag,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 22 |   HiOutlineExclamation,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 23 |   HiOutlineCheckCircle,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 24 |   HiOutlineXCircle
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 25 | } from 'react-icons/hi';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  26 | import { 
+  27 |   FiPackage, 
+  28 |   FiDollarSign, 
+
+The export HiOutlineQrCode was not found in module [project]/node_modules/react-icons/hi/index.mjs [app-client] (ecmascript).
+Did you mean to import HiOutlineQrcode?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+[00:13:03.811] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:11:1
+Export HiOutlineQrCode doesn't exist in target module
+   9 | import Image from 'next/image';
+  10 | import Link from 'next/link';
+> 11 | import { 
+     | ^^^^^^^^^
+> 12 |   HiOutlineArrowLeft,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 13 |   HiOutlinePencil,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 14 |   HiOutlineTrash,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 15 |   HiOutlineShare,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 16 |   HiOutlineDownload,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 17 |   HiOutlineQrCode,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   HiOutlineShoppingCart,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 19 |   HiOutlineCalendar,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 20 |   HiOutlineUser,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 21 |   HiOutlineTag,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 22 |   HiOutlineExclamation,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 23 |   HiOutlineCheckCircle,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 24 |   HiOutlineXCircle
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 25 | } from 'react-icons/hi';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  26 | import { 
+  27 |   FiPackage, 
+  28 |   FiDollarSign, 
+
+The export HiOutlineQrCode was not found in module [project]/node_modules/react-icons/hi/index.mjs [app-ssr] (ecmascript).
+Did you mean to import HiOutlineQrcode?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+[00:13:03.811] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:33:1
+Export getProductById doesn't exist in target module
+  31 |   FiRefreshCw
+  32 | } from 'react-icons/fi';
+> 33 | import { getProductById, deleteProduct, Product } from '@/lib/services/productService';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  34 |
+  35 | export default function ProductDetailPage() {
+  36 |   const params = useParams();
+
+The export getProductById was not found in module [project]/lib/services/productService.ts [app-client] (ecmascript).
+Did you mean to import getProduct?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+[00:13:03.811] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:33:1
+Export getProductById doesn't exist in target module
+  31 |   FiRefreshCw
+  32 | } from 'react-icons/fi';
+> 33 | import { getProductById, deleteProduct, Product } from '@/lib/services/productService';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  34 |
+  35 | export default function ProductDetailPage() {
+  36 |   const params = useParams();
+
+The export getProductById was not found in module [project]/lib/services/productService.ts [app-ssr] (ecmascript).
+Did you mean to import getProduct?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+[00:13:03.811] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:11:1
+Export HiOutlineQrCode doesn't exist in target module
+   9 | import Image from 'next/image';
+  10 | import Link from 'next/link';
+> 11 | import { 
+     | ^^^^^^^^^
+> 12 |   HiOutlineArrowLeft,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 13 |   HiOutlinePencil,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 14 |   HiOutlineTrash,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 15 |   HiOutlineShare,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 16 |   HiOutlineDownload,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 17 |   HiOutlineQrCode,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   HiOutlineShoppingCart,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 19 |   HiOutlineCalendar,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 20 |   HiOutlineUser,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 21 |   HiOutlineTag,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 22 |   HiOutlineExclamation,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 23 |   HiOutlineCheckCircle,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 24 |   HiOutlineXCircle
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 25 | } from 'react-icons/hi';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  26 | import { 
+  27 |   FiPackage, 
+  28 |   FiDollarSign, 
+
+The export HiOutlineQrCode was not found in module [project]/node_modules/react-icons/hi/index.mjs [app-client] (ecmascript).
+Did you mean to import HiOutlineQrcode?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+[00:13:03.811] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:11:1
+Export HiOutlineQrCode doesn't exist in target module
+   9 | import Image from 'next/image';
+  10 | import Link from 'next/link';
+> 11 | import { 
+     | ^^^^^^^^^
+> 12 |   HiOutlineArrowLeft,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 13 |   HiOutlinePencil,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 14 |   HiOutlineTrash,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 15 |   HiOutlineShare,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 16 |   HiOutlineDownload,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 17 |   HiOutlineQrCode,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   HiOutlineShoppingCart,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 19 |   HiOutlineCalendar,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 20 |   HiOutlineUser,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 21 |   HiOutlineTag,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 22 |   HiOutlineExclamation,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 23 |   HiOutlineCheckCircle,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 24 |   HiOutlineXCircle
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 25 | } from 'react-icons/hi';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  26 | import { 
+  27 |   FiPackage, 
+  28 |   FiDollarSign, 
+
+The export HiOutlineQrCode was not found in module [project]/node_modules/react-icons/hi/index.mjs [app-ssr] (ecmascript).
+Did you mean to import HiOutlineQrcode?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+[00:13:03.811] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:33:1
+Export getProductById doesn't exist in target module
+  31 |   FiRefreshCw
+  32 | } from 'react-icons/fi';
+> 33 | import { getProductById, deleteProduct, Product } from '@/lib/services/productService';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  34 |
+  35 | export default function ProductDetailPage() {
+  36 |   const params = useParams();
+
+The export getProductById was not found in module [project]/lib/services/productService.ts [app-client] (ecmascript).
+Did you mean to import getProduct?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+[00:13:03.811] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:33:1
+Export getProductById doesn't exist in target module
+  31 |   FiRefreshCw
+  32 | } from 'react-icons/fi';
+> 33 | import { getProductById, deleteProduct, Product } from '@/lib/services/productService';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  34 |
+  35 | export default function ProductDetailPage() {
+  36 |   const params = useParams();
+
+The export getProductById was not found in module [project]/lib/services/productService.ts [app-ssr] (ecmascript).
+Did you mean to import getProduct?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+[00:13:04.620] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:11:1
+Export HiOutlineQrCode doesn't exist in target module
+   9 | import Image from 'next/image';
+  10 | import Link from 'next/link';
+> 11 | import { 
+     | ^^^^^^^^^
+> 12 |   HiOutlineArrowLeft,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 13 |   HiOutlinePencil,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 14 |   HiOutlineTrash,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 15 |   HiOutlineShare,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 16 |   HiOutlineDownload,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 17 |   HiOutlineQrCode,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   HiOutlineShoppingCart,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 19 |   HiOutlineCalendar,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 20 |   HiOutlineUser,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 21 |   HiOutlineTag,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 22 |   HiOutlineExclamation,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 23 |   HiOutlineCheckCircle,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 24 |   HiOutlineXCircle
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 25 | } from 'react-icons/hi';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  26 | import { 
+  27 |   FiPackage, 
+  28 |   FiDollarSign, 
+
+The export HiOutlineQrCode was not found in module [project]/node_modules/react-icons/hi/index.mjs [app-client] (ecmascript).
+Did you mean to import HiOutlineQrcode?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+[00:13:04.620] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:11:1
+Export HiOutlineQrCode doesn't exist in target module
+   9 | import Image from 'next/image';
+  10 | import Link from 'next/link';
+> 11 | import { 
+     | ^^^^^^^^^
+> 12 |   HiOutlineArrowLeft,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 13 |   HiOutlinePencil,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 14 |   HiOutlineTrash,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 15 |   HiOutlineShare,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 16 |   HiOutlineDownload,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 17 |   HiOutlineQrCode,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   HiOutlineShoppingCart,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 19 |   HiOutlineCalendar,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 20 |   HiOutlineUser,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 21 |   HiOutlineTag,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 22 |   HiOutlineExclamation,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 23 |   HiOutlineCheckCircle,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 24 |   HiOutlineXCircle
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 25 | } from 'react-icons/hi';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  26 | import { 
+  27 |   FiPackage, 
+  28 |   FiDollarSign, 
+
+The export HiOutlineQrCode was not found in module [project]/node_modules/react-icons/hi/index.mjs [app-ssr] (ecmascript).
+Did you mean to import HiOutlineQrcode?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+[00:13:04.620] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:33:1
+Export getProductById doesn't exist in target module
+  31 |   FiRefreshCw
+  32 | } from 'react-icons/fi';
+> 33 | import { getProductById, deleteProduct, Product } from '@/lib/services/productService';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  34 |
+  35 | export default function ProductDetailPage() {
+  36 |   const params = useParams();
+
+The export getProductById was not found in module [project]/lib/services/productService.ts [app-client] (ecmascript).
+Did you mean to import getProduct?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+[00:13:04.620] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:33:1
+Export getProductById doesn't exist in target module
+  31 |   FiRefreshCw
+  32 | } from 'react-icons/fi';
+> 33 | import { getProductById, deleteProduct, Product } from '@/lib/services/productService';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  34 |
+  35 | export default function ProductDetailPage() {
+  36 |   const params = useParams();
+
+The export getProductById was not found in module [project]/lib/services/productService.ts [app-ssr] (ecmascript).
+Did you mean to import getProduct?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+[00:13:05.218] Server  ERROR   ⨯ ./app/dashboard/products/[id]/page.tsx:11:1
+Export HiOutlineQrCode doesn't exist in target module
+   9 | import Image from 'next/image';
+  10 | import Link from 'next/link';
+> 11 | import { 
+     | ^^^^^^^^^
+> 12 |   HiOutlineArrowLeft,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 13 |   HiOutlinePencil,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 14 |   HiOutlineTrash,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 15 |   HiOutlineShare,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 16 |   HiOutlineDownload,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 17 |   HiOutlineQrCode,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   HiOutlineShoppingCart,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 19 |   HiOutlineCalendar,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 20 |   HiOutlineUser,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 21 |   HiOutlineTag,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 22 |   HiOutlineExclamation,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 23 |   HiOutlineCheckCircle,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 24 |   HiOutlineXCircle
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 25 | } from 'react-icons/hi';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  26 | import { 
+  27 |   FiPackage, 
+  28 |   FiDollarSign, 
+
+The export HiOutlineQrCode was not found in module [project]/node_modules/react-icons/hi/index.mjs [app-client] (ecmascript).
+Did you mean to import HiOutlineQrcode?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+
+
+./app/dashboard/products/[id]/page.tsx:11:1
+Export HiOutlineQrCode doesn't exist in target module
+   9 | import Image from 'next/image';
+  10 | import Link from 'next/link';
+> 11 | import { 
+     | ^^^^^^^^^
+> 12 |   HiOutlineArrowLeft,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 13 |   HiOutlinePencil,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 14 |   HiOutlineTrash,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 15 |   HiOutlineShare,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 16 |   HiOutlineDownload,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 17 |   HiOutlineQrCode,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   HiOutlineShoppingCart,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 19 |   HiOutlineCalendar,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 20 |   HiOutlineUser,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 21 |   HiOutlineTag,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 22 |   HiOutlineExclamation,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 23 |   HiOutlineCheckCircle,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 24 |   HiOutlineXCircle
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 25 | } from 'react-icons/hi';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  26 | import { 
+  27 |   FiPackage, 
+  28 |   FiDollarSign, 
+
+The export HiOutlineQrCode was not found in module [project]/node_modules/react-icons/hi/index.mjs [app-ssr] (ecmascript).
+Did you mean to import HiOutlineQrcode?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+
+
+./app/dashboard/products/[id]/page.tsx:33:1
+Export getProductById doesn't exist in target module
+  31 |   FiRefreshCw
+  32 | } from 'react-icons/fi';
+> 33 | import { getProductById, deleteProduct, Product } from '@/lib/services/productService';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  34 |
+  35 | export default function ProductDetailPage() {
+  36 |   const params = useParams();
+
+The export getProductById was not found in module [project]/lib/services/productService.ts [app-client] (ecmascript).
+Did you mean to import getProduct?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+
+
+./app/dashboard/products/[id]/page.tsx:33:1
+Export getProductById doesn't exist in target module
+  31 |   FiRefreshCw
+  32 | } from 'react-icons/fi';
+> 33 | import { getProductById, deleteProduct, Product } from '@/lib/services/productService';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  34 |
+  35 | export default function ProductDetailPage() {
+  36 |   const params = useParams();
+
+The export getProductById was not found in module [project]/lib/services/productService.ts [app-ssr] (ecmascript).
+Did you mean to import getProduct?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+
+[00:13:05.733] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:11:1
+Export HiOutlineQrCode doesn't exist in target module
+   9 | import Image from 'next/image';
+  10 | import Link from 'next/link';
+> 11 | import { 
+     | ^^^^^^^^^
+> 12 |   HiOutlineArrowLeft,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 13 |   HiOutlinePencil,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 14 |   HiOutlineTrash,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 15 |   HiOutlineShare,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 16 |   HiOutlineDownload,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 17 |   HiOutlineQrCode,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   HiOutlineShoppingCart,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 19 |   HiOutlineCalendar,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 20 |   HiOutlineUser,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 21 |   HiOutlineTag,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 22 |   HiOutlineExclamation,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 23 |   HiOutlineCheckCircle,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 24 |   HiOutlineXCircle
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 25 | } from 'react-icons/hi';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  26 | import { 
+  27 |   FiPackage, 
+  28 |   FiDollarSign, 
+
+The export HiOutlineQrCode was not found in module [project]/node_modules/react-icons/hi/index.mjs [app-client] (ecmascript).
+Did you mean to import HiOutlineQrcode?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+[00:13:05.733] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:11:1
+Export HiOutlineQrCode doesn't exist in target module
+   9 | import Image from 'next/image';
+  10 | import Link from 'next/link';
+> 11 | import { 
+     | ^^^^^^^^^
+> 12 |   HiOutlineArrowLeft,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 13 |   HiOutlinePencil,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 14 |   HiOutlineTrash,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 15 |   HiOutlineShare,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 16 |   HiOutlineDownload,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 17 |   HiOutlineQrCode,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   HiOutlineShoppingCart,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 19 |   HiOutlineCalendar,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 20 |   HiOutlineUser,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 21 |   HiOutlineTag,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 22 |   HiOutlineExclamation,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 23 |   HiOutlineCheckCircle,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 24 |   HiOutlineXCircle
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 25 | } from 'react-icons/hi';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  26 | import { 
+  27 |   FiPackage, 
+  28 |   FiDollarSign, 
+
+The export HiOutlineQrCode was not found in module [project]/node_modules/react-icons/hi/index.mjs [app-ssr] (ecmascript).
+Did you mean to import HiOutlineQrcode?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+[00:13:05.733] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:33:1
+Export getProductById doesn't exist in target module
+  31 |   FiRefreshCw
+  32 | } from 'react-icons/fi';
+> 33 | import { getProductById, deleteProduct, Product } from '@/lib/services/productService';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  34 |
+  35 | export default function ProductDetailPage() {
+  36 |   const params = useParams();
+
+The export getProductById was not found in module [project]/lib/services/productService.ts [app-client] (ecmascript).
+Did you mean to import getProduct?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+[00:13:05.733] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:33:1
+Export getProductById doesn't exist in target module
+  31 |   FiRefreshCw
+  32 | } from 'react-icons/fi';
+> 33 | import { getProductById, deleteProduct, Product } from '@/lib/services/productService';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  34 |
+  35 | export default function ProductDetailPage() {
+  36 |   const params = useParams();
+
+The export getProductById was not found in module [project]/lib/services/productService.ts [app-ssr] (ecmascript).
+Did you mean to import getProduct?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+[00:13:05.733] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:11:1
+Export HiOutlineQrCode doesn't exist in target module
+   9 | import Image from 'next/image';
+  10 | import Link from 'next/link';
+> 11 | import { 
+     | ^^^^^^^^^
+> 12 |   HiOutlineArrowLeft,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 13 |   HiOutlinePencil,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 14 |   HiOutlineTrash,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 15 |   HiOutlineShare,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 16 |   HiOutlineDownload,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 17 |   HiOutlineQrCode,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   HiOutlineShoppingCart,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 19 |   HiOutlineCalendar,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 20 |   HiOutlineUser,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 21 |   HiOutlineTag,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 22 |   HiOutlineExclamation,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 23 |   HiOutlineCheckCircle,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 24 |   HiOutlineXCircle
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 25 | } from 'react-icons/hi';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  26 | import { 
+  27 |   FiPackage, 
+  28 |   FiDollarSign, 
+
+The export HiOutlineQrCode was not found in module [project]/node_modules/react-icons/hi/index.mjs [app-client] (ecmascript).
+Did you mean to import HiOutlineQrcode?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+[00:13:05.733] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:11:1
+Export HiOutlineQrCode doesn't exist in target module
+   9 | import Image from 'next/image';
+  10 | import Link from 'next/link';
+> 11 | import { 
+     | ^^^^^^^^^
+> 12 |   HiOutlineArrowLeft,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 13 |   HiOutlinePencil,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 14 |   HiOutlineTrash,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 15 |   HiOutlineShare,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 16 |   HiOutlineDownload,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 17 |   HiOutlineQrCode,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   HiOutlineShoppingCart,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 19 |   HiOutlineCalendar,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 20 |   HiOutlineUser,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 21 |   HiOutlineTag,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 22 |   HiOutlineExclamation,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 23 |   HiOutlineCheckCircle,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 24 |   HiOutlineXCircle
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 25 | } from 'react-icons/hi';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  26 | import { 
+  27 |   FiPackage, 
+  28 |   FiDollarSign, 
+
+The export HiOutlineQrCode was not found in module [project]/node_modules/react-icons/hi/index.mjs [app-ssr] (ecmascript).
+Did you mean to import HiOutlineQrcode?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+[00:13:05.734] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:33:1
+Export getProductById doesn't exist in target module
+  31 |   FiRefreshCw
+  32 | } from 'react-icons/fi';
+> 33 | import { getProductById, deleteProduct, Product } from '@/lib/services/productService';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  34 |
+  35 | export default function ProductDetailPage() {
+  36 |   const params = useParams();
+
+The export getProductById was not found in module [project]/lib/services/productService.ts [app-client] (ecmascript).
+Did you mean to import getProduct?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+[00:13:05.734] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:33:1
+Export getProductById doesn't exist in target module
+  31 |   FiRefreshCw
+  32 | } from 'react-icons/fi';
+> 33 | import { getProductById, deleteProduct, Product } from '@/lib/services/productService';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  34 |
+  35 | export default function ProductDetailPage() {
+  36 |   const params = useParams();
+
+The export getProductById was not found in module [project]/lib/services/productService.ts [app-ssr] (ecmascript).
+Did you mean to import getProduct?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+[00:13:07.428] Browser ERROR   uncaughtError: Error: ./app/dashboard/products/[id]/page.tsx:11:1
+Export HiOutlineQrCode doesn't exist in target module
+   9 | import Image from 'next/image';
+  10 | import Link from 'next/link';
+> 11 | import { 
+     | ^^^^^^^^^
+> 12 |   HiOutlineArrowLeft,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 13 |   HiOutlinePencil,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 14 |   HiOutlineTrash,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 15 |   HiOutlineShare,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 16 |   HiOutlineDownload,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 17 |   HiOutlineQrCode,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   HiOutlineShoppingCart,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 19 |   HiOutlineCalendar,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 20 |   HiOutlineUser,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 21 |   HiOutlineTag,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 22 |   HiOutlineExclamation,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 23 |   HiOutlineCheckCircle,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 24 |   HiOutlineXCircle
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 25 | } from 'react-icons/hi';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  26 | import { 
+  27 |   FiPackage, 
+  28 |   FiDollarSign, 
+
+The export HiOutlineQrCode was not found in module [project]/node_modules/react-icons/hi/index.mjs [app-client] (ecmascript).
+Did you mean to import HiOutlineQrcode?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+
+[00:13:08.295] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:11:1
+Export HiOutlineQrCode doesn't exist in target module
+   9 | import Image from 'next/image';
+  10 | import Link from 'next/link';
+> 11 | import { 
+     | ^^^^^^^^^
+> 12 |   HiOutlineArrowLeft,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 13 |   HiOutlinePencil,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 14 |   HiOutlineTrash,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 15 |   HiOutlineShare,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 16 |   HiOutlineDownload,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 17 |   HiOutlineQrCode,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   HiOutlineShoppingCart,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 19 |   HiOutlineCalendar,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 20 |   HiOutlineUser,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 21 |   HiOutlineTag,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 22 |   HiOutlineExclamation,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 23 |   HiOutlineCheckCircle,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 24 |   HiOutlineXCircle
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 25 | } from 'react-icons/hi';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  26 | import { 
+  27 |   FiPackage, 
+  28 |   FiDollarSign, 
+
+The export HiOutlineQrCode was not found in module [project]/node_modules/react-icons/hi/index.mjs [app-client] (ecmascript).
+Did you mean to import HiOutlineQrcode?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+[00:13:08.296] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:11:1
+Export HiOutlineQrCode doesn't exist in target module
+   9 | import Image from 'next/image';
+  10 | import Link from 'next/link';
+> 11 | import { 
+     | ^^^^^^^^^
+> 12 |   HiOutlineArrowLeft,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 13 |   HiOutlinePencil,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 14 |   HiOutlineTrash,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 15 |   HiOutlineShare,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 16 |   HiOutlineDownload,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 17 |   HiOutlineQrCode,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   HiOutlineShoppingCart,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 19 |   HiOutlineCalendar,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 20 |   HiOutlineUser,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 21 |   HiOutlineTag,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 22 |   HiOutlineExclamation,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 23 |   HiOutlineCheckCircle,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 24 |   HiOutlineXCircle
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 25 | } from 'react-icons/hi';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  26 | import { 
+  27 |   FiPackage, 
+  28 |   FiDollarSign, 
+
+The export HiOutlineQrCode was not found in module [project]/node_modules/react-icons/hi/index.mjs [app-ssr] (ecmascript).
+Did you mean to import HiOutlineQrcode?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+[00:13:08.296] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:33:1
+Export getProductById doesn't exist in target module
+  31 |   FiRefreshCw
+  32 | } from 'react-icons/fi';
+> 33 | import { getProductById, deleteProduct, Product } from '@/lib/services/productService';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  34 |
+  35 | export default function ProductDetailPage() {
+  36 |   const params = useParams();
+
+The export getProductById was not found in module [project]/lib/services/productService.ts [app-client] (ecmascript).
+Did you mean to import getProduct?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+[00:13:08.296] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:33:1
+Export getProductById doesn't exist in target module
+  31 |   FiRefreshCw
+  32 | } from 'react-icons/fi';
+> 33 | import { getProductById, deleteProduct, Product } from '@/lib/services/productService';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  34 |
+  35 | export default function ProductDetailPage() {
+  36 |   const params = useParams();
+
+The export getProductById was not found in module [project]/lib/services/productService.ts [app-ssr] (ecmascript).
+Did you mean to import getProduct?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+[00:13:08.844] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:11:1
+Export HiOutlineQrCode doesn't exist in target module
+   9 | import Image from 'next/image';
+  10 | import Link from 'next/link';
+> 11 | import { 
+     | ^^^^^^^^^
+> 12 |   HiOutlineArrowLeft,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 13 |   HiOutlinePencil,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 14 |   HiOutlineTrash,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 15 |   HiOutlineShare,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 16 |   HiOutlineDownload,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 17 |   HiOutlineQrCode,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   HiOutlineShoppingCart,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 19 |   HiOutlineCalendar,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 20 |   HiOutlineUser,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 21 |   HiOutlineTag,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 22 |   HiOutlineExclamation,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 23 |   HiOutlineCheckCircle,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 24 |   HiOutlineXCircle
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 25 | } from 'react-icons/hi';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  26 | import { 
+  27 |   FiPackage, 
+  28 |   FiDollarSign, 
+
+The export HiOutlineQrCode was not found in module [project]/node_modules/react-icons/hi/index.mjs [app-client] (ecmascript).
+Did you mean to import HiOutlineQrcode?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+[00:13:08.844] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:11:1
+Export HiOutlineQrCode doesn't exist in target module
+   9 | import Image from 'next/image';
+  10 | import Link from 'next/link';
+> 11 | import { 
+     | ^^^^^^^^^
+> 12 |   HiOutlineArrowLeft,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 13 |   HiOutlinePencil,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 14 |   HiOutlineTrash,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 15 |   HiOutlineShare,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 16 |   HiOutlineDownload,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 17 |   HiOutlineQrCode,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   HiOutlineShoppingCart,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 19 |   HiOutlineCalendar,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 20 |   HiOutlineUser,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 21 |   HiOutlineTag,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 22 |   HiOutlineExclamation,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 23 |   HiOutlineCheckCircle,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 24 |   HiOutlineXCircle
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 25 | } from 'react-icons/hi';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  26 | import { 
+  27 |   FiPackage, 
+  28 |   FiDollarSign, 
+
+The export HiOutlineQrCode was not found in module [project]/node_modules/react-icons/hi/index.mjs [app-ssr] (ecmascript).
+Did you mean to import HiOutlineQrcode?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+[00:13:08.844] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:33:1
+Export getProductById doesn't exist in target module
+  31 |   FiRefreshCw
+  32 | } from 'react-icons/fi';
+> 33 | import { getProductById, deleteProduct, Product } from '@/lib/services/productService';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  34 |
+  35 | export default function ProductDetailPage() {
+  36 |   const params = useParams();
+
+The export getProductById was not found in module [project]/lib/services/productService.ts [app-client] (ecmascript).
+Did you mean to import getProduct?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+[00:13:08.844] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:33:1
+Export getProductById doesn't exist in target module
+  31 |   FiRefreshCw
+  32 | } from 'react-icons/fi';
+> 33 | import { getProductById, deleteProduct, Product } from '@/lib/services/productService';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  34 |
+  35 | export default function ProductDetailPage() {
+  36 |   const params = useParams();
+
+The export getProductById was not found in module [project]/lib/services/productService.ts [app-ssr] (ecmascript).
+Did you mean to import getProduct?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+[00:28:17.683] Server  LOG     ✓ Compiled in 609ms
+[00:28:33.442] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:28:38.082] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:28:45.448] Server  LOG     ✓ Compiled in 916ms
+[00:29:36.910] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:29:37.958] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:29:42.851] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:29:43.803] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:29:56.176] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:29:56.177] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:29:56.500] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:29:56.500] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:29:56.501] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:29:56.501] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:29:56.719] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:29:57.272] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:29:57.272] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:29:57.838] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:30:00.718] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:31:06.384] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:31:09.405] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:31:09.610] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:31:11.962] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:31:20.179] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:31:21.847] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:31:24.863] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:31:25.928] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:31:26.631] Browser INFO    🔒 Clerk:
+The <SignIn/> component cannot render when a user is already signed in, unless the application allows multiple sessions. Since a user is signed in and this application only allows a single session, Clerk is redirecting to the `afterSignIn` URL instead.
+(This notice only appears in development)
+[00:31:33.693] Browser WARN    'lab(96.492 -1.14647 -5.11479)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:31:35.427] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:40:25.630] Browser WARN    'lab(96.492 -1.14647 -5.11479)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:40:25.840] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:40:25.840] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:40:31.654] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:40:31.657] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:49:39.043] Server  LOG     ✓ Compiled in 3.3s
+[00:49:40.099] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:17:1
+Export getProductById doesn't exist in target module
+  15 | } from 'react-icons/hi';
+  16 | import { FiPackage, FiDollarSign } from 'react-icons/fi';
+> 17 | import { getProductById, deleteProduct, Product } from '@/lib/services/productService';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | export default function ProductDetailPage() {
+  20 |   const params = useParams();
+
+The export getProductById was not found in module [project]/lib/services/productService.ts [app-client] (ecmascript).
+Did you mean to import getProduct?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+[00:49:40.099] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:17:1
+Export getProductById doesn't exist in target module
+  15 | } from 'react-icons/hi';
+  16 | import { FiPackage, FiDollarSign } from 'react-icons/fi';
+> 17 | import { getProductById, deleteProduct, Product } from '@/lib/services/productService';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |
+  19 | export default function ProductDetailPage() {
+  20 |   const params = useParams();
+
+The export getProductById was not found in module [project]/lib/services/productService.ts [app-ssr] (ecmascript).
+Did you mean to import getProduct?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
+    ./app/dashboard/products/[id]/page.tsx [Server Component]
+[00:51:06.198] Server  LOG     ✓ Compiled in 248ms
+[00:53:57.094] Server  LOG     ✓ Compiled in 182ms
+[00:55:39.892] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:55:41.088] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:56:17.738] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:56:19.451] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:56:21.217] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:56:22.459] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:58:42.130] Server  LOG     ✓ Compiled in 837ms
+[00:59:13.835] Server  LOG     ✓ Compiled in 349ms
+[00:59:29.981] Server  LOG     ✓ Compiled in 428ms
+[01:00:00.334] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:00:01.530] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[01:00:06.654] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:00:08.217] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[01:02:46.082] Server  LOG     ○ Compiling proxy ...
+[01:02:46.113] Server  LOG     ✓ Compiled in 2.1s
+[01:03:09.732] Server  LOG     ✓ Finished filesystem cache database compaction in 20.4s
+[01:03:09.894] Server  LOG     ✓ Finished writing to filesystem cache in 10.7s
+[01:04:22.212] Server  LOG     ✓ Compiled in 559ms
+[01:04:56.234] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:04:57.153] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[01:05:05.401] Server  LOG     ○ Compiling /dashboard/products/edit/[id] ...
+[01:12:57.852] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[01:12:57.853] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[01:12:57.853] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[01:12:58.064] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[01:12:58.198] Browser WARN    'lab(96.492 -1.14647 -5.11479)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[01:12:58.413] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[01:13:00.167] Browser WARN    'lab(96.492 -1.14647 -5.11479)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[01:20:53.542] Browser ERROR   Failed to create product: {"code":"ERR_BAD_RESPONSE","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8080/api","data":"{\"name\":\"gggg\",\"price\":0.02,\"stock\":2,\"description\":\"fff\",\"images\":[\"blob:http://localhost:3000/219d31d9-9f95-4430-8518-77aa03ee2381\"]}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJSUzI1NiIsImNhdCI6ImNsX0I3ZDRQRDExMUFBQSIsImtpZCI6Imluc18zQVR1MUNkekl4OEZGdmx0RktIblFFUHdnSVAiLCJ0eXAiOiJKV1QifQ.eyJhenAiOiJodHRwOi8vbG9jYWxob3N0OjMwMDAiLCJleHAiOjE3NzMxNDI2OTcsImZ2YSI6WzE5MCwtMV0sImlhdCI6MTc3MzE0MjYzNywiaXNzIjoiaHR0cHM6Ly9uYXRpb25hbC1sb25naG9ybi0yOS5jbGVyay5hY2NvdW50cy5kZXYiLCJuYmYiOjE3NzMxNDI2MjcsInNpZCI6InNlc3NfM0FrS2VzWTdydlNzbnZ1NmZ0ckNDSGdBVnhYIiwic3RzIjoiYWN0aXZlIiwic3ViIjoidXNlcl8zQWtLZXZVVVBqMjhUQkN3a0Vnc1FpYVFUNUciLCJ2IjoyfQ.ZG1FU7PKh6256sIs6ylWtKf5uMPGcRaRa9VZzE5VSYiSLw92iCBAavUEtiv9aXNd3USPO898UGBDI1e6GVF0usshnPPu67o2-oHsqKbyZ23xc6F4kmYDA_e_CU3G3GfPAS98I-eN2tlXPtmtEeWcOnQ7w8wwcFMdBYUjjjR_njKN4MkY0EwfAskjpD1yarxhadL2Bg6K6t35ZkzRidWxZLFZ2wI3ijXGAKSGcZzthGnPDWG5145BeuO9OIxm2w991dNpVc_GnYftci_UJgAjuNWvO55yd2SM5ax65Wo7WkCflQtDioY2JPszAmbpi4jGwHZr1qjTW-4UxZMfx6FHfQ","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"/products","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 500","name":"AxiosError","stack":"AxiosError: Request failed with status code 500\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:6827:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:7343:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:8149:49)\n    at async createProduct (http://localhost:3000/_next/static/chunks/_c679ae7b._.js:62:17)\n    at async handleSubmit (http://localhost:3000/_next/static/chunks/_1281f58b._.js:120:13)","status":500}

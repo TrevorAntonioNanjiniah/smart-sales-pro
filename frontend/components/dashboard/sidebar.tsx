@@ -1,7 +1,7 @@
 // components/dashboard/Sidebar.tsx
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useClerk } from '@clerk/nextjs';
@@ -24,6 +24,7 @@ const Sidebar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [hoverTimeout, setHoverTimeout] = useState<NodeJS.Timeout | null>(null);
+  const isInitialMount = useRef(true);
   const pathname = usePathname();
   const { signOut } = useClerk();
 
@@ -40,6 +41,10 @@ const Sidebar = () => {
 
   // Close mobile menu on route change
   useEffect(() => {
+    if (isInitialMount.current) {
+      isInitialMount.current = false;
+      return;
+    }
     setIsMobileMenuOpen(false);
   }, [pathname]);
 
@@ -138,9 +143,9 @@ const Sidebar = () => {
                     className="flex items-center space-x-2"
                   >
                     <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center">
-                      <span className="text-white font-bold text-sm">D</span>
+                      <span className="text-white font-bold text-sm">S</span>
                     </div>
-                    <span className="font-semibold text-gray-800">Dashboard</span>
+                    <span className="font-semibold text-gray-800">Smart Sales Pro</span>
                   </motion.div>
                 ) : (
                   <div className="w-full flex justify-center">
