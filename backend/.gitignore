@@ -1,4 +1,55 @@
-nodemon
-node_modules/
-dist/
+# dependencies
+/node_modules
+package-lock.json
+
+# environment variables
 .env
+.env.local
+.env.production
+.env.development
+
+# builds
+/dist
+/build
+/coverage
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# runtime data
+.pnpm-debug.log*
+lerna-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# testing
+/coverage
+.nyc_output
+
+# nodemon
+nodemon.json
+
+# clerk (if this is a temp folder)
+.clerk.tmp/
+.clerk/
+
+# config files that shouldn't be committed (if sensitive)
+# eslint.config.js - usually should be committed, but if it contains secrets
+# eslint.config.js.local
+
+# database
+*.sqlite
+*.db
+*.sqlite3
