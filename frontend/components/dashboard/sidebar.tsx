@@ -23,7 +23,6 @@ const Sidebar = () => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
-  const [hoverTimeout, setHoverTimeout] = useState<NodeJS.Timeout | null>(null);
   const isInitialMount = useRef(true);
   const pathname = usePathname();
   const { signOut } = useClerk();
@@ -74,17 +73,13 @@ const Sidebar = () => {
     window.location.href = '/sign-in';
   };
 
-  // Hover handlers with delay for better UX
+  // Hover handlers - NO DELAY
   const handleMouseEnter = () => {
-    if (hoverTimeout) clearTimeout(hoverTimeout);
     setIsExpanded(true);
   };
 
   const handleMouseLeave = () => {
-    const timeout = setTimeout(() => {
-      setIsExpanded(false);
-    }, 300); // 300ms delay before collapsing
-    setHoverTimeout(timeout);
+    setIsExpanded(false);
   };
 
   const sidebarVariants = {
@@ -94,20 +89,12 @@ const Sidebar = () => {
     mobileClosed: { x: '-100%' },
   };
 
-  const linkVariants = {
-    hover: {
-      backgroundColor: 'rgba(59, 130, 246, 0.1)',
-      transition: { duration: 0.2 }
-    },
-    tap: { scale: 0.98 }
-  };
-
   return (
     <>
       {/* Mobile Menu Button */}
       <button
         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-        className="lg:hidden fixed top-4 left-4 z-50 p-2.5 rounded-xl bg-white shadow-md hover:bg-blue-50 transition-colors"
+        className="lg:hidden fixed top-4 left-4 z-50 p-3 rounded-xl bg-white shadow-md hover:bg-blue-50 transition-all duration-200 border border-gray-100"
         aria-label="Toggle menu"
       >
         {isMobileMenuOpen ? (
@@ -130,35 +117,47 @@ const Sidebar = () => {
             transition={{ type: "spring", damping: 25, stiffness: 200 }}
             onMouseEnter={!isMobile ? handleMouseEnter : undefined}
             onMouseLeave={!isMobile ? handleMouseLeave : undefined}
-            className="fixed left-0 top-0 h-full bg-white shadow-lg z-40 overflow-hidden border-r border-gray-200"
+            className="fixed left-0 top-0 h-full bg-white shadow-xl z-40 overflow-hidden border-r border-blue-50"
           >
             <div className="flex flex-col h-full">
               {/* Logo Section */}
-              <div className="h-16 flex items-center px-4 border-b border-gray-100">
+              <div className="h-16 flex items-center px-4 border-b border-blue-50">
                 {isExpanded ? (
                   <motion.div 
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.1 }}
-                    className="flex items-center space-x-2"
+                    className="flex items-center space-x-3"
                   >
-                    <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center">
-                      <span className="text-white font-bold text-sm">S</span>
+                    <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center shadow-sm">
+                      <span className="text-white font-bold text-sm">SP</span>
                     </div>
                     <span className="font-semibold text-gray-800">Smart Sales Pro</span>
                   </motion.div>
                 ) : (
                   <div className="w-full flex justify-center">
-                    <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center">
-                      <span className="text-white font-bold text-sm">D</span>
+                    <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center shadow-sm">
+                      <span className="text-white font-bold text-sm">SP</span>
                     </div>
                   </div>
                 )}
               </div>
 
               {/* Navigation Links */}
-              <nav className="flex-1 py-4 px-2 overflow-y-auto">
-                <ul className="space-y-1">
+              <nav className="flex-1 py-6 px-3 overflow-y-auto scrollbar-thin scrollbar-thumb-blue-200 scrollbar-track-transparent">
+                <style jsx>{`
+                  nav::-webkit-scrollbar {
+                    width: 4px;
+                  }
+                  nav::-webkit-scrollbar-thumb {
+                    background-color: #bfdbfe;
+                    border-radius: 4px;
+                  }
+                  nav::-webkit-scrollbar-track {
+                    background-color: transparent;
+                  }
+                `}</style>
+                <ul className="space-y-1.5">
                   {navigationLinks.map((link, index) => {
                     const Icon = link.icon;
                     const isActive = pathname === link.href;
@@ -172,16 +171,24 @@ const Sidebar = () => {
                       >
                         <Link href={link.href}>
                           <motion.div
-                            variants={linkVariants}
-                            whileHover="hover"
-                            whileTap="tap"
-                            className={`flex items-center px-3 py-2 rounded-lg transition-all duration-200 cursor-pointer
+                            whileHover={{ 
+                              backgroundColor: 'rgba(59, 130, 246, 0.08)',
+                              x: 4,
+                              transition: { duration: 0.2 }
+                            }}
+                            whileTap={{ scale: 0.98 }}
+                            className={`flex items-center px-3 py-2.5 rounded-xl transition-all duration-200 cursor-pointer group
                               ${isActive 
-                                ? 'bg-blue-50 text-blue-600' 
-                                : 'text-gray-600 hover:bg-gray-50'
+                                ? 'bg-blue-500 text-white shadow-md shadow-blue-200' 
+                                : 'text-gray-600 hover:text-blue-600'
                               }`}
                           >
-                            <Icon className={`w-5 h-5 ${isActive ? 'text-blue-600' : 'text-gray-500'}`} />
+                            <Icon className={`w-5 h-5 transition-colors duration-200 ${
+                              isActive 
+                                ? 'text-white' 
+                                : 'text-gray-400 group-hover:text-blue-500'
+                            }`} />
+                            
                             <AnimatePresence>
                               {isExpanded && (
                                 <motion.span
@@ -189,12 +196,23 @@ const Sidebar = () => {
                                   animate={{ opacity: 1, width: 'auto' }}
                                   exit={{ opacity: 0, width: 0 }}
                                   transition={{ duration: 0.15 }}
-                                  className="ml-3 text-sm font-medium whitespace-nowrap"
+                                  className={`ml-3 text-sm font-medium whitespace-nowrap ${
+                                    isActive ? 'text-white' : 'text-gray-700'
+                                  }`}
                                 >
                                   {link.name}
                                 </motion.span>
                               )}
                             </AnimatePresence>
+
+                            {/* Active indicator dot */}
+                            {isActive && !isExpanded && (
+                              <motion.div
+                                initial={{ scale: 0 }}
+                                animate={{ scale: 1 }}
+                                className="absolute left-1 w-1.5 h-1.5 bg-blue-500 rounded-full"
+                              />
+                            )}
                           </motion.div>
                         </Link>
                       </motion.li>
@@ -204,17 +222,20 @@ const Sidebar = () => {
               </nav>
 
               {/* Logout Button */}
-              <div className="p-2 border-t border-gray-100">
+              <div className="p-3 border-t border-blue-50">
                 <motion.button
                   onClick={handleLogout}
-                  variants={linkVariants}
-                  whileHover="hover"
-                  whileTap="tap"
-                  className={`flex items-center w-full px-3 py-2 rounded-lg text-gray-600 hover:bg-red-50 hover:text-red-600 transition-colors ${
+                  whileHover={{ 
+                    backgroundColor: 'rgba(239, 68, 68, 0.08)',
+                    x: 4,
+                    transition: { duration: 0.2 }
+                  }}
+                  whileTap={{ scale: 0.98 }}
+                  className={`flex items-center w-full px-3 py-2.5 rounded-xl text-gray-600 hover:text-red-600 transition-all duration-200 group ${
                     isExpanded ? 'justify-start' : 'justify-center'
                   }`}
                 >
-                  <HiOutlineLogout className="w-5 h-5" />
+                  <HiOutlineLogout className="w-5 h-5 text-gray-400 group-hover:text-red-500 transition-colors duration-200" />
                   <AnimatePresence>
                     {isExpanded && (
                       <motion.span
@@ -222,7 +243,7 @@ const Sidebar = () => {
                         animate={{ opacity: 1, width: 'auto' }}
                         exit={{ opacity: 0, width: 0 }}
                         transition={{ duration: 0.15 }}
-                        className="ml-3 text-sm font-medium whitespace-nowrap"
+                        className="ml-3 text-sm font-medium whitespace-nowrap text-gray-700 group-hover:text-red-600"
                       >
                         Logout
                       </motion.span>
@@ -243,7 +264,7 @@ const Sidebar = () => {
             animate={{ opacity: 0.5 }}
             exit={{ opacity: 0 }}
             onClick={() => setIsMobileMenuOpen(false)}
-            className="lg:hidden fixed inset-0 bg-black z-30"
+            className="lg:hidden fixed inset-0 bg-black/40 backdrop-blur-sm z-30"
           />
         )}
       </AnimatePresence>
