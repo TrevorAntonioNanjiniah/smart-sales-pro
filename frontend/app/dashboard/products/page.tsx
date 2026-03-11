@@ -11,15 +11,14 @@ import {
   HiOutlinePencil,
   HiOutlineTrash,
   HiOutlineEye,
-  HiOutlineSortAscending,
-  HiOutlineSortDescending,
   HiOutlineFilter,
-  HiOutlineX,
-  HiOutlineCheck,
   HiOutlineExclamation
 } from 'react-icons/hi';
-import { FiPackage, FiDollarSign, FiShoppingBag } from 'react-icons/fi';
+import { FiPackage } from 'react-icons/fi';
 import { getProducts, deleteProduct, Product } from '@/lib/services/productService';
+
+// Default fallback image
+const DEFAULT_PRODUCT_IMAGE = 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=80';
 
 export default function ProductsPage() {
   const [products, setProducts] = useState<Product[]>([]);
@@ -46,7 +45,6 @@ export default function ProductsPage() {
     try {
       setIsLoading(true);
       const data = await getProducts();
-      // Guard: ensure data is always an array before setting state
       setProducts(Array.isArray(data) ? data : []);
     } catch (error) {
       console.error('Failed to fetch products:', error);
@@ -57,7 +55,6 @@ export default function ProductsPage() {
   };
 
   const filterAndSortProducts = () => {
-    // Guard: ensure products is always spread as an array
     let filtered = [...(Array.isArray(products) ? products : [])];
 
     // Apply search filter
@@ -83,8 +80,8 @@ export default function ProductsPage() {
       let bValue = b[sortField];
 
       if (sortField === 'createdAt') {
-        aValue = new Date(a.createdAt).getTime();
-        bValue = new Date(b.createdAt).getTime();
+        aValue = new Date(a.createdAt || '').getTime();
+        bValue = new Date(b.createdAt || '').getTime();
       }
 
       if (sortDirection === 'asc') {
@@ -127,12 +124,12 @@ export default function ProductsPage() {
     }).format(price);
   };
 
-  const formatDate = (date: string) => {
-    return new Date(date).toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'short',
-      day: 'numeric'
-    });
+  // Helper function to get safe image URL
+  const getSafeImageUrl = (imageUrl: string | undefined | null): string => {
+    if (!imageUrl || imageUrl === '') {
+      return DEFAULT_PRODUCT_IMAGE;
+    }
+    return imageUrl;
   };
 
   return (
@@ -176,7 +173,7 @@ export default function ProductsPage() {
               value={`${sortField}-${sortDirection}`}
               onChange={(e) => {
                 const [field, direction] = e.target.value.split('-');
-                setSortField(field as any);
+                setSortField(field as 'name' | 'price' | 'stock' | 'createdAt');
                 setSortDirection(direction as 'asc' | 'desc');
               }}
               className="px-3 py-2 rounded-lg border border-gray-200 focus:border-blue-400 focus:ring-2 focus:ring-blue-100 outline-none text-sm"
@@ -221,7 +218,7 @@ export default function ProductsPage() {
                     <label className="block text-xs text-gray-500 mb-1">Stock Status</label>
                     <select
                       value={stockFilter}
-                      onChange={(e) => setStockFilter(e.target.value as any)}
+                      onChange={(e) => setStockFilter(e.target.value as 'all' | 'inStock' | 'lowStock' | 'outOfStock')}
                       className="px-3 py-2 rounded-lg border border-gray-200 focus:border-blue-400 focus:ring-2 focus:ring-blue-100 outline-none text-sm"
                     >
                       <option value="all">All Products</option>
@@ -273,7 +270,8 @@ export default function ProductsPage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {filteredProducts.map((product, index) => {
             const stockStatus = getStockStatus(product.stock);
-            const mainImage = product.images?.[0] || 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=80';
+            // Safely get the first image or use default
+            const mainImage = product.images?.[0] ? product.images[0].url : DEFAULT_PRODUCT_IMAGE;
             
             return (
               <motion.div
@@ -283,13 +281,17 @@ export default function ProductsPage() {
                 transition={{ delay: index * 0.05 }}
                 className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow"
               >
-                <div className="relative aspect-square">
+                <div className="relative aspect-square bg-gray-100">
                   <Image
-                    src={mainImage}
+                    src={getSafeImageUrl(mainImage)}
                     alt={product.name}
                     fill
                     className="object-cover"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    onError={(e) => {
+                      // If image fails to load, replace with default
+                      e.currentTarget.src = DEFAULT_PRODUCT_IMAGE;
+                    }}
                   />
                   {!product.isActive && (
                     <div className="absolute inset-0 bg-black/50 flex items-center justify-center">

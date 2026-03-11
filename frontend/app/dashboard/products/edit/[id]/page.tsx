@@ -11,8 +11,36 @@ import {
   HiOutlineX
 } from 'react-icons/hi';
 import { FiDollarSign, FiPackage } from 'react-icons/fi';
-import { getProduct, updateProduct, Product } from '@/lib/services/productService';
+import { getProduct, updateProduct } from '@/lib/services/productService';
 import Image from 'next/image';
+
+// Helper function to convert blob URL to base64
+const blobToBase64 = (blobUrl: string): Promise<string> => {
+  return new Promise((resolve, reject) => {
+    const xhr = new XMLHttpRequest();
+    xhr.onload = function() {
+      const reader = new FileReader();
+      reader.onloadend = () => resolve(reader.result as string);
+      reader.onerror = reject;
+      reader.readAsDataURL(xhr.response);
+    };
+    xhr.onerror = reject;
+    xhr.open('GET', blobUrl);
+    xhr.responseType = 'blob';
+    xhr.send();
+  });
+};
+
+// Default fallback image
+const DEFAULT_PRODUCT_IMAGE = 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=80';
+
+// Helper function to get safe image URL
+const getSafeImageUrl = (imageUrl: string | undefined | null): string => {
+  if (!imageUrl || imageUrl === '') {
+    return DEFAULT_PRODUCT_IMAGE;
+  }
+  return imageUrl;
+};
 
 export default function EditProductPage() {
   const params = useParams();
@@ -24,8 +52,9 @@ export default function EditProductPage() {
     price: 0,
     stock: 0,
     description: '',
-    images: [] as string[]
+    images: [] as string[] // This will store image URLs for existing and base64 for new
   });
+  const [imagePreviews, setImagePreviews] = useState<string[]>([]);
 
   useEffect(() => {
     if (params.id) {
@@ -37,13 +66,21 @@ export default function EditProductPage() {
     try {
       setIsLoading(true);
       const product = await getProduct(params.id as string);
+      
+      // Extract image URLs from product images
+      const imageUrls = product.images?.map(img => 
+        typeof img === 'string' ? img : img.url
+      ) || [];
+      
       setFormData({
         name: product.name,
         price: product.price,
         stock: product.stock,
         description: product.description || '',
-        images: product.images || []
+        images: imageUrls
       });
+      
+      setImagePreviews(imageUrls);
     } catch (error) {
       console.error('Failed to fetch product:', error);
     } finally {
@@ -64,25 +101,59 @@ export default function EditProductPage() {
     }
   };
 
-  const handleImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (file) {
-      // In a real app, upload to cloud storage and get URL
-      // For demo, create local preview URL
-      const url = URL.createObjectURL(file);
-      setFormData({
-        ...formData,
-        images: [...formData.images, url]
-      });
+  const handleImageUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const files = e.target.files;
+    if (!files || files.length === 0) return;
+
+    const newPreviews: string[] = [];
+    const newImages: string[] = [];
+
+    for (let i = 0; i < files.length; i++) {
+      const file = files[i];
+      
+      // Create preview URL
+      const previewUrl = URL.createObjectURL(file);
+      newPreviews.push(previewUrl);
+      
+      // Convert blob to base64 for sending to backend
+      try {
+        const base64 = await blobToBase64(previewUrl);
+        newImages.push(base64);
+      } catch (error) {
+        console.error('Failed to convert image:', error);
+      }
     }
+
+    setImagePreviews([...imagePreviews, ...newPreviews]);
+    setFormData({ 
+      ...formData, 
+      images: [...formData.images, ...newImages] 
+    });
   };
 
   const removeImage = (index: number) => {
-    setFormData({
-      ...formData,
-      images: formData.images.filter((_, i) => i !== index)
-    });
+    // If it's a blob URL (new image), revoke it to free memory
+    if (imagePreviews[index]?.startsWith('blob:')) {
+      URL.revokeObjectURL(imagePreviews[index]);
+    }
+    
+    const newPreviews = imagePreviews.filter((_, i) => i !== index);
+    const newImages = formData.images.filter((_, i) => i !== index);
+    
+    setImagePreviews(newPreviews);
+    setFormData({ ...formData, images: newImages });
   };
+
+  // Clean up blob URLs when component unmounts
+  useEffect(() => {
+    return () => {
+      imagePreviews.forEach(preview => {
+        if (preview.startsWith('blob:')) {
+          URL.revokeObjectURL(preview);
+        }
+      });
+    };
+  }, [imagePreviews]);
 
   if (isLoading) {
     return (
@@ -194,37 +265,47 @@ export default function EditProductPage() {
             
             {/* Image Grid */}
             <div className="grid grid-cols-4 gap-2 mb-3">
-              {formData.images.map((image, index) => (
-                <div key={index} className="relative aspect-square">
+              {imagePreviews.map((preview, index) => (
+                <div key={index} className="relative aspect-square bg-gray-100 rounded-lg overflow-hidden">
                   <Image
-                    src={image}
+                    src={getSafeImageUrl(preview)}
                     alt={`Product ${index + 1}`}
                     fill
-                    className="object-cover rounded-lg"
+                    className="object-cover"
+                    sizes="(max-width: 768px) 25vw, 100px"
+                    onError={(e) => {
+                      // If image fails to load, replace with default
+                      e.currentTarget.src = DEFAULT_PRODUCT_IMAGE;
+                    }}
                   />
                   <button
                     type="button"
                     onClick={() => removeImage(index)}
-                    className="absolute -top-1 -right-1 p-1 bg-red-500 text-white rounded-full hover:bg-red-600"
+                    className="absolute -top-1 -right-1 p-1 bg-red-500 text-white rounded-full hover:bg-red-600 shadow-md z-10"
                   >
                     <HiOutlineX className="w-3 h-3" />
                   </button>
                 </div>
               ))}
               
-              {/* Upload Button */}
-              <label className="aspect-square border-2 border-dashed border-gray-200 rounded-lg flex flex-col items-center justify-center cursor-pointer hover:border-blue-400 transition-colors">
-                <HiOutlinePhotograph className="w-6 h-6 text-gray-300" />
-                <span className="text-xs text-gray-400 mt-1">Upload</span>
-                <input
-                  type="file"
-                  accept="image/*"
-                  onChange={handleImageUpload}
-                  className="hidden"
-                />
-              </label>
+              {/* Upload Button - Show if less than 5 images */}
+              {imagePreviews.length < 5 && (
+                <label className="aspect-square border-2 border-dashed border-gray-200 rounded-lg flex flex-col items-center justify-center cursor-pointer hover:border-blue-400 transition-colors bg-gray-50">
+                  <HiOutlinePhotograph className="w-6 h-6 text-gray-400" />
+                  <span className="text-xs text-gray-500 mt-1">Upload</span>
+                  <input
+                    type="file"
+                    accept="image/*"
+                    onChange={handleImageUpload}
+                    className="hidden"
+                    multiple
+                  />
+                </label>
+              )}
             </div>
-            <p className="text-xs text-gray-400">Click to upload new images</p>
+            <p className="text-xs text-gray-400">
+              {imagePreviews.length} / 5 images. Click to upload new images (PNG, JPG up to 5MB)
+            </p>
           </div>
 
           {/* Submit Buttons */}

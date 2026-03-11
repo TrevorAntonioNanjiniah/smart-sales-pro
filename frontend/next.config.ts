@@ -2,8 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
-
-    images: {
+  images: {
     remotePatterns: [
       {
         protocol: 'https',
@@ -11,7 +10,19 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
-      // Add other domains you need
+      {
+        protocol: 'https',
+        hostname: 'res.cloudinary.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: '**.cloudinary.com',
+        port: '',
+        pathname: '/**',
+      },
+      // Keep your existing cloudfront config
       {
         protocol: 'https',
         hostname: '**.cloudfront.net',

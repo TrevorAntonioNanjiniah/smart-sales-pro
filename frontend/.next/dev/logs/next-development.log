@@ -1,83 +1,49 @@
-[00:00:10.251] Server  LOG     ✓ Ready in 7.5s
-[00:02:47.511] Server  LOG     ○ Compiling / ...
-[00:02:54.327] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:56.951] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
-[00:03:02.546] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:03:02.903] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:03:03.098] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:03:03.099] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:03:03.099] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:03:03.682] Browser WARN    'lab(96.492 -1.14647 -5.11479)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:03:03.682] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:03:03.682] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:03:03.682] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:03:03.682] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:03:03.682] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:03:03.682] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:03:05.690] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:03:06.788] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:03:12.309] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:03:12.309] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:03:14.595] Browser WARN    'lab(96.492 -1.14647 -5.11479)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:03:16.233] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:03:16.233] Browser WARN    'lab(96.492 -1.14647 -5.11479)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:03:22.296] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:03:23.129] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:03:23.129] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:03:23.412] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:03:23.413] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:03:23.581] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:03:42.950] Browser WARN    'lab(96.492 -1.14647 -5.11479)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:05:41.667] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:05:43.318] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:06:10.195] Browser WARN    'lab(96.492 -1.14647 -5.11479)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:06:12.203] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:07:38.085] Server  LOG     ○ Compiling proxy ...
-[00:07:38.240] Server  LOG     ✓ Compiled in 3.5s
-[00:12:38.041] Server  LOG     ✓ Compiled in 1172ms
-[00:12:52.668] Server  LOG     ✓ Finished filesystem cache database compaction in 11.9s
-[00:12:54.272] Server  LOG     ○ Compiling /dashboard/products/[id] ...
-[00:13:01.986] Server  ERROR   ⨯ ./app/dashboard/products/[id]/page.tsx:11:1
-Export HiOutlineQrCode doesn't exist in target module
-   9 | import Image from 'next/image';
-  10 | import Link from 'next/link';
-> 11 | import { 
-     | ^^^^^^^^^
-> 12 |   HiOutlineArrowLeft,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 13 |   HiOutlinePencil,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 14 |   HiOutlineTrash,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 15 |   HiOutlineShare,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 16 |   HiOutlineDownload,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 17 |   HiOutlineQrCode,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 18 |   HiOutlineShoppingCart,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 19 |   HiOutlineCalendar,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 20 |   HiOutlineUser,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 21 |   HiOutlineTag,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 22 |   HiOutlineExclamation,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 23 |   HiOutlineCheckCircle,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 24 |   HiOutlineXCircle
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 25 | } from 'react-icons/hi';
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^
-  26 | import { 
-  27 |   FiPackage, 
-  28 |   FiDollarSign, 
+[00:00:08.847] Server  LOG     ✓ Ready in 7.8s
+[00:00:14.315] Server  LOG     ○ Compiling /dashboard/products ...
+[00:00:23.747] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:25.067] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:00:33.481] Browser WARN    Image with src "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=80" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:00:38.262] Browser WARN    Image with src "https://res.cloudinary.com/dexjv6h1l/image/upload/v1773214907/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773214895127.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:00:47.519] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:49.097] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:00:51.484] Browser WARN    Image with src "https://res.cloudinary.com/dexjv6h1l/image/upload/v1773214907/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773214895127.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:01:52.893] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:01:52.893] Browser ERROR   Image is missing required "src" property: <img>
+[00:01:52.893] Browser ERROR   Image is missing required "src" property: <img>
+[00:04:30.727] Server  LOG     ✓ Compiled in 1650ms
+[00:04:47.294] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:04:47.294] Browser ERROR   Image is missing required "src" property: <img>
+[00:04:47.295] Browser ERROR   Image is missing required "src" property: <img>
+[00:07:15.918] Server  LOG     ✓ Compiled in 2.1s
+[00:08:54.106] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:55.558] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:08:58.643] Browser WARN    Image with src "https://res.cloudinary.com/dexjv6h1l/image/upload/v1773215370/sellers/69afd5da813cf756aaee5953/products/69b11e869fb69c0c27b3b6ae/image_0_1773215366394.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:09:00.431] Server  LOG     ✓ Finished filesystem cache database compaction in 16.2s
+[00:09:00.744] Server  LOG     ✓ Finished writing to filesystem cache in 10.9s
+[00:10:01.586] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:03.043] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:10:05.652] Browser WARN    Image with src "https://res.cloudinary.com/dexjv6h1l/image/upload/v1773215370/sellers/69afd5da813cf756aaee5953/products/69b11e869fb69c0c27b3b6ae/image_0_1773215366394.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:25:48.266] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:25:49.109] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:25:54.717] Browser WARN    Image with src "https://res.cloudinary.com/dexjv6h1l/image/upload/v1773214907/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773214895127.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:31:21.129] Server  ERROR   ⨯ ./app/dashboard/products/[id]/page.tsx:18:1
+Module not found: Can't resolve '@/lib/services/api'
+  16 | import { FiPackage } from 'react-icons/fi';
+  17 | import { getProduct, deleteProduct, Product } from '@/lib/services/productService';
+> 18 | import api from '@/lib/services/api'; // ✅ Use axios instance with Clerk token
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 |
+  20 | const DEFAULT_PRODUCT_IMAGE = 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&q=80';
+  21 |
 
-The export HiOutlineQrCode was not found in module [project]/node_modules/react-icons/hi/index.mjs [app-client] (ecmascript).
-Did you mean to import HiOutlineQrcode?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+Import map: aliased to relative './lib/services/api' inside of [project]/
+
 
 Import traces:
   Client Component Browser:
@@ -88,49 +54,21 @@ Import traces:
     ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
     ./app/dashboard/products/[id]/page.tsx [Server Component]
 
+https://nextjs.org/docs/messages/module-not-found
 
 
-./app/dashboard/products/[id]/page.tsx:11:1
-Export HiOutlineQrCode doesn't exist in target module
-   9 | import Image from 'next/image';
-  10 | import Link from 'next/link';
-> 11 | import { 
-     | ^^^^^^^^^
-> 12 |   HiOutlineArrowLeft,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 13 |   HiOutlinePencil,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 14 |   HiOutlineTrash,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 15 |   HiOutlineShare,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 16 |   HiOutlineDownload,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 17 |   HiOutlineQrCode,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 18 |   HiOutlineShoppingCart,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 19 |   HiOutlineCalendar,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 20 |   HiOutlineUser,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 21 |   HiOutlineTag,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 22 |   HiOutlineExclamation,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 23 |   HiOutlineCheckCircle,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 24 |   HiOutlineXCircle
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 25 | } from 'react-icons/hi';
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^
-  26 | import { 
-  27 |   FiPackage, 
-  28 |   FiDollarSign, 
+[00:31:21.177] Server  ERROR   ⨯ ./app/dashboard/products/[id]/page.tsx:18:1
+Module not found: Can't resolve '@/lib/services/api'
+  16 | import { FiPackage } from 'react-icons/fi';
+  17 | import { getProduct, deleteProduct, Product } from '@/lib/services/productService';
+> 18 | import api from '@/lib/services/api'; // ✅ Use axios instance with Clerk token
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 |
+  20 | const DEFAULT_PRODUCT_IMAGE = 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&q=80';
+  21 |
 
-The export HiOutlineQrCode was not found in module [project]/node_modules/react-icons/hi/index.mjs [app-ssr] (ecmascript).
-Did you mean to import HiOutlineQrcode?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+Import map: aliased to relative './lib/services/api' inside of [project]/
+
 
 Import traces:
   Client Component Browser:
@@ -141,21 +79,21 @@ Import traces:
     ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
     ./app/dashboard/products/[id]/page.tsx [Server Component]
 
+https://nextjs.org/docs/messages/module-not-found
 
 
-./app/dashboard/products/[id]/page.tsx:33:1
-Export getProductById doesn't exist in target module
-  31 |   FiRefreshCw
-  32 | } from 'react-icons/fi';
-> 33 | import { getProductById, deleteProduct, Product } from '@/lib/services/productService';
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  34 |
-  35 | export default function ProductDetailPage() {
-  36 |   const params = useParams();
+[00:31:21.199] Server  ERROR   ⨯ ./app/dashboard/products/[id]/page.tsx:18:1
+Module not found: Can't resolve '@/lib/services/api'
+  16 | import { FiPackage } from 'react-icons/fi';
+  17 | import { getProduct, deleteProduct, Product } from '@/lib/services/productService';
+> 18 | import api from '@/lib/services/api'; // ✅ Use axios instance with Clerk token
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 |
+  20 | const DEFAULT_PRODUCT_IMAGE = 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&q=80';
+  21 |
 
-The export getProductById was not found in module [project]/lib/services/productService.ts [app-client] (ecmascript).
-Did you mean to import getProduct?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+Import map: aliased to relative './lib/services/api' inside of [project]/
+
 
 Import traces:
   Client Component Browser:
@@ -166,21 +104,21 @@ Import traces:
     ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
     ./app/dashboard/products/[id]/page.tsx [Server Component]
 
+https://nextjs.org/docs/messages/module-not-found
 
 
-./app/dashboard/products/[id]/page.tsx:33:1
-Export getProductById doesn't exist in target module
-  31 |   FiRefreshCw
-  32 | } from 'react-icons/fi';
-> 33 | import { getProductById, deleteProduct, Product } from '@/lib/services/productService';
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  34 |
-  35 | export default function ProductDetailPage() {
-  36 |   const params = useParams();
+[00:31:21.231] Server  ERROR   ⨯ ./app/dashboard/products/[id]/page.tsx:18:1
+Module not found: Can't resolve '@/lib/services/api'
+  16 | import { FiPackage } from 'react-icons/fi';
+  17 | import { getProduct, deleteProduct, Product } from '@/lib/services/productService';
+> 18 | import api from '@/lib/services/api'; // ✅ Use axios instance with Clerk token
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 |
+  20 | const DEFAULT_PRODUCT_IMAGE = 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&q=80';
+  21 |
 
-The export getProductById was not found in module [project]/lib/services/productService.ts [app-ssr] (ecmascript).
-Did you mean to import getProduct?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+Import map: aliased to relative './lib/services/api' inside of [project]/
+
 
 Import traces:
   Client Component Browser:
@@ -191,768 +129,21 @@ Import traces:
     ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
     ./app/dashboard/products/[id]/page.tsx [Server Component]
 
+https://nextjs.org/docs/messages/module-not-found
 
-[00:13:02.409] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:11:1
-Export HiOutlineQrCode doesn't exist in target module
-   9 | import Image from 'next/image';
-  10 | import Link from 'next/link';
-> 11 | import { 
-     | ^^^^^^^^^
-> 12 |   HiOutlineArrowLeft,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 13 |   HiOutlinePencil,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 14 |   HiOutlineTrash,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 15 |   HiOutlineShare,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 16 |   HiOutlineDownload,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 17 |   HiOutlineQrCode,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 18 |   HiOutlineShoppingCart,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 19 |   HiOutlineCalendar,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 20 |   HiOutlineUser,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 21 |   HiOutlineTag,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 22 |   HiOutlineExclamation,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 23 |   HiOutlineCheckCircle,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 24 |   HiOutlineXCircle
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 25 | } from 'react-icons/hi';
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^
-  26 | import { 
-  27 |   FiPackage, 
-  28 |   FiDollarSign, 
 
-The export HiOutlineQrCode was not found in module [project]/node_modules/react-icons/hi/index.mjs [app-client] (ecmascript).
-Did you mean to import HiOutlineQrcode?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[00:31:21.265] Server  ERROR   ⨯ ./app/dashboard/products/[id]/page.tsx:18:1
+Module not found: Can't resolve '@/lib/services/api'
+  16 | import { FiPackage } from 'react-icons/fi';
+  17 | import { getProduct, deleteProduct, Product } from '@/lib/services/productService';
+> 18 | import api from '@/lib/services/api'; // ✅ Use axios instance with Clerk token
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 |
+  20 | const DEFAULT_PRODUCT_IMAGE = 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&q=80';
+  21 |
 
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
+Import map: aliased to relative './lib/services/api' inside of [project]/
 
-  Client Component SSR:
-    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-[00:13:02.409] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:11:1
-Export HiOutlineQrCode doesn't exist in target module
-   9 | import Image from 'next/image';
-  10 | import Link from 'next/link';
-> 11 | import { 
-     | ^^^^^^^^^
-> 12 |   HiOutlineArrowLeft,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 13 |   HiOutlinePencil,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 14 |   HiOutlineTrash,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 15 |   HiOutlineShare,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 16 |   HiOutlineDownload,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 17 |   HiOutlineQrCode,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 18 |   HiOutlineShoppingCart,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 19 |   HiOutlineCalendar,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 20 |   HiOutlineUser,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 21 |   HiOutlineTag,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 22 |   HiOutlineExclamation,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 23 |   HiOutlineCheckCircle,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 24 |   HiOutlineXCircle
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 25 | } from 'react-icons/hi';
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^
-  26 | import { 
-  27 |   FiPackage, 
-  28 |   FiDollarSign, 
-
-The export HiOutlineQrCode was not found in module [project]/node_modules/react-icons/hi/index.mjs [app-ssr] (ecmascript).
-Did you mean to import HiOutlineQrcode?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-[00:13:02.410] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:33:1
-Export getProductById doesn't exist in target module
-  31 |   FiRefreshCw
-  32 | } from 'react-icons/fi';
-> 33 | import { getProductById, deleteProduct, Product } from '@/lib/services/productService';
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  34 |
-  35 | export default function ProductDetailPage() {
-  36 |   const params = useParams();
-
-The export getProductById was not found in module [project]/lib/services/productService.ts [app-client] (ecmascript).
-Did you mean to import getProduct?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-[00:13:02.410] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:33:1
-Export getProductById doesn't exist in target module
-  31 |   FiRefreshCw
-  32 | } from 'react-icons/fi';
-> 33 | import { getProductById, deleteProduct, Product } from '@/lib/services/productService';
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  34 |
-  35 | export default function ProductDetailPage() {
-  36 |   const params = useParams();
-
-The export getProductById was not found in module [project]/lib/services/productService.ts [app-ssr] (ecmascript).
-Did you mean to import getProduct?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-[00:13:03.811] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:11:1
-Export HiOutlineQrCode doesn't exist in target module
-   9 | import Image from 'next/image';
-  10 | import Link from 'next/link';
-> 11 | import { 
-     | ^^^^^^^^^
-> 12 |   HiOutlineArrowLeft,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 13 |   HiOutlinePencil,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 14 |   HiOutlineTrash,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 15 |   HiOutlineShare,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 16 |   HiOutlineDownload,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 17 |   HiOutlineQrCode,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 18 |   HiOutlineShoppingCart,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 19 |   HiOutlineCalendar,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 20 |   HiOutlineUser,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 21 |   HiOutlineTag,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 22 |   HiOutlineExclamation,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 23 |   HiOutlineCheckCircle,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 24 |   HiOutlineXCircle
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 25 | } from 'react-icons/hi';
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^
-  26 | import { 
-  27 |   FiPackage, 
-  28 |   FiDollarSign, 
-
-The export HiOutlineQrCode was not found in module [project]/node_modules/react-icons/hi/index.mjs [app-client] (ecmascript).
-Did you mean to import HiOutlineQrcode?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-[00:13:03.811] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:11:1
-Export HiOutlineQrCode doesn't exist in target module
-   9 | import Image from 'next/image';
-  10 | import Link from 'next/link';
-> 11 | import { 
-     | ^^^^^^^^^
-> 12 |   HiOutlineArrowLeft,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 13 |   HiOutlinePencil,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 14 |   HiOutlineTrash,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 15 |   HiOutlineShare,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 16 |   HiOutlineDownload,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 17 |   HiOutlineQrCode,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 18 |   HiOutlineShoppingCart,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 19 |   HiOutlineCalendar,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 20 |   HiOutlineUser,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 21 |   HiOutlineTag,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 22 |   HiOutlineExclamation,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 23 |   HiOutlineCheckCircle,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 24 |   HiOutlineXCircle
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 25 | } from 'react-icons/hi';
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^
-  26 | import { 
-  27 |   FiPackage, 
-  28 |   FiDollarSign, 
-
-The export HiOutlineQrCode was not found in module [project]/node_modules/react-icons/hi/index.mjs [app-ssr] (ecmascript).
-Did you mean to import HiOutlineQrcode?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-[00:13:03.811] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:33:1
-Export getProductById doesn't exist in target module
-  31 |   FiRefreshCw
-  32 | } from 'react-icons/fi';
-> 33 | import { getProductById, deleteProduct, Product } from '@/lib/services/productService';
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  34 |
-  35 | export default function ProductDetailPage() {
-  36 |   const params = useParams();
-
-The export getProductById was not found in module [project]/lib/services/productService.ts [app-client] (ecmascript).
-Did you mean to import getProduct?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-[00:13:03.811] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:33:1
-Export getProductById doesn't exist in target module
-  31 |   FiRefreshCw
-  32 | } from 'react-icons/fi';
-> 33 | import { getProductById, deleteProduct, Product } from '@/lib/services/productService';
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  34 |
-  35 | export default function ProductDetailPage() {
-  36 |   const params = useParams();
-
-The export getProductById was not found in module [project]/lib/services/productService.ts [app-ssr] (ecmascript).
-Did you mean to import getProduct?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-[00:13:03.811] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:11:1
-Export HiOutlineQrCode doesn't exist in target module
-   9 | import Image from 'next/image';
-  10 | import Link from 'next/link';
-> 11 | import { 
-     | ^^^^^^^^^
-> 12 |   HiOutlineArrowLeft,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 13 |   HiOutlinePencil,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 14 |   HiOutlineTrash,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 15 |   HiOutlineShare,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 16 |   HiOutlineDownload,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 17 |   HiOutlineQrCode,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 18 |   HiOutlineShoppingCart,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 19 |   HiOutlineCalendar,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 20 |   HiOutlineUser,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 21 |   HiOutlineTag,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 22 |   HiOutlineExclamation,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 23 |   HiOutlineCheckCircle,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 24 |   HiOutlineXCircle
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 25 | } from 'react-icons/hi';
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^
-  26 | import { 
-  27 |   FiPackage, 
-  28 |   FiDollarSign, 
-
-The export HiOutlineQrCode was not found in module [project]/node_modules/react-icons/hi/index.mjs [app-client] (ecmascript).
-Did you mean to import HiOutlineQrcode?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-[00:13:03.811] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:11:1
-Export HiOutlineQrCode doesn't exist in target module
-   9 | import Image from 'next/image';
-  10 | import Link from 'next/link';
-> 11 | import { 
-     | ^^^^^^^^^
-> 12 |   HiOutlineArrowLeft,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 13 |   HiOutlinePencil,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 14 |   HiOutlineTrash,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 15 |   HiOutlineShare,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 16 |   HiOutlineDownload,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 17 |   HiOutlineQrCode,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 18 |   HiOutlineShoppingCart,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 19 |   HiOutlineCalendar,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 20 |   HiOutlineUser,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 21 |   HiOutlineTag,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 22 |   HiOutlineExclamation,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 23 |   HiOutlineCheckCircle,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 24 |   HiOutlineXCircle
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 25 | } from 'react-icons/hi';
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^
-  26 | import { 
-  27 |   FiPackage, 
-  28 |   FiDollarSign, 
-
-The export HiOutlineQrCode was not found in module [project]/node_modules/react-icons/hi/index.mjs [app-ssr] (ecmascript).
-Did you mean to import HiOutlineQrcode?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-[00:13:03.811] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:33:1
-Export getProductById doesn't exist in target module
-  31 |   FiRefreshCw
-  32 | } from 'react-icons/fi';
-> 33 | import { getProductById, deleteProduct, Product } from '@/lib/services/productService';
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  34 |
-  35 | export default function ProductDetailPage() {
-  36 |   const params = useParams();
-
-The export getProductById was not found in module [project]/lib/services/productService.ts [app-client] (ecmascript).
-Did you mean to import getProduct?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-[00:13:03.811] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:33:1
-Export getProductById doesn't exist in target module
-  31 |   FiRefreshCw
-  32 | } from 'react-icons/fi';
-> 33 | import { getProductById, deleteProduct, Product } from '@/lib/services/productService';
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  34 |
-  35 | export default function ProductDetailPage() {
-  36 |   const params = useParams();
-
-The export getProductById was not found in module [project]/lib/services/productService.ts [app-ssr] (ecmascript).
-Did you mean to import getProduct?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-[00:13:03.811] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:11:1
-Export HiOutlineQrCode doesn't exist in target module
-   9 | import Image from 'next/image';
-  10 | import Link from 'next/link';
-> 11 | import { 
-     | ^^^^^^^^^
-> 12 |   HiOutlineArrowLeft,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 13 |   HiOutlinePencil,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 14 |   HiOutlineTrash,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 15 |   HiOutlineShare,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 16 |   HiOutlineDownload,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 17 |   HiOutlineQrCode,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 18 |   HiOutlineShoppingCart,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 19 |   HiOutlineCalendar,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 20 |   HiOutlineUser,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 21 |   HiOutlineTag,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 22 |   HiOutlineExclamation,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 23 |   HiOutlineCheckCircle,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 24 |   HiOutlineXCircle
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 25 | } from 'react-icons/hi';
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^
-  26 | import { 
-  27 |   FiPackage, 
-  28 |   FiDollarSign, 
-
-The export HiOutlineQrCode was not found in module [project]/node_modules/react-icons/hi/index.mjs [app-client] (ecmascript).
-Did you mean to import HiOutlineQrcode?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-[00:13:03.811] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:11:1
-Export HiOutlineQrCode doesn't exist in target module
-   9 | import Image from 'next/image';
-  10 | import Link from 'next/link';
-> 11 | import { 
-     | ^^^^^^^^^
-> 12 |   HiOutlineArrowLeft,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 13 |   HiOutlinePencil,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 14 |   HiOutlineTrash,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 15 |   HiOutlineShare,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 16 |   HiOutlineDownload,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 17 |   HiOutlineQrCode,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 18 |   HiOutlineShoppingCart,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 19 |   HiOutlineCalendar,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 20 |   HiOutlineUser,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 21 |   HiOutlineTag,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 22 |   HiOutlineExclamation,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 23 |   HiOutlineCheckCircle,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 24 |   HiOutlineXCircle
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 25 | } from 'react-icons/hi';
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^
-  26 | import { 
-  27 |   FiPackage, 
-  28 |   FiDollarSign, 
-
-The export HiOutlineQrCode was not found in module [project]/node_modules/react-icons/hi/index.mjs [app-ssr] (ecmascript).
-Did you mean to import HiOutlineQrcode?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-[00:13:03.811] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:33:1
-Export getProductById doesn't exist in target module
-  31 |   FiRefreshCw
-  32 | } from 'react-icons/fi';
-> 33 | import { getProductById, deleteProduct, Product } from '@/lib/services/productService';
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  34 |
-  35 | export default function ProductDetailPage() {
-  36 |   const params = useParams();
-
-The export getProductById was not found in module [project]/lib/services/productService.ts [app-client] (ecmascript).
-Did you mean to import getProduct?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-[00:13:03.811] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:33:1
-Export getProductById doesn't exist in target module
-  31 |   FiRefreshCw
-  32 | } from 'react-icons/fi';
-> 33 | import { getProductById, deleteProduct, Product } from '@/lib/services/productService';
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  34 |
-  35 | export default function ProductDetailPage() {
-  36 |   const params = useParams();
-
-The export getProductById was not found in module [project]/lib/services/productService.ts [app-ssr] (ecmascript).
-Did you mean to import getProduct?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-[00:13:04.620] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:11:1
-Export HiOutlineQrCode doesn't exist in target module
-   9 | import Image from 'next/image';
-  10 | import Link from 'next/link';
-> 11 | import { 
-     | ^^^^^^^^^
-> 12 |   HiOutlineArrowLeft,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 13 |   HiOutlinePencil,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 14 |   HiOutlineTrash,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 15 |   HiOutlineShare,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 16 |   HiOutlineDownload,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 17 |   HiOutlineQrCode,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 18 |   HiOutlineShoppingCart,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 19 |   HiOutlineCalendar,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 20 |   HiOutlineUser,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 21 |   HiOutlineTag,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 22 |   HiOutlineExclamation,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 23 |   HiOutlineCheckCircle,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 24 |   HiOutlineXCircle
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 25 | } from 'react-icons/hi';
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^
-  26 | import { 
-  27 |   FiPackage, 
-  28 |   FiDollarSign, 
-
-The export HiOutlineQrCode was not found in module [project]/node_modules/react-icons/hi/index.mjs [app-client] (ecmascript).
-Did you mean to import HiOutlineQrcode?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-[00:13:04.620] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:11:1
-Export HiOutlineQrCode doesn't exist in target module
-   9 | import Image from 'next/image';
-  10 | import Link from 'next/link';
-> 11 | import { 
-     | ^^^^^^^^^
-> 12 |   HiOutlineArrowLeft,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 13 |   HiOutlinePencil,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 14 |   HiOutlineTrash,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 15 |   HiOutlineShare,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 16 |   HiOutlineDownload,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 17 |   HiOutlineQrCode,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 18 |   HiOutlineShoppingCart,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 19 |   HiOutlineCalendar,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 20 |   HiOutlineUser,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 21 |   HiOutlineTag,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 22 |   HiOutlineExclamation,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 23 |   HiOutlineCheckCircle,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 24 |   HiOutlineXCircle
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 25 | } from 'react-icons/hi';
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^
-  26 | import { 
-  27 |   FiPackage, 
-  28 |   FiDollarSign, 
-
-The export HiOutlineQrCode was not found in module [project]/node_modules/react-icons/hi/index.mjs [app-ssr] (ecmascript).
-Did you mean to import HiOutlineQrcode?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-[00:13:04.620] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:33:1
-Export getProductById doesn't exist in target module
-  31 |   FiRefreshCw
-  32 | } from 'react-icons/fi';
-> 33 | import { getProductById, deleteProduct, Product } from '@/lib/services/productService';
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  34 |
-  35 | export default function ProductDetailPage() {
-  36 |   const params = useParams();
-
-The export getProductById was not found in module [project]/lib/services/productService.ts [app-client] (ecmascript).
-Did you mean to import getProduct?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-[00:13:04.620] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:33:1
-Export getProductById doesn't exist in target module
-  31 |   FiRefreshCw
-  32 | } from 'react-icons/fi';
-> 33 | import { getProductById, deleteProduct, Product } from '@/lib/services/productService';
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  34 |
-  35 | export default function ProductDetailPage() {
-  36 |   const params = useParams();
-
-The export getProductById was not found in module [project]/lib/services/productService.ts [app-ssr] (ecmascript).
-Did you mean to import getProduct?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-[00:13:05.218] Server  ERROR   ⨯ ./app/dashboard/products/[id]/page.tsx:11:1
-Export HiOutlineQrCode doesn't exist in target module
-   9 | import Image from 'next/image';
-  10 | import Link from 'next/link';
-> 11 | import { 
-     | ^^^^^^^^^
-> 12 |   HiOutlineArrowLeft,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 13 |   HiOutlinePencil,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 14 |   HiOutlineTrash,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 15 |   HiOutlineShare,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 16 |   HiOutlineDownload,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 17 |   HiOutlineQrCode,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 18 |   HiOutlineShoppingCart,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 19 |   HiOutlineCalendar,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 20 |   HiOutlineUser,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 21 |   HiOutlineTag,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 22 |   HiOutlineExclamation,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 23 |   HiOutlineCheckCircle,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 24 |   HiOutlineXCircle
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 25 | } from 'react-icons/hi';
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^
-  26 | import { 
-  27 |   FiPackage, 
-  28 |   FiDollarSign, 
-
-The export HiOutlineQrCode was not found in module [project]/node_modules/react-icons/hi/index.mjs [app-client] (ecmascript).
-Did you mean to import HiOutlineQrcode?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
 
 Import traces:
   Client Component Browser:
@@ -963,49 +154,21 @@ Import traces:
     ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
     ./app/dashboard/products/[id]/page.tsx [Server Component]
 
+https://nextjs.org/docs/messages/module-not-found
 
 
-./app/dashboard/products/[id]/page.tsx:11:1
-Export HiOutlineQrCode doesn't exist in target module
-   9 | import Image from 'next/image';
-  10 | import Link from 'next/link';
-> 11 | import { 
-     | ^^^^^^^^^
-> 12 |   HiOutlineArrowLeft,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 13 |   HiOutlinePencil,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 14 |   HiOutlineTrash,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 15 |   HiOutlineShare,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 16 |   HiOutlineDownload,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 17 |   HiOutlineQrCode,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 18 |   HiOutlineShoppingCart,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 19 |   HiOutlineCalendar,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 20 |   HiOutlineUser,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 21 |   HiOutlineTag,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 22 |   HiOutlineExclamation,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 23 |   HiOutlineCheckCircle,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 24 |   HiOutlineXCircle
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 25 | } from 'react-icons/hi';
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^
-  26 | import { 
-  27 |   FiPackage, 
-  28 |   FiDollarSign, 
+[00:31:21.293] Server  ERROR   ⨯ ./app/dashboard/products/[id]/page.tsx:18:1
+Module not found: Can't resolve '@/lib/services/api'
+  16 | import { FiPackage } from 'react-icons/fi';
+  17 | import { getProduct, deleteProduct, Product } from '@/lib/services/productService';
+> 18 | import api from '@/lib/services/api'; // ✅ Use axios instance with Clerk token
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 |
+  20 | const DEFAULT_PRODUCT_IMAGE = 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&q=80';
+  21 |
 
-The export HiOutlineQrCode was not found in module [project]/node_modules/react-icons/hi/index.mjs [app-ssr] (ecmascript).
-Did you mean to import HiOutlineQrcode?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+Import map: aliased to relative './lib/services/api' inside of [project]/
+
 
 Import traces:
   Client Component Browser:
@@ -1016,21 +179,21 @@ Import traces:
     ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
     ./app/dashboard/products/[id]/page.tsx [Server Component]
 
+https://nextjs.org/docs/messages/module-not-found
 
 
-./app/dashboard/products/[id]/page.tsx:33:1
-Export getProductById doesn't exist in target module
-  31 |   FiRefreshCw
-  32 | } from 'react-icons/fi';
-> 33 | import { getProductById, deleteProduct, Product } from '@/lib/services/productService';
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  34 |
-  35 | export default function ProductDetailPage() {
-  36 |   const params = useParams();
+[00:31:21.331] Server  ERROR   ⨯ ./app/dashboard/products/[id]/page.tsx:18:1
+Module not found: Can't resolve '@/lib/services/api'
+  16 | import { FiPackage } from 'react-icons/fi';
+  17 | import { getProduct, deleteProduct, Product } from '@/lib/services/productService';
+> 18 | import api from '@/lib/services/api'; // ✅ Use axios instance with Clerk token
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 |
+  20 | const DEFAULT_PRODUCT_IMAGE = 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&q=80';
+  21 |
 
-The export getProductById was not found in module [project]/lib/services/productService.ts [app-client] (ecmascript).
-Did you mean to import getProduct?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+Import map: aliased to relative './lib/services/api' inside of [project]/
+
 
 Import traces:
   Client Component Browser:
@@ -1041,21 +204,21 @@ Import traces:
     ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
     ./app/dashboard/products/[id]/page.tsx [Server Component]
 
+https://nextjs.org/docs/messages/module-not-found
 
 
-./app/dashboard/products/[id]/page.tsx:33:1
-Export getProductById doesn't exist in target module
-  31 |   FiRefreshCw
-  32 | } from 'react-icons/fi';
-> 33 | import { getProductById, deleteProduct, Product } from '@/lib/services/productService';
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  34 |
-  35 | export default function ProductDetailPage() {
-  36 |   const params = useParams();
+[00:31:21.361] Server  ERROR   ⨯ ./app/dashboard/products/[id]/page.tsx:18:1
+Module not found: Can't resolve '@/lib/services/api'
+  16 | import { FiPackage } from 'react-icons/fi';
+  17 | import { getProduct, deleteProduct, Product } from '@/lib/services/productService';
+> 18 | import api from '@/lib/services/api'; // ✅ Use axios instance with Clerk token
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 |
+  20 | const DEFAULT_PRODUCT_IMAGE = 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&q=80';
+  21 |
 
-The export getProductById was not found in module [project]/lib/services/productService.ts [app-ssr] (ecmascript).
-Did you mean to import getProduct?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+Import map: aliased to relative './lib/services/api' inside of [project]/
+
 
 Import traces:
   Client Component Browser:
@@ -1066,336 +229,21 @@ Import traces:
     ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
     ./app/dashboard/products/[id]/page.tsx [Server Component]
 
+https://nextjs.org/docs/messages/module-not-found
 
-[00:13:05.733] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:11:1
-Export HiOutlineQrCode doesn't exist in target module
-   9 | import Image from 'next/image';
-  10 | import Link from 'next/link';
-> 11 | import { 
-     | ^^^^^^^^^
-> 12 |   HiOutlineArrowLeft,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 13 |   HiOutlinePencil,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 14 |   HiOutlineTrash,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 15 |   HiOutlineShare,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 16 |   HiOutlineDownload,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 17 |   HiOutlineQrCode,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 18 |   HiOutlineShoppingCart,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 19 |   HiOutlineCalendar,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 20 |   HiOutlineUser,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 21 |   HiOutlineTag,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 22 |   HiOutlineExclamation,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 23 |   HiOutlineCheckCircle,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 24 |   HiOutlineXCircle
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 25 | } from 'react-icons/hi';
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^
-  26 | import { 
-  27 |   FiPackage, 
-  28 |   FiDollarSign, 
 
-The export HiOutlineQrCode was not found in module [project]/node_modules/react-icons/hi/index.mjs [app-client] (ecmascript).
-Did you mean to import HiOutlineQrcode?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[00:31:21.382] Server  ERROR   ⨯ ./app/dashboard/products/[id]/page.tsx:18:1
+Module not found: Can't resolve '@/lib/services/api'
+  16 | import { FiPackage } from 'react-icons/fi';
+  17 | import { getProduct, deleteProduct, Product } from '@/lib/services/productService';
+> 18 | import api from '@/lib/services/api'; // ✅ Use axios instance with Clerk token
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 |
+  20 | const DEFAULT_PRODUCT_IMAGE = 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&q=80';
+  21 |
 
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
+Import map: aliased to relative './lib/services/api' inside of [project]/
 
-  Client Component SSR:
-    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-[00:13:05.733] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:11:1
-Export HiOutlineQrCode doesn't exist in target module
-   9 | import Image from 'next/image';
-  10 | import Link from 'next/link';
-> 11 | import { 
-     | ^^^^^^^^^
-> 12 |   HiOutlineArrowLeft,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 13 |   HiOutlinePencil,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 14 |   HiOutlineTrash,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 15 |   HiOutlineShare,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 16 |   HiOutlineDownload,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 17 |   HiOutlineQrCode,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 18 |   HiOutlineShoppingCart,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 19 |   HiOutlineCalendar,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 20 |   HiOutlineUser,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 21 |   HiOutlineTag,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 22 |   HiOutlineExclamation,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 23 |   HiOutlineCheckCircle,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 24 |   HiOutlineXCircle
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 25 | } from 'react-icons/hi';
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^
-  26 | import { 
-  27 |   FiPackage, 
-  28 |   FiDollarSign, 
-
-The export HiOutlineQrCode was not found in module [project]/node_modules/react-icons/hi/index.mjs [app-ssr] (ecmascript).
-Did you mean to import HiOutlineQrcode?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-[00:13:05.733] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:33:1
-Export getProductById doesn't exist in target module
-  31 |   FiRefreshCw
-  32 | } from 'react-icons/fi';
-> 33 | import { getProductById, deleteProduct, Product } from '@/lib/services/productService';
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  34 |
-  35 | export default function ProductDetailPage() {
-  36 |   const params = useParams();
-
-The export getProductById was not found in module [project]/lib/services/productService.ts [app-client] (ecmascript).
-Did you mean to import getProduct?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-[00:13:05.733] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:33:1
-Export getProductById doesn't exist in target module
-  31 |   FiRefreshCw
-  32 | } from 'react-icons/fi';
-> 33 | import { getProductById, deleteProduct, Product } from '@/lib/services/productService';
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  34 |
-  35 | export default function ProductDetailPage() {
-  36 |   const params = useParams();
-
-The export getProductById was not found in module [project]/lib/services/productService.ts [app-ssr] (ecmascript).
-Did you mean to import getProduct?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-[00:13:05.733] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:11:1
-Export HiOutlineQrCode doesn't exist in target module
-   9 | import Image from 'next/image';
-  10 | import Link from 'next/link';
-> 11 | import { 
-     | ^^^^^^^^^
-> 12 |   HiOutlineArrowLeft,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 13 |   HiOutlinePencil,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 14 |   HiOutlineTrash,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 15 |   HiOutlineShare,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 16 |   HiOutlineDownload,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 17 |   HiOutlineQrCode,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 18 |   HiOutlineShoppingCart,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 19 |   HiOutlineCalendar,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 20 |   HiOutlineUser,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 21 |   HiOutlineTag,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 22 |   HiOutlineExclamation,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 23 |   HiOutlineCheckCircle,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 24 |   HiOutlineXCircle
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 25 | } from 'react-icons/hi';
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^
-  26 | import { 
-  27 |   FiPackage, 
-  28 |   FiDollarSign, 
-
-The export HiOutlineQrCode was not found in module [project]/node_modules/react-icons/hi/index.mjs [app-client] (ecmascript).
-Did you mean to import HiOutlineQrcode?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-[00:13:05.733] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:11:1
-Export HiOutlineQrCode doesn't exist in target module
-   9 | import Image from 'next/image';
-  10 | import Link from 'next/link';
-> 11 | import { 
-     | ^^^^^^^^^
-> 12 |   HiOutlineArrowLeft,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 13 |   HiOutlinePencil,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 14 |   HiOutlineTrash,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 15 |   HiOutlineShare,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 16 |   HiOutlineDownload,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 17 |   HiOutlineQrCode,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 18 |   HiOutlineShoppingCart,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 19 |   HiOutlineCalendar,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 20 |   HiOutlineUser,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 21 |   HiOutlineTag,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 22 |   HiOutlineExclamation,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 23 |   HiOutlineCheckCircle,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 24 |   HiOutlineXCircle
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 25 | } from 'react-icons/hi';
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^
-  26 | import { 
-  27 |   FiPackage, 
-  28 |   FiDollarSign, 
-
-The export HiOutlineQrCode was not found in module [project]/node_modules/react-icons/hi/index.mjs [app-ssr] (ecmascript).
-Did you mean to import HiOutlineQrcode?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-[00:13:05.734] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:33:1
-Export getProductById doesn't exist in target module
-  31 |   FiRefreshCw
-  32 | } from 'react-icons/fi';
-> 33 | import { getProductById, deleteProduct, Product } from '@/lib/services/productService';
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  34 |
-  35 | export default function ProductDetailPage() {
-  36 |   const params = useParams();
-
-The export getProductById was not found in module [project]/lib/services/productService.ts [app-client] (ecmascript).
-Did you mean to import getProduct?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-[00:13:05.734] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:33:1
-Export getProductById doesn't exist in target module
-  31 |   FiRefreshCw
-  32 | } from 'react-icons/fi';
-> 33 | import { getProductById, deleteProduct, Product } from '@/lib/services/productService';
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  34 |
-  35 | export default function ProductDetailPage() {
-  36 |   const params = useParams();
-
-The export getProductById was not found in module [project]/lib/services/productService.ts [app-ssr] (ecmascript).
-Did you mean to import getProduct?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-[00:13:07.428] Browser ERROR   uncaughtError: Error: ./app/dashboard/products/[id]/page.tsx:11:1
-Export HiOutlineQrCode doesn't exist in target module
-   9 | import Image from 'next/image';
-  10 | import Link from 'next/link';
-> 11 | import { 
-     | ^^^^^^^^^
-> 12 |   HiOutlineArrowLeft,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 13 |   HiOutlinePencil,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 14 |   HiOutlineTrash,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 15 |   HiOutlineShare,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 16 |   HiOutlineDownload,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 17 |   HiOutlineQrCode,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 18 |   HiOutlineShoppingCart,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 19 |   HiOutlineCalendar,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 20 |   HiOutlineUser,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 21 |   HiOutlineTag,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 22 |   HiOutlineExclamation,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 23 |   HiOutlineCheckCircle,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 24 |   HiOutlineXCircle
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 25 | } from 'react-icons/hi';
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^
-  26 | import { 
-  27 |   FiPackage, 
-  28 |   FiDollarSign, 
-
-The export HiOutlineQrCode was not found in module [project]/node_modules/react-icons/hi/index.mjs [app-client] (ecmascript).
-Did you mean to import HiOutlineQrcode?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
 
 Import traces:
   Client Component Browser:
@@ -1406,48 +254,21 @@ Import traces:
     ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
     ./app/dashboard/products/[id]/page.tsx [Server Component]
 
+https://nextjs.org/docs/messages/module-not-found
 
-[00:13:08.295] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:11:1
-Export HiOutlineQrCode doesn't exist in target module
-   9 | import Image from 'next/image';
-  10 | import Link from 'next/link';
-> 11 | import { 
-     | ^^^^^^^^^
-> 12 |   HiOutlineArrowLeft,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 13 |   HiOutlinePencil,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 14 |   HiOutlineTrash,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 15 |   HiOutlineShare,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 16 |   HiOutlineDownload,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 17 |   HiOutlineQrCode,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 18 |   HiOutlineShoppingCart,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 19 |   HiOutlineCalendar,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 20 |   HiOutlineUser,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 21 |   HiOutlineTag,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 22 |   HiOutlineExclamation,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 23 |   HiOutlineCheckCircle,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 24 |   HiOutlineXCircle
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 25 | } from 'react-icons/hi';
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^
-  26 | import { 
-  27 |   FiPackage, 
-  28 |   FiDollarSign, 
 
-The export HiOutlineQrCode was not found in module [project]/node_modules/react-icons/hi/index.mjs [app-client] (ecmascript).
-Did you mean to import HiOutlineQrcode?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[00:31:21.398] Server  ERROR   ⨯ ./app/dashboard/products/[id]/page.tsx:18:1
+Module not found: Can't resolve '@/lib/services/api'
+  16 | import { FiPackage } from 'react-icons/fi';
+  17 | import { getProduct, deleteProduct, Product } from '@/lib/services/productService';
+> 18 | import api from '@/lib/services/api'; // ✅ Use axios instance with Clerk token
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 |
+  20 | const DEFAULT_PRODUCT_IMAGE = 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&q=80';
+  21 |
+
+Import map: aliased to relative './lib/services/api' inside of [project]/
+
 
 Import traces:
   Client Component Browser:
@@ -1457,47 +278,22 @@ Import traces:
   Client Component SSR:
     ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
     ./app/dashboard/products/[id]/page.tsx [Server Component]
-[00:13:08.296] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:11:1
-Export HiOutlineQrCode doesn't exist in target module
-   9 | import Image from 'next/image';
-  10 | import Link from 'next/link';
-> 11 | import { 
-     | ^^^^^^^^^
-> 12 |   HiOutlineArrowLeft,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 13 |   HiOutlinePencil,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 14 |   HiOutlineTrash,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 15 |   HiOutlineShare,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 16 |   HiOutlineDownload,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 17 |   HiOutlineQrCode,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 18 |   HiOutlineShoppingCart,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 19 |   HiOutlineCalendar,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 20 |   HiOutlineUser,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 21 |   HiOutlineTag,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 22 |   HiOutlineExclamation,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 23 |   HiOutlineCheckCircle,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 24 |   HiOutlineXCircle
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 25 | } from 'react-icons/hi';
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^
-  26 | import { 
-  27 |   FiPackage, 
-  28 |   FiDollarSign, 
 
-The export HiOutlineQrCode was not found in module [project]/node_modules/react-icons/hi/index.mjs [app-ssr] (ecmascript).
-Did you mean to import HiOutlineQrcode?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:31:21.411] Server  ERROR   ⨯ ./app/dashboard/products/[id]/page.tsx:18:1
+Module not found: Can't resolve '@/lib/services/api'
+  16 | import { FiPackage } from 'react-icons/fi';
+  17 | import { getProduct, deleteProduct, Product } from '@/lib/services/productService';
+> 18 | import api from '@/lib/services/api'; // ✅ Use axios instance with Clerk token
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 |
+  20 | const DEFAULT_PRODUCT_IMAGE = 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&q=80';
+  21 |
+
+Import map: aliased to relative './lib/services/api' inside of [project]/
+
 
 Import traces:
   Client Component Browser:
@@ -1507,41 +303,22 @@ Import traces:
   Client Component SSR:
     ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
     ./app/dashboard/products/[id]/page.tsx [Server Component]
-[00:13:08.296] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:33:1
-Export getProductById doesn't exist in target module
-  31 |   FiRefreshCw
-  32 | } from 'react-icons/fi';
-> 33 | import { getProductById, deleteProduct, Product } from '@/lib/services/productService';
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  34 |
-  35 | export default function ProductDetailPage() {
-  36 |   const params = useParams();
 
-The export getProductById was not found in module [project]/lib/services/productService.ts [app-client] (ecmascript).
-Did you mean to import getProduct?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+https://nextjs.org/docs/messages/module-not-found
 
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
 
-  Client Component SSR:
-    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-[00:13:08.296] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:33:1
-Export getProductById doesn't exist in target module
-  31 |   FiRefreshCw
-  32 | } from 'react-icons/fi';
-> 33 | import { getProductById, deleteProduct, Product } from '@/lib/services/productService';
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  34 |
-  35 | export default function ProductDetailPage() {
-  36 |   const params = useParams();
+[00:31:21.426] Server  ERROR   ⨯ ./app/dashboard/products/[id]/page.tsx:18:1
+Module not found: Can't resolve '@/lib/services/api'
+  16 | import { FiPackage } from 'react-icons/fi';
+  17 | import { getProduct, deleteProduct, Product } from '@/lib/services/productService';
+> 18 | import api from '@/lib/services/api'; // ✅ Use axios instance with Clerk token
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 |
+  20 | const DEFAULT_PRODUCT_IMAGE = 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&q=80';
+  21 |
 
-The export getProductById was not found in module [project]/lib/services/productService.ts [app-ssr] (ecmascript).
-Did you mean to import getProduct?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+Import map: aliased to relative './lib/services/api' inside of [project]/
+
 
 Import traces:
   Client Component Browser:
@@ -1551,47 +328,22 @@ Import traces:
   Client Component SSR:
     ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
     ./app/dashboard/products/[id]/page.tsx [Server Component]
-[00:13:08.844] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:11:1
-Export HiOutlineQrCode doesn't exist in target module
-   9 | import Image from 'next/image';
-  10 | import Link from 'next/link';
-> 11 | import { 
-     | ^^^^^^^^^
-> 12 |   HiOutlineArrowLeft,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 13 |   HiOutlinePencil,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 14 |   HiOutlineTrash,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 15 |   HiOutlineShare,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 16 |   HiOutlineDownload,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 17 |   HiOutlineQrCode,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 18 |   HiOutlineShoppingCart,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 19 |   HiOutlineCalendar,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 20 |   HiOutlineUser,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 21 |   HiOutlineTag,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 22 |   HiOutlineExclamation,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 23 |   HiOutlineCheckCircle,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 24 |   HiOutlineXCircle
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 25 | } from 'react-icons/hi';
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^
-  26 | import { 
-  27 |   FiPackage, 
-  28 |   FiDollarSign, 
 
-The export HiOutlineQrCode was not found in module [project]/node_modules/react-icons/hi/index.mjs [app-client] (ecmascript).
-Did you mean to import HiOutlineQrcode?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:31:21.456] Server  LOG     ✓ Compiled in 3.3s
+[00:31:21.638] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:18:1
+Module not found: Can't resolve '@/lib/services/api'
+  16 | import { FiPackage } from 'react-icons/fi';
+  17 | import { getProduct, deleteProduct, Product } from '@/lib/services/productService';
+> 18 | import api from '@/lib/services/api'; // ✅ Use axios instance with Clerk token
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 |
+  20 | const DEFAULT_PRODUCT_IMAGE = 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&q=80';
+  21 |
+
+Import map: aliased to relative './lib/services/api' inside of [project]/
 
 Import traces:
   Client Component Browser:
@@ -1601,210 +353,61 @@ Import traces:
   Client Component SSR:
     ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
     ./app/dashboard/products/[id]/page.tsx [Server Component]
-[00:13:08.844] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:11:1
-Export HiOutlineQrCode doesn't exist in target module
-   9 | import Image from 'next/image';
-  10 | import Link from 'next/link';
-> 11 | import { 
-     | ^^^^^^^^^
-> 12 |   HiOutlineArrowLeft,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 13 |   HiOutlinePencil,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 14 |   HiOutlineTrash,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 15 |   HiOutlineShare,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 16 |   HiOutlineDownload,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 17 |   HiOutlineQrCode,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 18 |   HiOutlineShoppingCart,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 19 |   HiOutlineCalendar,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 20 |   HiOutlineUser,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 21 |   HiOutlineTag,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 22 |   HiOutlineExclamation,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 23 |   HiOutlineCheckCircle,
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 24 |   HiOutlineXCircle
-     | ^^^^^^^^^^^^^^^^^^^^^
-> 25 | } from 'react-icons/hi';
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^
-  26 | import { 
-  27 |   FiPackage, 
-  28 |   FiDollarSign, 
 
-The export HiOutlineQrCode was not found in module [project]/node_modules/react-icons/hi/index.mjs [app-ssr] (ecmascript).
-Did you mean to import HiOutlineQrcode?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-[00:13:08.844] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:33:1
-Export getProductById doesn't exist in target module
-  31 |   FiRefreshCw
-  32 | } from 'react-icons/fi';
-> 33 | import { getProductById, deleteProduct, Product } from '@/lib/services/productService';
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  34 |
-  35 | export default function ProductDetailPage() {
-  36 |   const params = useParams();
-
-The export getProductById was not found in module [project]/lib/services/productService.ts [app-client] (ecmascript).
-Did you mean to import getProduct?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-[00:13:08.844] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:33:1
-Export getProductById doesn't exist in target module
-  31 |   FiRefreshCw
-  32 | } from 'react-icons/fi';
-> 33 | import { getProductById, deleteProduct, Product } from '@/lib/services/productService';
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  34 |
-  35 | export default function ProductDetailPage() {
-  36 |   const params = useParams();
-
-The export getProductById was not found in module [project]/lib/services/productService.ts [app-ssr] (ecmascript).
-Did you mean to import getProduct?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-[00:28:17.683] Server  LOG     ✓ Compiled in 609ms
-[00:28:33.442] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:28:38.082] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
-[00:28:45.448] Server  LOG     ✓ Compiled in 916ms
-[00:29:36.910] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:29:37.958] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
-[00:29:42.851] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:29:43.803] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
-[00:29:56.176] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:29:56.177] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:29:56.500] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:29:56.500] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:29:56.501] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:29:56.501] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:29:56.719] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:29:57.272] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:29:57.272] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:29:57.838] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:30:00.718] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:31:06.384] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:31:09.405] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:31:09.610] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:31:11.962] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:31:20.179] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:31:21.847] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
-[00:31:24.863] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:31:25.928] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
-[00:31:26.631] Browser INFO    🔒 Clerk:
-The <SignIn/> component cannot render when a user is already signed in, unless the application allows multiple sessions. Since a user is signed in and this application only allows a single session, Clerk is redirecting to the `afterSignIn` URL instead.
-(This notice only appears in development)
-[00:31:33.693] Browser WARN    'lab(96.492 -1.14647 -5.11479)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:31:35.427] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:40:25.630] Browser WARN    'lab(96.492 -1.14647 -5.11479)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:40:25.840] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:40:25.840] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:40:31.654] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:40:31.657] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:49:39.043] Server  LOG     ✓ Compiled in 3.3s
-[00:49:40.099] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:17:1
-Export getProductById doesn't exist in target module
-  15 | } from 'react-icons/hi';
-  16 | import { FiPackage, FiDollarSign } from 'react-icons/fi';
-> 17 | import { getProductById, deleteProduct, Product } from '@/lib/services/productService';
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  18 |
-  19 | export default function ProductDetailPage() {
-  20 |   const params = useParams();
-
-The export getProductById was not found in module [project]/lib/services/productService.ts [app-client] (ecmascript).
-Did you mean to import getProduct?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-[00:49:40.099] Browser ERROR   ./app/dashboard/products/[id]/page.tsx:17:1
-Export getProductById doesn't exist in target module
-  15 | } from 'react-icons/hi';
-  16 | import { FiPackage, FiDollarSign } from 'react-icons/fi';
-> 17 | import { getProductById, deleteProduct, Product } from '@/lib/services/productService';
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  18 |
-  19 | export default function ProductDetailPage() {
-  20 |   const params = useParams();
-
-The export getProductById was not found in module [project]/lib/services/productService.ts [app-ssr] (ecmascript).
-Did you mean to import getProduct?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/products/[id]/page.tsx [Client Component Browser]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/products/[id]/page.tsx [Client Component SSR]
-    ./app/dashboard/products/[id]/page.tsx [Server Component]
-[00:51:06.198] Server  LOG     ✓ Compiled in 248ms
-[00:53:57.094] Server  LOG     ✓ Compiled in 182ms
-[00:55:39.892] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:55:41.088] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
-[00:56:17.738] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:56:19.451] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
-[00:56:21.217] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:56:22.459] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
-[00:58:42.130] Server  LOG     ✓ Compiled in 837ms
-[00:59:13.835] Server  LOG     ✓ Compiled in 349ms
-[00:59:29.981] Server  LOG     ✓ Compiled in 428ms
-[01:00:00.334] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:00:01.530] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
-[01:00:06.654] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:00:08.217] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
-[01:02:46.082] Server  LOG     ○ Compiling proxy ...
-[01:02:46.113] Server  LOG     ✓ Compiled in 2.1s
-[01:03:09.732] Server  LOG     ✓ Finished filesystem cache database compaction in 20.4s
-[01:03:09.894] Server  LOG     ✓ Finished writing to filesystem cache in 10.7s
-[01:04:22.212] Server  LOG     ✓ Compiled in 559ms
-[01:04:56.234] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:04:57.153] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
-[01:05:05.401] Server  LOG     ○ Compiling /dashboard/products/edit/[id] ...
-[01:12:57.852] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[01:12:57.853] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[01:12:57.853] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[01:12:58.064] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[01:12:58.198] Browser WARN    'lab(96.492 -1.14647 -5.11479)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[01:12:58.413] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[01:13:00.167] Browser WARN    'lab(96.492 -1.14647 -5.11479)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[01:20:53.542] Browser ERROR   Failed to create product: {"code":"ERR_BAD_RESPONSE","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8080/api","data":"{\"name\":\"gggg\",\"price\":0.02,\"stock\":2,\"description\":\"fff\",\"images\":[\"blob:http://localhost:3000/219d31d9-9f95-4430-8518-77aa03ee2381\"]}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJSUzI1NiIsImNhdCI6ImNsX0I3ZDRQRDExMUFBQSIsImtpZCI6Imluc18zQVR1MUNkekl4OEZGdmx0RktIblFFUHdnSVAiLCJ0eXAiOiJKV1QifQ.eyJhenAiOiJodHRwOi8vbG9jYWxob3N0OjMwMDAiLCJleHAiOjE3NzMxNDI2OTcsImZ2YSI6WzE5MCwtMV0sImlhdCI6MTc3MzE0MjYzNywiaXNzIjoiaHR0cHM6Ly9uYXRpb25hbC1sb25naG9ybi0yOS5jbGVyay5hY2NvdW50cy5kZXYiLCJuYmYiOjE3NzMxNDI2MjcsInNpZCI6InNlc3NfM0FrS2VzWTdydlNzbnZ1NmZ0ckNDSGdBVnhYIiwic3RzIjoiYWN0aXZlIiwic3ViIjoidXNlcl8zQWtLZXZVVVBqMjhUQkN3a0Vnc1FpYVFUNUciLCJ2IjoyfQ.ZG1FU7PKh6256sIs6ylWtKf5uMPGcRaRa9VZzE5VSYiSLw92iCBAavUEtiv9aXNd3USPO898UGBDI1e6GVF0usshnPPu67o2-oHsqKbyZ23xc6F4kmYDA_e_CU3G3GfPAS98I-eN2tlXPtmtEeWcOnQ7w8wwcFMdBYUjjjR_njKN4MkY0EwfAskjpD1yarxhadL2Bg6K6t35ZkzRidWxZLFZ2wI3ijXGAKSGcZzthGnPDWG5145BeuO9OIxm2w991dNpVc_GnYftci_UJgAjuNWvO55yd2SM5ax65Wo7WkCflQtDioY2JPszAmbpi4jGwHZr1qjTW-4UxZMfx6FHfQ","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"/products","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 500","name":"AxiosError","stack":"AxiosError: Request failed with status code 500\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:6827:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:7343:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:8149:49)\n    at async createProduct (http://localhost:3000/_next/static/chunks/_c679ae7b._.js:62:17)\n    at async handleSubmit (http://localhost:3000/_next/static/chunks/_1281f58b._.js:120:13)","status":500}
+https://nextjs.org/docs/messages/module-not-found
+[00:32:15.924] Server  LOG     ✓ Compiled in 371ms
+[00:32:24.447] Browser ERROR   Failed to post to n8n: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8080/api","data":"{\"productId\":\"69b11cae9fb69c0c27b3b690\",\"name\":\"dddddddddddd\",\"price\":0.03,\"stock\":4,\"description\":\"dddddddddddddddddddd\",\"images\":[{\"url\":\"https://res.cloudinary.com/dexjv6h1l/image/upload/v1773214907/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773214895127.jpg\",\"isPrimary\":true,\"format\":\"jpg\"},{\"url\":\"https://res.cloudinary.com/dexjv6h1l/image/upload/v1773216237/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773216228392.jpg\",\"isPrimary\":false,\"format\":\"jpg\"}],\"timestamp\":\"2026-03-11T08:20:29.236Z\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJSUzI1NiIsImNhdCI6ImNsX0I3ZDRQRDExMUFBQSIsImtpZCI6Imluc18zQVR1MUNkekl4OEZGdmx0RktIblFFUHdnSVAiLCJ0eXAiOiJKV1QifQ.eyJhenAiOiJodHRwOi8vbG9jYWxob3N0OjMwMDAiLCJleHAiOjE3NzMyMTcyODksImZ2YSI6WzE0MzMsLTFdLCJpYXQiOjE3NzMyMTcyMjksImlzcyI6Imh0dHBzOi8vbmF0aW9uYWwtbG9uZ2hvcm4tMjkuY2xlcmsuYWNjb3VudHMuZGV2IiwibmJmIjoxNzczMjE3MjE5LCJzaWQiOiJzZXNzXzNBa0tlc1k3cnZTc252dTZmdHJDQ0hnQVZ4WCIsInN0cyI6ImFjdGl2ZSIsInN1YiI6InVzZXJfM0FrS2V2VVVQajI4VEJDd2tFZ3NRaWFRVDVHIiwidiI6Mn0.PV7NYw3R45QasNG1kPUE3JnEF9Lr-Yiot8L61T3YZ-KTl8YaBPK1yJz8EoBzD7Z5RJCaUQTR5h9aI7XESfcze1JR4onXdr9czR0TaWFRM_c9fpKHXCc3PqRLD76-lG0GShdN5_fpCSmsMzEAn9sz1QIap-qtXkuZNZiclsAz1Rd8B7Qd-f4zOc5CiIOuf1o6yrq4DNHeokGCVj5gB0b4GmBnmrEYzqStOHAhn25J7EWewmEzj7cwd_xLUZbIYw7kdkrTtgmHV70cCQuH_mnmz9ZyiUB2ObgSESed59x_hTjyjnCqtoLMyLzEYFlXxOcka3Be7b6_uLI5BjBaMd2qlQ","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"/n8n-webhook","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:6813:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:7329:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:8135:49)\n    at async handlePostToN8n (http://localhost:3000/_next/static/chunks/_c679ae7b._.js?id=%255Bproject%255D%252Fapp%252Fdashboard%252Fproducts%252F%255Bid%255D%252Fpage.tsx+%255Bapp-client%255D+%2528ecmascript%2529:79:30)","status":404}
+[00:34:12.887] Server  LOG     ✓ Compiled in 119ms
+[00:34:12.986] Browser ERROR   uncaughtError: ReferenceError: handlePostToN8n is not defined
+[00:37:02.434] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:37:02.450] Server  LOG     ✓ Compiled in 109ms
+[00:37:06.601] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:37:07.580] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:37:09.264] Browser WARN    Image with src "https://res.cloudinary.com/dexjv6h1l/image/upload/v1773214907/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773214895127.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:37:33.466] Browser ERROR   Failed to post to n8n: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8080/api","data":"{\"productId\":\"69b11cae9fb69c0c27b3b690\",\"name\":\"dddddddddddd\",\"price\":0.03,\"stock\":4,\"description\":\"dddddddddddddddddddd\",\"images\":[{\"url\":\"https://res.cloudinary.com/dexjv6h1l/image/upload/v1773214907/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773214895127.jpg\",\"isPrimary\":true,\"format\":\"jpg\"},{\"url\":\"https://res.cloudinary.com/dexjv6h1l/image/upload/v1773216237/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773216228392.jpg\",\"isPrimary\":false,\"format\":\"jpg\"}],\"timestamp\":\"2026-03-11T08:25:37.228Z\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJSUzI1NiIsImNhdCI6ImNsX0I3ZDRQRDExMUFBQSIsImtpZCI6Imluc18zQVR1MUNkekl4OEZGdmx0RktIblFFUHdnSVAiLCJ0eXAiOiJKV1QifQ.eyJhenAiOiJodHRwOi8vbG9jYWxob3N0OjMwMDAiLCJleHAiOjE3NzMyMTc1OTcsImZ2YSI6WzE0MzgsLTFdLCJpYXQiOjE3NzMyMTc1MzcsImlzcyI6Imh0dHBzOi8vbmF0aW9uYWwtbG9uZ2hvcm4tMjkuY2xlcmsuYWNjb3VudHMuZGV2IiwibmJmIjoxNzczMjE3NTI3LCJzaWQiOiJzZXNzXzNBa0tlc1k3cnZTc252dTZmdHJDQ0hnQVZ4WCIsInN0cyI6ImFjdGl2ZSIsInN1YiI6InVzZXJfM0FrS2V2VVVQajI4VEJDd2tFZ3NRaWFRVDVHIiwidiI6Mn0.Oy9XsgG-vo16Io2mQPe_HqnsJCZsa6ZO_HxPv7krLFg4pDEScu0ZzmYxEYRopuGN9-IIxcuG_yulzTYP2dO-78t8ZBcdWqXW9iguaIcfDbE-nwzTKrWEh2c7GtQff-AJ7bd4FiHNG_8nubemAiuXatEYgYLmzAeDouNnVwgAVR6wREAiWlal39vI7iaxEgKYW2Y9zQLYIG07584o6pW8PHD95kooyPrJ1ymcy_pqIVTtjyffX4w1RY85K8JNkkFPU-YCLspFrF5wg0xpugVXKebpNGq2x_OR6nKih-lr5NDfMFoS1Mwq0GlRyqEV9yCGnpDItbPte6xKTgZ9UF71Xw","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"/n8n-webhook","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:6813:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:7329:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:8135:49)\n    at async handlePostToN8n (http://localhost:3000/_next/static/chunks/_c679ae7b._.js:202:30)","status":404}
+[00:40:25.425] Server  LOG     ✓ Compiled in 98ms
+[00:40:45.856] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:40:46.568] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:40:47.912] Browser WARN    Image with src "https://res.cloudinary.com/dexjv6h1l/image/upload/v1773214907/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773214895127.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:40:53.474] Browser ERROR   Failed to post to n8n: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8080/api","data":"{\"productId\":\"69b11cae9fb69c0c27b3b690\",\"name\":\"dddddddddddd\",\"price\":0.03,\"stock\":4,\"description\":\"dddddddddddddddddddd\",\"images\":[{\"url\":\"https://res.cloudinary.com/dexjv6h1l/image/upload/v1773214907/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773214895127.jpg\",\"isPrimary\":true,\"format\":\"jpg\"},{\"url\":\"https://res.cloudinary.com/dexjv6h1l/image/upload/v1773216237/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773216228392.jpg\",\"isPrimary\":false,\"format\":\"jpg\"}],\"timestamp\":\"2026-03-11T08:28:58.662Z\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJSUzI1NiIsImNhdCI6ImNsX0I3ZDRQRDExMUFBQSIsImtpZCI6Imluc18zQVR1MUNkekl4OEZGdmx0RktIblFFUHdnSVAiLCJ0eXAiOiJKV1QifQ.eyJhenAiOiJodHRwOi8vbG9jYWxob3N0OjMwMDAiLCJleHAiOjE3NzMyMTc3OTQsImZ2YSI6WzE0NDEsLTFdLCJpYXQiOjE3NzMyMTc3MzQsImlzcyI6Imh0dHBzOi8vbmF0aW9uYWwtbG9uZ2hvcm4tMjkuY2xlcmsuYWNjb3VudHMuZGV2IiwibmJmIjoxNzczMjE3NzI0LCJzaWQiOiJzZXNzXzNBa0tlc1k3cnZTc252dTZmdHJDQ0hnQVZ4WCIsInN0cyI6ImFjdGl2ZSIsInN1YiI6InVzZXJfM0FrS2V2VVVQajI4VEJDd2tFZ3NRaWFRVDVHIiwidiI6Mn0.Z7ct3-1Bx8paP04cfUAS-ukxGxVtwAyUcvgwGHX3esEyM6rBwn73L2kajcIBu2k5lAfKGK5R2uly4FiUjOjDrAbWjwQu04C_eDaRjtbwgjHPzzAeea_cV0fIRctZkX7D3GjqhKjksspQQHrmBac74jxTl_i8DkLhPMexhlStWdxy1DGusYux-j7CJtm_28LOyvYtsE25GFi_k4Pg0jvrKnqsPsqq6VAGUrTGG_Z0lafwxYNqQISz9E5VKbINvr6rf_ENqDGv_MQC5XbmSg1S9dPHxZf8NJLlIfJPY0kgPMagJEc5Z_5VhY09PKU_3uU02Sa2-4LcXigx73CqY3BW0Q","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"/api/n8n-webhook","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:6813:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:7329:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:8135:49)\n    at async handlePostToN8n (http://localhost:3000/_next/static/chunks/_c679ae7b._.js:202:30)","status":404}
+[00:41:01.391] Browser ERROR   Failed to post to n8n: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8080/api","data":"{\"productId\":\"69b11cae9fb69c0c27b3b690\",\"name\":\"dddddddddddd\",\"price\":0.03,\"stock\":4,\"description\":\"dddddddddddddddddddd\",\"images\":[{\"url\":\"https://res.cloudinary.com/dexjv6h1l/image/upload/v1773214907/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773214895127.jpg\",\"isPrimary\":true,\"format\":\"jpg\"},{\"url\":\"https://res.cloudinary.com/dexjv6h1l/image/upload/v1773216237/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773216228392.jpg\",\"isPrimary\":false,\"format\":\"jpg\"}],\"timestamp\":\"2026-03-11T08:29:06.597Z\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJSUzI1NiIsImNhdCI6ImNsX0I3ZDRQRDExMUFBQSIsImtpZCI6Imluc18zQVR1MUNkekl4OEZGdmx0RktIblFFUHdnSVAiLCJ0eXAiOiJKV1QifQ.eyJhenAiOiJodHRwOi8vbG9jYWxob3N0OjMwMDAiLCJleHAiOjE3NzMyMTc4MDAsImZ2YSI6WzE0NDEsLTFdLCJpYXQiOjE3NzMyMTc3NDAsImlzcyI6Imh0dHBzOi8vbmF0aW9uYWwtbG9uZ2hvcm4tMjkuY2xlcmsuYWNjb3VudHMuZGV2IiwibmJmIjoxNzczMjE3NzMwLCJzaWQiOiJzZXNzXzNBa0tlc1k3cnZTc252dTZmdHJDQ0hnQVZ4WCIsInN0cyI6ImFjdGl2ZSIsInN1YiI6InVzZXJfM0FrS2V2VVVQajI4VEJDd2tFZ3NRaWFRVDVHIiwidiI6Mn0.VedEiduqu07GJJQzxC19SNGJp0vTOe6xICPLzYZZZnoQG5H9G4KMKjdK56AlXO0gTV8u1EH8YyocQDMchugdFx8-vnXrOy7bIq_7Run1rC4lWsocvZj57DETCfxAzxW3UcyWAvfMWEqfPGYr8ursqYDRrj8SxH2q2A7L7U1sc116_ECD8avMgP5PQV4BL-68_thIeiT-t5rTMGMpoH02pWsNqL6qVzyg0uGqxbpTzGW94QtCsziKItys5hs5-PU1joDGqoEXkKQHTvbKAHBLp0Ogwrsa8sgjahnGCGPDSmXtP51S64d8V_brTM2eC13RKYNY5BO0EIrfr27cQqcW7g","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"/api/n8n-webhook","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:6813:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:7329:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:8135:49)\n    at async handlePostToN8n (http://localhost:3000/_next/static/chunks/_c679ae7b._.js:202:30)","status":404}
+[00:41:05.231] Browser ERROR   Failed to post to n8n: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8080/api","data":"{\"productId\":\"69b11cae9fb69c0c27b3b690\",\"name\":\"dddddddddddd\",\"price\":0.03,\"stock\":4,\"description\":\"dddddddddddddddddddd\",\"images\":[{\"url\":\"https://res.cloudinary.com/dexjv6h1l/image/upload/v1773214907/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773214895127.jpg\",\"isPrimary\":true,\"format\":\"jpg\"},{\"url\":\"https://res.cloudinary.com/dexjv6h1l/image/upload/v1773216237/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773216228392.jpg\",\"isPrimary\":false,\"format\":\"jpg\"}],\"timestamp\":\"2026-03-11T08:29:10.453Z\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJSUzI1NiIsImNhdCI6ImNsX0I3ZDRQRDExMUFBQSIsImtpZCI6Imluc18zQVR1MUNkekl4OEZGdmx0RktIblFFUHdnSVAiLCJ0eXAiOiJKV1QifQ.eyJhenAiOiJodHRwOi8vbG9jYWxob3N0OjMwMDAiLCJleHAiOjE3NzMyMTc4MDgsImZ2YSI6WzE0NDIsLTFdLCJpYXQiOjE3NzMyMTc3NDgsImlzcyI6Imh0dHBzOi8vbmF0aW9uYWwtbG9uZ2hvcm4tMjkuY2xlcmsuYWNjb3VudHMuZGV2IiwibmJmIjoxNzczMjE3NzM4LCJzaWQiOiJzZXNzXzNBa0tlc1k3cnZTc252dTZmdHJDQ0hnQVZ4WCIsInN0cyI6ImFjdGl2ZSIsInN1YiI6InVzZXJfM0FrS2V2VVVQajI4VEJDd2tFZ3NRaWFRVDVHIiwidiI6Mn0.EMQxbOrDhLcm4IFSNJM-if-1XlAd5GQzutzGXXKNWB52cZJFGcSJJOkdNtP_5XHlh23kWcEHa9guiwA6Eb_YO-X5XvNYdXRUJVd4NibjyO0HYroAN06HjVwzqPqzgyKTraTylXATXJZqOM_nCpniSwN1CXle2TX3iWCam89FtoAH4V5OeTn-qcAQZ3r81p7BuajpRmX4aVXW5Yl-avhnDsDl96LB31lMd61tfKVtwSt0SrWD3lNI4ABGkB0TqdeYLwzwAg9YpkSHVvRy_CwslJljUzvGSxWBCp7i_ipFr_yN9mrnme_1HXZbJg-_TUUXGtAMe-_ATQ7VOWbwUrPrKA","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"/api/n8n-webhook","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:6813:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:7329:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:8135:49)\n    at async handlePostToN8n (http://localhost:3000/_next/static/chunks/_c679ae7b._.js:202:30)","status":404}
+[00:41:06.079] Browser ERROR   Failed to post to n8n: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8080/api","data":"{\"productId\":\"69b11cae9fb69c0c27b3b690\",\"name\":\"dddddddddddd\",\"price\":0.03,\"stock\":4,\"description\":\"dddddddddddddddddddd\",\"images\":[{\"url\":\"https://res.cloudinary.com/dexjv6h1l/image/upload/v1773214907/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773214895127.jpg\",\"isPrimary\":true,\"format\":\"jpg\"},{\"url\":\"https://res.cloudinary.com/dexjv6h1l/image/upload/v1773216237/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773216228392.jpg\",\"isPrimary\":false,\"format\":\"jpg\"}],\"timestamp\":\"2026-03-11T08:29:11.286Z\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJSUzI1NiIsImNhdCI6ImNsX0I3ZDRQRDExMUFBQSIsImtpZCI6Imluc18zQVR1MUNkekl4OEZGdmx0RktIblFFUHdnSVAiLCJ0eXAiOiJKV1QifQ.eyJhenAiOiJodHRwOi8vbG9jYWxob3N0OjMwMDAiLCJleHAiOjE3NzMyMTc4MDgsImZ2YSI6WzE0NDIsLTFdLCJpYXQiOjE3NzMyMTc3NDgsImlzcyI6Imh0dHBzOi8vbmF0aW9uYWwtbG9uZ2hvcm4tMjkuY2xlcmsuYWNjb3VudHMuZGV2IiwibmJmIjoxNzczMjE3NzM4LCJzaWQiOiJzZXNzXzNBa0tlc1k3cnZTc252dTZmdHJDQ0hnQVZ4WCIsInN0cyI6ImFjdGl2ZSIsInN1YiI6InVzZXJfM0FrS2V2VVVQajI4VEJDd2tFZ3NRaWFRVDVHIiwidiI6Mn0.EMQxbOrDhLcm4IFSNJM-if-1XlAd5GQzutzGXXKNWB52cZJFGcSJJOkdNtP_5XHlh23kWcEHa9guiwA6Eb_YO-X5XvNYdXRUJVd4NibjyO0HYroAN06HjVwzqPqzgyKTraTylXATXJZqOM_nCpniSwN1CXle2TX3iWCam89FtoAH4V5OeTn-qcAQZ3r81p7BuajpRmX4aVXW5Yl-avhnDsDl96LB31lMd61tfKVtwSt0SrWD3lNI4ABGkB0TqdeYLwzwAg9YpkSHVvRy_CwslJljUzvGSxWBCp7i_ipFr_yN9mrnme_1HXZbJg-_TUUXGtAMe-_ATQ7VOWbwUrPrKA","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"/api/n8n-webhook","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:6813:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:7329:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:8135:49)\n    at async handlePostToN8n (http://localhost:3000/_next/static/chunks/_c679ae7b._.js:202:30)","status":404}
+[00:41:06.299] Browser ERROR   Failed to post to n8n: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8080/api","data":"{\"productId\":\"69b11cae9fb69c0c27b3b690\",\"name\":\"dddddddddddd\",\"price\":0.03,\"stock\":4,\"description\":\"dddddddddddddddddddd\",\"images\":[{\"url\":\"https://res.cloudinary.com/dexjv6h1l/image/upload/v1773214907/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773214895127.jpg\",\"isPrimary\":true,\"format\":\"jpg\"},{\"url\":\"https://res.cloudinary.com/dexjv6h1l/image/upload/v1773216237/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773216228392.jpg\",\"isPrimary\":false,\"format\":\"jpg\"}],\"timestamp\":\"2026-03-11T08:29:11.512Z\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJSUzI1NiIsImNhdCI6ImNsX0I3ZDRQRDExMUFBQSIsImtpZCI6Imluc18zQVR1MUNkekl4OEZGdmx0RktIblFFUHdnSVAiLCJ0eXAiOiJKV1QifQ.eyJhenAiOiJodHRwOi8vbG9jYWxob3N0OjMwMDAiLCJleHAiOjE3NzMyMTc4MDgsImZ2YSI6WzE0NDIsLTFdLCJpYXQiOjE3NzMyMTc3NDgsImlzcyI6Imh0dHBzOi8vbmF0aW9uYWwtbG9uZ2hvcm4tMjkuY2xlcmsuYWNjb3VudHMuZGV2IiwibmJmIjoxNzczMjE3NzM4LCJzaWQiOiJzZXNzXzNBa0tlc1k3cnZTc252dTZmdHJDQ0hnQVZ4WCIsInN0cyI6ImFjdGl2ZSIsInN1YiI6InVzZXJfM0FrS2V2VVVQajI4VEJDd2tFZ3NRaWFRVDVHIiwidiI6Mn0.EMQxbOrDhLcm4IFSNJM-if-1XlAd5GQzutzGXXKNWB52cZJFGcSJJOkdNtP_5XHlh23kWcEHa9guiwA6Eb_YO-X5XvNYdXRUJVd4NibjyO0HYroAN06HjVwzqPqzgyKTraTylXATXJZqOM_nCpniSwN1CXle2TX3iWCam89FtoAH4V5OeTn-qcAQZ3r81p7BuajpRmX4aVXW5Yl-avhnDsDl96LB31lMd61tfKVtwSt0SrWD3lNI4ABGkB0TqdeYLwzwAg9YpkSHVvRy_CwslJljUzvGSxWBCp7i_ipFr_yN9mrnme_1HXZbJg-_TUUXGtAMe-_ATQ7VOWbwUrPrKA","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"/api/n8n-webhook","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:6813:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:7329:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:8135:49)\n    at async handlePostToN8n (http://localhost:3000/_next/static/chunks/_c679ae7b._.js:202:30)","status":404}
+[00:41:06.943] Browser ERROR   Failed to post to n8n: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8080/api","data":"{\"productId\":\"69b11cae9fb69c0c27b3b690\",\"name\":\"dddddddddddd\",\"price\":0.03,\"stock\":4,\"description\":\"dddddddddddddddddddd\",\"images\":[{\"url\":\"https://res.cloudinary.com/dexjv6h1l/image/upload/v1773214907/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773214895127.jpg\",\"isPrimary\":true,\"format\":\"jpg\"},{\"url\":\"https://res.cloudinary.com/dexjv6h1l/image/upload/v1773216237/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773216228392.jpg\",\"isPrimary\":false,\"format\":\"jpg\"}],\"timestamp\":\"2026-03-11T08:29:12.117Z\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJSUzI1NiIsImNhdCI6ImNsX0I3ZDRQRDExMUFBQSIsImtpZCI6Imluc18zQVR1MUNkekl4OEZGdmx0RktIblFFUHdnSVAiLCJ0eXAiOiJKV1QifQ.eyJhenAiOiJodHRwOi8vbG9jYWxob3N0OjMwMDAiLCJleHAiOjE3NzMyMTc4MDgsImZ2YSI6WzE0NDIsLTFdLCJpYXQiOjE3NzMyMTc3NDgsImlzcyI6Imh0dHBzOi8vbmF0aW9uYWwtbG9uZ2hvcm4tMjkuY2xlcmsuYWNjb3VudHMuZGV2IiwibmJmIjoxNzczMjE3NzM4LCJzaWQiOiJzZXNzXzNBa0tlc1k3cnZTc252dTZmdHJDQ0hnQVZ4WCIsInN0cyI6ImFjdGl2ZSIsInN1YiI6InVzZXJfM0FrS2V2VVVQajI4VEJDd2tFZ3NRaWFRVDVHIiwidiI6Mn0.EMQxbOrDhLcm4IFSNJM-if-1XlAd5GQzutzGXXKNWB52cZJFGcSJJOkdNtP_5XHlh23kWcEHa9guiwA6Eb_YO-X5XvNYdXRUJVd4NibjyO0HYroAN06HjVwzqPqzgyKTraTylXATXJZqOM_nCpniSwN1CXle2TX3iWCam89FtoAH4V5OeTn-qcAQZ3r81p7BuajpRmX4aVXW5Yl-avhnDsDl96LB31lMd61tfKVtwSt0SrWD3lNI4ABGkB0TqdeYLwzwAg9YpkSHVvRy_CwslJljUzvGSxWBCp7i_ipFr_yN9mrnme_1HXZbJg-_TUUXGtAMe-_ATQ7VOWbwUrPrKA","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"/api/n8n-webhook","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:6813:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:7329:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:8135:49)\n    at async handlePostToN8n (http://localhost:3000/_next/static/chunks/_c679ae7b._.js:202:30)","status":404}
+[00:41:07.122] Browser ERROR   Failed to post to n8n: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8080/api","data":"{\"productId\":\"69b11cae9fb69c0c27b3b690\",\"name\":\"dddddddddddd\",\"price\":0.03,\"stock\":4,\"description\":\"dddddddddddddddddddd\",\"images\":[{\"url\":\"https://res.cloudinary.com/dexjv6h1l/image/upload/v1773214907/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773214895127.jpg\",\"isPrimary\":true,\"format\":\"jpg\"},{\"url\":\"https://res.cloudinary.com/dexjv6h1l/image/upload/v1773216237/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773216228392.jpg\",\"isPrimary\":false,\"format\":\"jpg\"}],\"timestamp\":\"2026-03-11T08:29:12.331Z\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJSUzI1NiIsImNhdCI6ImNsX0I3ZDRQRDExMUFBQSIsImtpZCI6Imluc18zQVR1MUNkekl4OEZGdmx0RktIblFFUHdnSVAiLCJ0eXAiOiJKV1QifQ.eyJhenAiOiJodHRwOi8vbG9jYWxob3N0OjMwMDAiLCJleHAiOjE3NzMyMTc4MDgsImZ2YSI6WzE0NDIsLTFdLCJpYXQiOjE3NzMyMTc3NDgsImlzcyI6Imh0dHBzOi8vbmF0aW9uYWwtbG9uZ2hvcm4tMjkuY2xlcmsuYWNjb3VudHMuZGV2IiwibmJmIjoxNzczMjE3NzM4LCJzaWQiOiJzZXNzXzNBa0tlc1k3cnZTc252dTZmdHJDQ0hnQVZ4WCIsInN0cyI6ImFjdGl2ZSIsInN1YiI6InVzZXJfM0FrS2V2VVVQajI4VEJDd2tFZ3NRaWFRVDVHIiwidiI6Mn0.EMQxbOrDhLcm4IFSNJM-if-1XlAd5GQzutzGXXKNWB52cZJFGcSJJOkdNtP_5XHlh23kWcEHa9guiwA6Eb_YO-X5XvNYdXRUJVd4NibjyO0HYroAN06HjVwzqPqzgyKTraTylXATXJZqOM_nCpniSwN1CXle2TX3iWCam89FtoAH4V5OeTn-qcAQZ3r81p7BuajpRmX4aVXW5Yl-avhnDsDl96LB31lMd61tfKVtwSt0SrWD3lNI4ABGkB0TqdeYLwzwAg9YpkSHVvRy_CwslJljUzvGSxWBCp7i_ipFr_yN9mrnme_1HXZbJg-_TUUXGtAMe-_ATQ7VOWbwUrPrKA","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"/api/n8n-webhook","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:6813:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:7329:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:8135:49)\n    at async handlePostToN8n (http://localhost:3000/_next/static/chunks/_c679ae7b._.js:202:30)","status":404}
+[00:46:06.578] Server  LOG     ✓ Compiled in 99ms
+[00:46:12.328] Browser ERROR   Failed to post to n8n: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8080/api","data":"{\"productId\":\"69b11cae9fb69c0c27b3b690\",\"name\":\"dddddddddddd\",\"price\":0.03,\"stock\":4,\"description\":\"dddddddddddddddddddd\",\"images\":[{\"url\":\"https://res.cloudinary.com/dexjv6h1l/image/upload/v1773214907/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773214895127.jpg\",\"isPrimary\":true,\"format\":\"jpg\"},{\"url\":\"https://res.cloudinary.com/dexjv6h1l/image/upload/v1773216237/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773216228392.jpg\",\"isPrimary\":false,\"format\":\"jpg\"}],\"timestamp\":\"2026-03-11T08:34:16.733Z\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJSUzI1NiIsImNhdCI6ImNsX0I3ZDRQRDExMUFBQSIsImtpZCI6Imluc18zQVR1MUNkekl4OEZGdmx0RktIblFFUHdnSVAiLCJ0eXAiOiJKV1QifQ.eyJhenAiOiJodHRwOi8vbG9jYWxob3N0OjMwMDAiLCJleHAiOjE3NzMyMTgxMTgsImZ2YSI6WzE0NDcsLTFdLCJpYXQiOjE3NzMyMTgwNTgsImlzcyI6Imh0dHBzOi8vbmF0aW9uYWwtbG9uZ2hvcm4tMjkuY2xlcmsuYWNjb3VudHMuZGV2IiwibmJmIjoxNzczMjE4MDQ4LCJzaWQiOiJzZXNzXzNBa0tlc1k3cnZTc252dTZmdHJDQ0hnQVZ4WCIsInN0cyI6ImFjdGl2ZSIsInN1YiI6InVzZXJfM0FrS2V2VVVQajI4VEJDd2tFZ3NRaWFRVDVHIiwidiI6Mn0.WoH1_zuTI6umvsrsUGInrfkExLMRXaV9PmDyO1dmdf49XFQAWxiift35DgqTeUAabdxh1rq8HIW4CWpuPKaJrAaaiBy36onMtots4BjskdsJPBCqfTASJrJgtyTqvQc04cY8YfeMrTsv9oImJGHymTX-_hZi9L_pMDphxyIiKAt7XE15qxAV2hG-OKLPowrkoypZryXoljhXnlq5tx7IfwpdR9Nq1gVJ49acgCSJY0FI-9IeoFovxS3-32bvixPET_hYkoggnRDxx1Jytl8-4H8VSbF82EJ1sxZtFbs8N2Jto2wXe7wd0Ym085pVPsV1X8BD68_X20HdWtkb9plplQ","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"/n8n-webhook","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:6813:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:7329:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:8135:49)\n    at async handlePostToN8n (http://localhost:3000/_next/static/chunks/_c679ae7b._.js?id=%255Bproject%255D%252Fapp%252Fdashboard%252Fproducts%252F%255Bid%255D%252Fpage.tsx+%255Bapp-client%255D+%2528ecmascript%2529:91:30)","status":404}
+[00:48:29.766] Server  LOG     ✓ Compiled in 131ms
+[00:48:32.628] Browser ERROR   Failed to post to n8n: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8080/api","data":"{\"productId\":\"69b11cae9fb69c0c27b3b690\",\"name\":\"dddddddddddd\",\"price\":0.03,\"stock\":4,\"description\":\"dddddddddddddddddddd\",\"images\":[{\"url\":\"https://res.cloudinary.com/dexjv6h1l/image/upload/v1773214907/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773214895127.jpg\",\"isPrimary\":true,\"format\":\"jpg\"},{\"url\":\"https://res.cloudinary.com/dexjv6h1l/image/upload/v1773216237/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773216228392.jpg\",\"isPrimary\":false,\"format\":\"jpg\"}],\"timestamp\":\"2026-03-11T08:36:37.819Z\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJSUzI1NiIsImNhdCI6ImNsX0I3ZDRQRDExMUFBQSIsImtpZCI6Imluc18zQVR1MUNkekl4OEZGdmx0RktIblFFUHdnSVAiLCJ0eXAiOiJKV1QifQ.eyJhenAiOiJodHRwOi8vbG9jYWxob3N0OjMwMDAiLCJleHAiOjE3NzMyMTgyNTIsImZ2YSI6WzE0NDksLTFdLCJpYXQiOjE3NzMyMTgxOTIsImlzcyI6Imh0dHBzOi8vbmF0aW9uYWwtbG9uZ2hvcm4tMjkuY2xlcmsuYWNjb3VudHMuZGV2IiwibmJmIjoxNzczMjE4MTgyLCJzaWQiOiJzZXNzXzNBa0tlc1k3cnZTc252dTZmdHJDQ0hnQVZ4WCIsInN0cyI6ImFjdGl2ZSIsInN1YiI6InVzZXJfM0FrS2V2VVVQajI4VEJDd2tFZ3NRaWFRVDVHIiwidiI6Mn0.mxMuhdAgtv0j6GFKItnfcA-d5Gmq1Wo2ieCqJwxtSvn2Q-g0tGEwOMB12rAi0zWnSU9_VKWJBFzCq_7h7I8FbS2rYr02A1vBDRZNDUIMoYRl2q3y4xGM0eV_NF6lVIYpj3vUUM3loiCKP7UHbUzzPd7I3WZgnKfL9CVK79nngMqULUR8kr9lvHhWBnf6ojYlK6dtMn1w96srYgBFjU-1KvOaOPkgj_luRWKCNUH7caXqChyCNZUstlbxVXgZF2QnO3TiJLIp9S5YIF8NNIuEsVh3RHhwl_9XYJGc97IRL0XGTXXuSgBCFOAVfTka_9BdGRzx0oQ8WzTDC2MpLvhg7w","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"n8n-webhook","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:6813:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:7329:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:8135:49)\n    at async handlePostToN8n (http://localhost:3000/_next/static/chunks/_c679ae7b._.js?id=%255Bproject%255D%252Fapp%252Fdashboard%252Fproducts%252F%255Bid%255D%252Fpage.tsx+%255Bapp-client%255D+%2528ecmascript%2529:91:30)","status":404}
+[00:53:37.737] Browser ERROR   Failed to post to n8n: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8080/api","data":"{\"productId\":\"69b11cae9fb69c0c27b3b690\",\"name\":\"dddddddddddd\",\"price\":0.03,\"stock\":4,\"description\":\"dddddddddddddddddddd\",\"images\":[{\"url\":\"https://res.cloudinary.com/dexjv6h1l/image/upload/v1773214907/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773214895127.jpg\",\"isPrimary\":true,\"format\":\"jpg\"},{\"url\":\"https://res.cloudinary.com/dexjv6h1l/image/upload/v1773216237/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773216228392.jpg\",\"isPrimary\":false,\"format\":\"jpg\"}],\"timestamp\":\"2026-03-11T08:41:41.631Z\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJSUzI1NiIsImNhdCI6ImNsX0I3ZDRQRDExMUFBQSIsImtpZCI6Imluc18zQVR1MUNkekl4OEZGdmx0RktIblFFUHdnSVAiLCJ0eXAiOiJKV1QifQ.eyJhenAiOiJodHRwOi8vbG9jYWxob3N0OjMwMDAiLCJleHAiOjE3NzMyMTg1NjIsImZ2YSI6WzE0NTQsLTFdLCJpYXQiOjE3NzMyMTg1MDIsImlzcyI6Imh0dHBzOi8vbmF0aW9uYWwtbG9uZ2hvcm4tMjkuY2xlcmsuYWNjb3VudHMuZGV2IiwibmJmIjoxNzczMjE4NDkyLCJzaWQiOiJzZXNzXzNBa0tlc1k3cnZTc252dTZmdHJDQ0hnQVZ4WCIsInN0cyI6ImFjdGl2ZSIsInN1YiI6InVzZXJfM0FrS2V2VVVQajI4VEJDd2tFZ3NRaWFRVDVHIiwidiI6Mn0.ANSZ0x0GMBFB_WbjIdIOrApdE642d1OLCo3zHKPMKyMou8UdClFwldVxdgXhgjkNEfGTVMO_KdxPTcDDnf62WlR5fX4OlSTovQiDc44m3y0wG7avfsKMC542qWn6qvFsa6AuDz8-QW5Pz8Njxcyna_HkkzSqbNP2hyre5O6vVO7vFxO6X3wckaTPSaSdCeBFLdMDk9bMONN4XaXVrJwE7blAM4Kxv_QWvxrlWzYFlx5_LU-mPYBNozWt9ktD7kq6RobI9h11WrPt5bGnqtpdIbh3tR_R--awKLfWI5Cp8asYJQkBGoJPGNbN6hCvew9e2tsbQvrzSXHC_7kM8IZPNw","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"n8n-webhook","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:6813:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:7329:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:8135:49)\n    at async handlePostToN8n (http://localhost:3000/_next/static/chunks/_c679ae7b._.js?id=%255Bproject%255D%252Fapp%252Fdashboard%252Fproducts%252F%255Bid%255D%252Fpage.tsx+%255Bapp-client%255D+%2528ecmascript%2529:91:30)","status":404}
+[00:53:42.904] Browser ERROR   Failed to post to n8n: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8080/api","data":"{\"productId\":\"69b11cae9fb69c0c27b3b690\",\"name\":\"dddddddddddd\",\"price\":0.03,\"stock\":4,\"description\":\"dddddddddddddddddddd\",\"images\":[{\"url\":\"https://res.cloudinary.com/dexjv6h1l/image/upload/v1773214907/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773214895127.jpg\",\"isPrimary\":true,\"format\":\"jpg\"},{\"url\":\"https://res.cloudinary.com/dexjv6h1l/image/upload/v1773216237/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773216228392.jpg\",\"isPrimary\":false,\"format\":\"jpg\"}],\"timestamp\":\"2026-03-11T08:41:48.110Z\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJSUzI1NiIsImNhdCI6ImNsX0I3ZDRQRDExMUFBQSIsImtpZCI6Imluc18zQVR1MUNkekl4OEZGdmx0RktIblFFUHdnSVAiLCJ0eXAiOiJKV1QifQ.eyJhenAiOiJodHRwOi8vbG9jYWxob3N0OjMwMDAiLCJleHAiOjE3NzMyMTg1NjksImZ2YSI6WzE0NTQsLTFdLCJpYXQiOjE3NzMyMTg1MDksImlzcyI6Imh0dHBzOi8vbmF0aW9uYWwtbG9uZ2hvcm4tMjkuY2xlcmsuYWNjb3VudHMuZGV2IiwibmJmIjoxNzczMjE4NDk5LCJzaWQiOiJzZXNzXzNBa0tlc1k3cnZTc252dTZmdHJDQ0hnQVZ4WCIsInN0cyI6ImFjdGl2ZSIsInN1YiI6InVzZXJfM0FrS2V2VVVQajI4VEJDd2tFZ3NRaWFRVDVHIiwidiI6Mn0.Atseft1TRkJ1bgkFoUqVndegSN3_OBKmAyjNNI-4OE-i_GRlxkHemW3n8kDBh008ULs_ZxlaViwHmC0vY_87hOUW3Gd3BLDyT7d0weE-MW-ztlSKtGs6UyWAVSkrW3bKwz_PTEdySsYbcjYahua18veJvWp73t7EMJLKdFHbZJlQvmXwGcW18tJXW2BeN57IGvQ_K1_ZLCN-59UPGmiVTbWlAJLhfnc_qKlutdrqIgQTkAefexBzDRArLFBG9-Am3XGPcO-XdCRWeKjNyKcVgVwNS0XT-xWUPCzjmA0-n57-PNdMSTlQksS3HeGMdp9qGuwydmTMzyKUln5RNQXalA","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"n8n-webhook","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:6813:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:7329:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:8135:49)\n    at async handlePostToN8n (http://localhost:3000/_next/static/chunks/_c679ae7b._.js?id=%255Bproject%255D%252Fapp%252Fdashboard%252Fproducts%252F%255Bid%255D%252Fpage.tsx+%255Bapp-client%255D+%2528ecmascript%2529:91:30)","status":404}
+[00:53:44.237] Browser ERROR   Failed to post to n8n: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8080/api","data":"{\"productId\":\"69b11cae9fb69c0c27b3b690\",\"name\":\"dddddddddddd\",\"price\":0.03,\"stock\":4,\"description\":\"dddddddddddddddddddd\",\"images\":[{\"url\":\"https://res.cloudinary.com/dexjv6h1l/image/upload/v1773214907/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773214895127.jpg\",\"isPrimary\":true,\"format\":\"jpg\"},{\"url\":\"https://res.cloudinary.com/dexjv6h1l/image/upload/v1773216237/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773216228392.jpg\",\"isPrimary\":false,\"format\":\"jpg\"}],\"timestamp\":\"2026-03-11T08:41:49.460Z\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJSUzI1NiIsImNhdCI6ImNsX0I3ZDRQRDExMUFBQSIsImtpZCI6Imluc18zQVR1MUNkekl4OEZGdmx0RktIblFFUHdnSVAiLCJ0eXAiOiJKV1QifQ.eyJhenAiOiJodHRwOi8vbG9jYWxob3N0OjMwMDAiLCJleHAiOjE3NzMyMTg1NjksImZ2YSI6WzE0NTQsLTFdLCJpYXQiOjE3NzMyMTg1MDksImlzcyI6Imh0dHBzOi8vbmF0aW9uYWwtbG9uZ2hvcm4tMjkuY2xlcmsuYWNjb3VudHMuZGV2IiwibmJmIjoxNzczMjE4NDk5LCJzaWQiOiJzZXNzXzNBa0tlc1k3cnZTc252dTZmdHJDQ0hnQVZ4WCIsInN0cyI6ImFjdGl2ZSIsInN1YiI6InVzZXJfM0FrS2V2VVVQajI4VEJDd2tFZ3NRaWFRVDVHIiwidiI6Mn0.Atseft1TRkJ1bgkFoUqVndegSN3_OBKmAyjNNI-4OE-i_GRlxkHemW3n8kDBh008ULs_ZxlaViwHmC0vY_87hOUW3Gd3BLDyT7d0weE-MW-ztlSKtGs6UyWAVSkrW3bKwz_PTEdySsYbcjYahua18veJvWp73t7EMJLKdFHbZJlQvmXwGcW18tJXW2BeN57IGvQ_K1_ZLCN-59UPGmiVTbWlAJLhfnc_qKlutdrqIgQTkAefexBzDRArLFBG9-Am3XGPcO-XdCRWeKjNyKcVgVwNS0XT-xWUPCzjmA0-n57-PNdMSTlQksS3HeGMdp9qGuwydmTMzyKUln5RNQXalA","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"n8n-webhook","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:6813:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:7329:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:8135:49)\n    at async handlePostToN8n (http://localhost:3000/_next/static/chunks/_c679ae7b._.js?id=%255Bproject%255D%252Fapp%252Fdashboard%252Fproducts%252F%255Bid%255D%252Fpage.tsx+%255Bapp-client%255D+%2528ecmascript%2529:91:30)","status":404}
+[00:57:06.148] Browser ERROR   Failed to post to n8n: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8080/api","data":"{\"productId\":\"69b11cae9fb69c0c27b3b690\",\"name\":\"dddddddddddd\",\"price\":0.03,\"stock\":4,\"description\":\"dddddddddddddddddddd\",\"images\":[{\"url\":\"https://res.cloudinary.com/dexjv6h1l/image/upload/v1773214907/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773214895127.jpg\",\"isPrimary\":true,\"format\":\"jpg\"},{\"url\":\"https://res.cloudinary.com/dexjv6h1l/image/upload/v1773216237/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773216228392.jpg\",\"isPrimary\":false,\"format\":\"jpg\"}],\"timestamp\":\"2026-03-11T08:45:10.439Z\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJSUzI1NiIsImNhdCI6ImNsX0I3ZDRQRDExMUFBQSIsImtpZCI6Imluc18zQVR1MUNkekl4OEZGdmx0RktIblFFUHdnSVAiLCJ0eXAiOiJKV1QifQ.eyJhenAiOiJodHRwOi8vbG9jYWxob3N0OjMwMDAiLCJleHAiOjE3NzMyMTg3NDYsImZ2YSI6WzE0NTcsLTFdLCJpYXQiOjE3NzMyMTg2ODYsImlzcyI6Imh0dHBzOi8vbmF0aW9uYWwtbG9uZ2hvcm4tMjkuY2xlcmsuYWNjb3VudHMuZGV2IiwibmJmIjoxNzczMjE4Njc2LCJzaWQiOiJzZXNzXzNBa0tlc1k3cnZTc252dTZmdHJDQ0hnQVZ4WCIsInN0cyI6ImFjdGl2ZSIsInN1YiI6InVzZXJfM0FrS2V2VVVQajI4VEJDd2tFZ3NRaWFRVDVHIiwidiI6Mn0.Hz-zoCRe74_yxp18xMgi0ioE2EvA9iWMFcfzirtnR7OSjQAqIY4Av8lm6NuWz0QpiXJ7HFls1nZf8JKN_fVIBR3MWeBmfZaO-juYAM8W9cWYe07gCoeu1zL7kVjkhQiD615RnXwCyX0tABaFon7X_cvq7fNQE8l6FQhAgIf0Zj8d3a42Z2loEVpGJeS6vr9pxALQaEmm3zUiUA1-6PbYNFWZqj5-RaDpvvJEkdp0eosKtGo2P6T5uBQkI_lmuAfXuifAVdjA2hs1Zd8CAlOfFIqJ91MN2gwOX06KTE6KdFIYsvPOqy3J8fhJEXuFKG_uB4E00tjeBdsX_hO5y2q9Yw","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"n8n-webhook","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:6813:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:7329:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:8135:49)\n    at async handlePostToN8n (http://localhost:3000/_next/static/chunks/_c679ae7b._.js?id=%255Bproject%255D%252Fapp%252Fdashboard%252Fproducts%252F%255Bid%255D%252Fpage.tsx+%255Bapp-client%255D+%2528ecmascript%2529:91:30)","status":404}
+[00:57:07.931] Browser ERROR   Failed to post to n8n: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8080/api","data":"{\"productId\":\"69b11cae9fb69c0c27b3b690\",\"name\":\"dddddddddddd\",\"price\":0.03,\"stock\":4,\"description\":\"dddddddddddddddddddd\",\"images\":[{\"url\":\"https://res.cloudinary.com/dexjv6h1l/image/upload/v1773214907/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773214895127.jpg\",\"isPrimary\":true,\"format\":\"jpg\"},{\"url\":\"https://res.cloudinary.com/dexjv6h1l/image/upload/v1773216237/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773216228392.jpg\",\"isPrimary\":false,\"format\":\"jpg\"}],\"timestamp\":\"2026-03-11T08:45:13.123Z\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJSUzI1NiIsImNhdCI6ImNsX0I3ZDRQRDExMUFBQSIsImtpZCI6Imluc18zQVR1MUNkekl4OEZGdmx0RktIblFFUHdnSVAiLCJ0eXAiOiJKV1QifQ.eyJhenAiOiJodHRwOi8vbG9jYWxob3N0OjMwMDAiLCJleHAiOjE3NzMyMTg3NzMsImZ2YSI6WzE0NTgsLTFdLCJpYXQiOjE3NzMyMTg3MTMsImlzcyI6Imh0dHBzOi8vbmF0aW9uYWwtbG9uZ2hvcm4tMjkuY2xlcmsuYWNjb3VudHMuZGV2IiwibmJmIjoxNzczMjE4NzAzLCJzaWQiOiJzZXNzXzNBa0tlc1k3cnZTc252dTZmdHJDQ0hnQVZ4WCIsInN0cyI6ImFjdGl2ZSIsInN1YiI6InVzZXJfM0FrS2V2VVVQajI4VEJDd2tFZ3NRaWFRVDVHIiwidiI6Mn0.uNcVNXYhwkfBZqRJSyXQCB1ZuR1aVh2En4vcxC9hFXDz6sExWmBtbISz7Cf68omnHDp4fKkn7e6_fPDNuCT33z5_F8_j6YN5e3EA497aCxTawal1YQcGVwWWiukufwKevMW7PQsGsxlUfpPxzpAtfvz2tYiI5_zbvSzktB231urtjgWQkTN40SzLRDPOmeTmCwdj0eLa_UNBDHh7fAG3h9uhrepHQoLmbW5JgmgjIw2FIFFiInqb6FHH3vH3Syx2-gZpM1t7SBx3CNPO1sRRgWgGcih79SWvJVUJ2WvzyLvEJiskl7f7yUXmQzq5huofIlSzMmy5vRncR3cTo_ozdw","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"n8n-webhook","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:6813:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:7329:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:8135:49)\n    at async handlePostToN8n (http://localhost:3000/_next/static/chunks/_c679ae7b._.js?id=%255Bproject%255D%252Fapp%252Fdashboard%252Fproducts%252F%255Bid%255D%252Fpage.tsx+%255Bapp-client%255D+%2528ecmascript%2529:91:30)","status":404}
+[01:02:21.661] Browser ERROR   Failed to post to n8n: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8080/api","data":"{\"productId\":\"69b11cae9fb69c0c27b3b690\",\"name\":\"dddddddddddd\",\"price\":0.03,\"stock\":4,\"description\":\"dddddddddddddddddddd\",\"images\":[{\"url\":\"https://res.cloudinary.com/dexjv6h1l/image/upload/v1773214907/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773214895127.jpg\",\"isPrimary\":true,\"format\":\"jpg\"},{\"url\":\"https://res.cloudinary.com/dexjv6h1l/image/upload/v1773216237/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773216228392.jpg\",\"isPrimary\":false,\"format\":\"jpg\"}],\"timestamp\":\"2026-03-11T08:50:26.008Z\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJSUzI1NiIsImNhdCI6ImNsX0I3ZDRQRDExMUFBQSIsImtpZCI6Imluc18zQVR1MUNkekl4OEZGdmx0RktIblFFUHdnSVAiLCJ0eXAiOiJKV1QifQ.eyJhenAiOiJodHRwOi8vbG9jYWxob3N0OjMwMDAiLCJleHAiOjE3NzMyMTkwODMsImZ2YSI6WzE0NjMsLTFdLCJpYXQiOjE3NzMyMTkwMjMsImlzcyI6Imh0dHBzOi8vbmF0aW9uYWwtbG9uZ2hvcm4tMjkuY2xlcmsuYWNjb3VudHMuZGV2IiwibmJmIjoxNzczMjE5MDEzLCJzaWQiOiJzZXNzXzNBa0tlc1k3cnZTc252dTZmdHJDQ0hnQVZ4WCIsInN0cyI6ImFjdGl2ZSIsInN1YiI6InVzZXJfM0FrS2V2VVVQajI4VEJDd2tFZ3NRaWFRVDVHIiwidiI6Mn0.ZOXBATDFUjZt17q4Sb3Prq6vVD5QN_iExP09gOkJ7xwwOTZreA1qd7vFYC1Nh1WfVk98M3YCns4WQCm9IxEmYfnbnGkm8B5aPFnzc4YIFu1_e-PNbA9HmXRfaDlX2HqgnsgRopdkgM-Q4zeEcoWMl8dCp2c1pIZHdRKpZ7UwYr6ojLOEJhrLyGhtMB3rTazcfArHRv3V6ef0C6VS9h-9HkZyMInoMxm8qMta-Agezh_Pu9b5yzq5TGHriDpn1U5vtYwchpOCGgN-0l0hlmLSVxa3-CtYp9kl5FkHfgp7KaKHC2yaDDorigi0GgnNpI3ZOAwwXOW2ap3eVudcgOe2iQ","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"n8n-webhook","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:6813:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:7329:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:8135:49)\n    at async handlePostToN8n (http://localhost:3000/_next/static/chunks/_c679ae7b._.js?id=%255Bproject%255D%252Fapp%252Fdashboard%252Fproducts%252F%255Bid%255D%252Fpage.tsx+%255Bapp-client%255D+%2528ecmascript%2529:91:30)","status":404}
+[01:02:59.464] Browser ERROR   Failed to post to n8n: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8080/api","data":"{\"productId\":\"69b11cae9fb69c0c27b3b690\",\"name\":\"dddddddddddd\",\"price\":0.03,\"stock\":4,\"description\":\"dddddddddddddddddddd\",\"images\":[{\"url\":\"https://res.cloudinary.com/dexjv6h1l/image/upload/v1773214907/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773214895127.jpg\",\"isPrimary\":true,\"format\":\"jpg\"},{\"url\":\"https://res.cloudinary.com/dexjv6h1l/image/upload/v1773216237/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773216228392.jpg\",\"isPrimary\":false,\"format\":\"jpg\"}],\"timestamp\":\"2026-03-11T08:51:04.266Z\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJSUzI1NiIsImNhdCI6ImNsX0I3ZDRQRDExMUFBQSIsImtpZCI6Imluc18zQVR1MUNkekl4OEZGdmx0RktIblFFUHdnSVAiLCJ0eXAiOiJKV1QifQ.eyJhenAiOiJodHRwOi8vbG9jYWxob3N0OjMwMDAiLCJleHAiOjE3NzMyMTkxMDAsImZ2YSI6WzE0NjMsLTFdLCJpYXQiOjE3NzMyMTkwNDAsImlzcyI6Imh0dHBzOi8vbmF0aW9uYWwtbG9uZ2hvcm4tMjkuY2xlcmsuYWNjb3VudHMuZGV2IiwibmJmIjoxNzczMjE5MDMwLCJzaWQiOiJzZXNzXzNBa0tlc1k3cnZTc252dTZmdHJDQ0hnQVZ4WCIsInN0cyI6ImFjdGl2ZSIsInN1YiI6InVzZXJfM0FrS2V2VVVQajI4VEJDd2tFZ3NRaWFRVDVHIiwidiI6Mn0.W-Sa0hDzdRh-XN04mJy6CtWFz_k9tCNE9RHqpSijCbtDf3uSq_Zl1-pd09ge3wD4OfAe8gj7DTEt-OMvWihjjF9rWnX3ATHOdEEHdTV6mZYzl0gnLfUwGvPuc271n1BRXwbLA-yXrmYG5v3TXnmZFtIs7mfQ0l5aZG-6LbwZhDwResKj0rusDRSCQ6i1pZD8suycblfctK-fmI3JxAfDb6SUqEJZiUobG-m97TF6ajDu94EPHmMzcoyABnT0qd75ff6OEY8VeTUheB90ri6z7MUmeqIr94TLjXREPjpszMvYfwoJ5tkQGXXkKjewg0M6Zqaha18CQ9oI-Nw5LPscRQ","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"n8n-webhook","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:6813:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:7329:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:8135:49)\n    at async handlePostToN8n (http://localhost:3000/_next/static/chunks/_c679ae7b._.js?id=%255Bproject%255D%252Fapp%252Fdashboard%252Fproducts%252F%255Bid%255D%252Fpage.tsx+%255Bapp-client%255D+%2528ecmascript%2529:91:30)","status":404}
+[01:07:30.223] Server  LOG     ✓ Compiled in 449ms
+[01:07:43.383] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:07:45.415] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[01:07:46.823] Browser WARN    Image with src "https://res.cloudinary.com/dexjv6h1l/image/upload/v1773214907/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773214895127.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:07:58.212] Browser ERROR   Failed to post to n8n: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8080/api","data":"{\"productId\":\"69b11cae9fb69c0c27b3b690\",\"name\":\"dddddddddddd\",\"price\":0.03,\"stock\":4,\"description\":\"dddddddddddddddddddd\",\"images\":[{\"url\":\"https://res.cloudinary.com/dexjv6h1l/image/upload/v1773214907/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773214895127.jpg\",\"isPrimary\":true,\"format\":\"jpg\"},{\"url\":\"https://res.cloudinary.com/dexjv6h1l/image/upload/v1773216237/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773216228392.jpg\",\"isPrimary\":false,\"format\":\"jpg\"}],\"timestamp\":\"2026-03-11T08:56:01.202Z\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJSUzI1NiIsImNhdCI6ImNsX0I3ZDRQRDExMUFBQSIsImtpZCI6Imluc18zQVR1MUNkekl4OEZGdmx0RktIblFFUHdnSVAiLCJ0eXAiOiJKV1QifQ.eyJhenAiOiJodHRwOi8vbG9jYWxob3N0OjMwMDAiLCJleHAiOjE3NzMyMTk0MTIsImZ2YSI6WzE0NjgsLTFdLCJpYXQiOjE3NzMyMTkzNTIsImlzcyI6Imh0dHBzOi8vbmF0aW9uYWwtbG9uZ2hvcm4tMjkuY2xlcmsuYWNjb3VudHMuZGV2IiwibmJmIjoxNzczMjE5MzQyLCJzaWQiOiJzZXNzXzNBa0tlc1k3cnZTc252dTZmdHJDQ0hnQVZ4WCIsInN0cyI6ImFjdGl2ZSIsInN1YiI6InVzZXJfM0FrS2V2VVVQajI4VEJDd2tFZ3NRaWFRVDVHIiwidiI6Mn0.P9zB_-Yo5mJQypKdgO6lJvrxpxvGaGEk4tIJI-Ynd2hIgRXQCK9hWuYXb_8WphUmhBZUsU-IiNdMYo_zuyidkWAsX6x5wEwrenD9tinWWRZGPQ5htERvlnZGAm8zFQzkVBzqG5L2e2lKeCIt2xv-fBw02IVxQRe3QKlDL2P77bUEMF2qNIK9SXTZdooDRYf-LJcvsaorXMCmAjKjw7my_3kgyaQafs-rHn-tcmK5wbrYp-zRRMbiSIZle0Yn3qSG6kk55MwuEFHZ0M0Pfnxszksz0VUSnA1zJ7siqxCVEblto3FF7Wfc46bdKjghAARkpsXcWbcC4USPWybbIKMVAA","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"n8n-webhook/product","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:6813:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:7329:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:8135:49)\n    at async handlePostToN8n (http://localhost:3000/_next/static/chunks/_c679ae7b._.js:202:30)","status":404}
+[01:08:08.610] Browser ERROR   Failed to post to n8n: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8080/api","data":"{\"productId\":\"69b11cae9fb69c0c27b3b690\",\"name\":\"dddddddddddd\",\"price\":0.03,\"stock\":4,\"description\":\"dddddddddddddddddddd\",\"images\":[{\"url\":\"https://res.cloudinary.com/dexjv6h1l/image/upload/v1773214907/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773214895127.jpg\",\"isPrimary\":true,\"format\":\"jpg\"},{\"url\":\"https://res.cloudinary.com/dexjv6h1l/image/upload/v1773216237/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773216228392.jpg\",\"isPrimary\":false,\"format\":\"jpg\"}],\"timestamp\":\"2026-03-11T08:56:10.153Z\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJSUzI1NiIsImNhdCI6ImNsX0I3ZDRQRDExMUFBQSIsImtpZCI6Imluc18zQVR1MUNkekl4OEZGdmx0RktIblFFUHdnSVAiLCJ0eXAiOiJKV1QifQ.eyJhenAiOiJodHRwOi8vbG9jYWxob3N0OjMwMDAiLCJleHAiOjE3NzMyMTk0MjMsImZ2YSI6WzE0NjgsLTFdLCJpYXQiOjE3NzMyMTkzNjMsImlzcyI6Imh0dHBzOi8vbmF0aW9uYWwtbG9uZ2hvcm4tMjkuY2xlcmsuYWNjb3VudHMuZGV2IiwibmJmIjoxNzczMjE5MzUzLCJzaWQiOiJzZXNzXzNBa0tlc1k3cnZTc252dTZmdHJDQ0hnQVZ4WCIsInN0cyI6ImFjdGl2ZSIsInN1YiI6InVzZXJfM0FrS2V2VVVQajI4VEJDd2tFZ3NRaWFRVDVHIiwidiI6Mn0.PfcMWrarouMraG6w8hfklWzuZRbz5arxnWkgAJpYddjkBMVT7QZvwzUWyEucldAj8vsxNcR7c-ik69uF2mmexz0j3S7Uf2Qp7CquSWrrBdlaypptoZzfit2eX9pe7lsz-Y3DcAlSHUB6FHCt3xzdYOl0XjDZc1nsCB-3hEELLDvs57u6NnivZpw_LjZif-2CB4AP-ZoCCAOXm1xk5u-PSYXy6OaiaVZaQf9cqBWiMePkNEqzEGSI8JUh_B5dHrl1n9dcfJ4YdyiNpkt4n2IQ5PMbr5JB7_xlsP7kr1wPU8sJUsl8_5iFY0qi4gpRC1zFwgYnt8FpXcl6yUWSdv6jng","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"n8n-webhook/product","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:6813:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:7329:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:8135:49)\n    at async handlePostToN8n (http://localhost:3000/_next/static/chunks/_c679ae7b._.js:202:30)","status":404}
+[01:13:48.454] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:13:49.446] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[01:13:51.536] Browser WARN    Image with src "https://res.cloudinary.com/dexjv6h1l/image/upload/v1773214907/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773214895127.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:14:17.040] Browser ERROR   Failed to post to n8n: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8080/api","data":"{\"productId\":\"69b11cae9fb69c0c27b3b690\",\"name\":\"dddddddddddd\",\"price\":0.03,\"stock\":4,\"description\":\"dddddddddddddddddddd\",\"images\":[{\"url\":\"https://res.cloudinary.com/dexjv6h1l/image/upload/v1773214907/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773214895127.jpg\",\"isPrimary\":true,\"format\":\"jpg\"},{\"url\":\"https://res.cloudinary.com/dexjv6h1l/image/upload/v1773216237/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773216228392.jpg\",\"isPrimary\":false,\"format\":\"jpg\"}],\"timestamp\":\"2026-03-11T09:02:20.075Z\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJSUzI1NiIsImNhdCI6ImNsX0I3ZDRQRDExMUFBQSIsImtpZCI6Imluc18zQVR1MUNkekl4OEZGdmx0RktIblFFUHdnSVAiLCJ0eXAiOiJKV1QifQ.eyJhenAiOiJodHRwOi8vbG9jYWxob3N0OjMwMDAiLCJleHAiOjE3NzMyMTk3ODMsImZ2YSI6WzE0NzQsLTFdLCJpYXQiOjE3NzMyMTk3MjMsImlzcyI6Imh0dHBzOi8vbmF0aW9uYWwtbG9uZ2hvcm4tMjkuY2xlcmsuYWNjb3VudHMuZGV2IiwibmJmIjoxNzczMjE5NzEzLCJzaWQiOiJzZXNzXzNBa0tlc1k3cnZTc252dTZmdHJDQ0hnQVZ4WCIsInN0cyI6ImFjdGl2ZSIsInN1YiI6InVzZXJfM0FrS2V2VVVQajI4VEJDd2tFZ3NRaWFRVDVHIiwidiI6Mn0.h9sAXDaBSlUfZcVBqywhKUv4HVbqOIgcw6hdCJToHlui91iqXN2x84-BpCqwiVV1aTjEmt85MFStn5mYDkSVgvrnTDu9PDmn98-7H9h068ecztdnKU7aZDTZ-y87W_UCl6GuP8sWMbAiv66rxxoEZPExJEVIkf2r4I9rG-ZrqfDXgfrvtqrjxJL7vI2BDAJ2dfBtgk3fYuVcuarDVryEQ7SxyL7CJ8djuTreS9SQEG335X9dEZJjTujPmWYI-Lhe0LjxoCLsCKHU8gAZnQIWZzwT0ZU1RdXsDpMY9mO69iGeXvT0wpEfqDtong55K_2DYW5-zZv6PZVm0d4vgW4uJQ","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"n8n-webhook/product","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:6813:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:7329:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:8135:49)\n    at async handlePostToN8n (http://localhost:3000/_next/static/chunks/_c679ae7b._.js:202:30)","status":404}
+[01:14:34.683] Browser ERROR   Failed to post to n8n: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8080/api","data":"{\"productId\":\"69b11cae9fb69c0c27b3b690\",\"name\":\"dddddddddddd\",\"price\":0.03,\"stock\":4,\"description\":\"dddddddddddddddddddd\",\"images\":[{\"url\":\"https://res.cloudinary.com/dexjv6h1l/image/upload/v1773214907/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773214895127.jpg\",\"isPrimary\":true,\"format\":\"jpg\"},{\"url\":\"https://res.cloudinary.com/dexjv6h1l/image/upload/v1773216237/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773216228392.jpg\",\"isPrimary\":false,\"format\":\"jpg\"}],\"timestamp\":\"2026-03-11T09:02:38.401Z\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJSUzI1NiIsImNhdCI6ImNsX0I3ZDRQRDExMUFBQSIsImtpZCI6Imluc18zQVR1MUNkekl4OEZGdmx0RktIblFFUHdnSVAiLCJ0eXAiOiJKV1QifQ.eyJhenAiOiJodHRwOi8vbG9jYWxob3N0OjMwMDAiLCJleHAiOjE3NzMyMTk4MDIsImZ2YSI6WzE0NzUsLTFdLCJpYXQiOjE3NzMyMTk3NDIsImlzcyI6Imh0dHBzOi8vbmF0aW9uYWwtbG9uZ2hvcm4tMjkuY2xlcmsuYWNjb3VudHMuZGV2IiwibmJmIjoxNzczMjE5NzMyLCJzaWQiOiJzZXNzXzNBa0tlc1k3cnZTc252dTZmdHJDQ0hnQVZ4WCIsInN0cyI6ImFjdGl2ZSIsInN1YiI6InVzZXJfM0FrS2V2VVVQajI4VEJDd2tFZ3NRaWFRVDVHIiwidiI6Mn0.pUNEY9FpLn5jUDz8A_9npGKmA2rV9R5_NoWbVjDXHsqKeb5iXeVmfQjZECEhzWxCXojMMaT_6eNMWtg1AE2Qt1gYG_Yd5WNoFuA1m6U2h5fXsUIPkRgySmliE2RzexbHCBDuQ4y4m95sPPl3cfnIorAEiI9rnZlEODdh_ClbPSz23Jx7z1XR_xZ59F4nDDz1culXjHPyr8Ow-EwwIg_rQ9DX_jG6iF4774OE9r37f0-cEselgQyHE1jC9AEz3DSeqAeOauUQeelJgGaqr8c2PhoYeRZCwx5kPIpNsPEuchrB8bZTRv1giYDA79U85Ns4r_i5_J80CmRVFEzkKAmW8A","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"n8n-webhook/product","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:6813:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:7329:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_00de6b20._.js:8135:49)\n    at async handlePostToN8n (http://localhost:3000/_next/static/chunks/_c679ae7b._.js:202:30)","status":404}
+[01:14:51.909] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:14:52.899] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[01:14:54.903] Browser WARN    Image with src "https://res.cloudinary.com/dexjv6h1l/image/upload/v1773214907/sellers/69afd5da813cf756aaee5953/products/69b11cae9fb69c0c27b3b690/image_0_1773214895127.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:16:44.662] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[01:16:47.518] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[01:16:47.518] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[01:16:47.518] Browser WARN    'oklab(0 0 0 / 0)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[01:19:16.182] Server  ERROR   TimeoutError: The operation was aborted due to timeout

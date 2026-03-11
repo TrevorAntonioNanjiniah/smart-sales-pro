@@ -11,10 +11,23 @@ import {
   HiOutlinePencil,
   HiOutlineTrash,
   HiOutlineExclamation,
-  HiOutlineShare
+  HiOutlineShare,
+  HiOutlinePhotograph
 } from 'react-icons/hi';
 import { FiPackage, FiDollarSign } from 'react-icons/fi';
-import { getProduct, deleteProduct, Product } from '@/lib/services/productService';
+import { getProduct, deleteProduct, Product, Image as ProductImage } from '@/lib/services/productService';
+import api from '@/lib/api'; // ✅ Use axios instance with Clerk token
+
+// Default fallback image
+const DEFAULT_PRODUCT_IMAGE = 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&q=80';
+
+// Helper function to get safe image URL
+const getSafeImageUrl = (imageUrl: string | undefined | null): string => {
+  if (!imageUrl || imageUrl === '') {
+    return DEFAULT_PRODUCT_IMAGE;
+  }
+  return imageUrl;
+};
 
 export default function ProductDetailPage() {
   const params = useParams();
@@ -25,6 +38,7 @@ export default function ProductDetailPage() {
   const [isDeleting, setIsDeleting] = useState(false);
   const [isPosting, setIsPosting] = useState(false);
   const [postSuccess, setPostSuccess] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(0);
 
   useEffect(() => {
     if (params.id) {
@@ -57,32 +71,30 @@ export default function ProductDetailPage() {
       setIsDeleting(false);
     }
   };
+   // post to n8n workflow
 
+  // ✅ Updated: Use axios instance that attaches Clerk JWT
   const handlePostToN8n = async () => {
     if (!product) return;
-    
     try {
       setIsPosting(true);
       setPostSuccess(false);
-      
-      // Replace with your Express.js webhook URL
-      const response = await fetch('http://localhost:8080/api/n8n-webhook', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          productId: product._id,
-          name: product.name,
-          price: product.price,
-          stock: product.stock,
-          description: product.description,
-          images: product.images,
-          timestamp: new Date().toISOString()
-        }),
+
+      const response = await api.post('n8n-webhook/product', {
+        productId: product._id,
+        name: product.name,
+        price: product.price,
+        stock: product.stock,
+        description: product.description,
+        images: product.images?.map(img => ({
+          url: img.url,
+          isPrimary: img.isPrimary,
+          format: img.format
+        })) || [],
+        timestamp: new Date().toISOString()
       });
 
-      if (response.ok) {
+      if (response.data.success) {
         setPostSuccess(true);
         setTimeout(() => setPostSuccess(false), 3000);
       }
@@ -130,7 +142,8 @@ export default function ProductDetailPage() {
     );
   }
 
-  const mainImage = product.images?.[0] || 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&q=80';
+  const images = product.images || [];
+  const mainImage = images[selectedImage]?.url || DEFAULT_PRODUCT_IMAGE;
 
   return (
     <div className="max-w-4xl mx-auto space-y-4">
@@ -180,27 +193,70 @@ export default function ProductDetailPage() {
       {/* Product Card */}
       <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
         <div className="md:flex">
-          {/* Image */}
-          <div className="md:w-1/3 relative aspect-square">
-            <Image
-              src={mainImage}
-              alt={product.name}
-              fill
-              className="object-cover"
-            />
+          {/* Image Gallery */}
+          <div className="md:w-2/5 p-4">
+            {/* Main Image */}
+            <div className="relative aspect-square bg-gray-100 rounded-lg overflow-hidden mb-2">
+              <Image
+                src={getSafeImageUrl(mainImage)}
+                alt={product.name}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 400px"
+                onError={(e) => {
+                  e.currentTarget.src = DEFAULT_PRODUCT_IMAGE;
+                }}
+              />
+            </div>
+            
+            {/* Thumbnail Grid */}
+            {images.length > 1 && (
+              <div className="grid grid-cols-4 gap-2">
+                {images.map((img, index) => (
+                  <button
+                    key={img._id || index}
+                    onClick={() => setSelectedImage(index)}
+                    className={`relative aspect-square bg-gray-100 rounded-lg overflow-hidden border-2 transition-colors ${
+                      selectedImage === index ? 'border-blue-500' : 'border-transparent hover:border-gray-300'
+                    }`}
+                  >
+                    <Image
+                      src={getSafeImageUrl(img.url)}
+                      alt={`${product.name} ${index + 1}`}
+                      fill
+                      className="object-cover"
+                      sizes="100px"
+                      onError={(e) => {
+                        e.currentTarget.src = DEFAULT_PRODUCT_IMAGE;
+                      }}
+                    />
+                  </button>
+                ))}
+              </div>
+            )}
+            
+            {/* No Images Placeholder */}
+            {images.length === 0 && (
+              <div className="flex items-center justify-center h-32 bg-gray-50 rounded-lg border border-dashed border-gray-200">
+                <div className="text-center">
+                  <HiOutlinePhotograph className="w-8 h-8 text-gray-300 mx-auto mb-1" />
+                  <p className="text-xs text-gray-400">No images</p>
+                </div>
+              </div>
+            )}
           </div>
           
           {/* Details */}
-          <div className="md:w-2/3 p-6">
+          <div className="md:w-3/5 p-6">
             <h1 className="text-2xl font-semibold text-gray-800 mb-2">{product.name}</h1>
             <p className="text-sm text-gray-500 mb-4">ID: {product._id.slice(-8)}</p>
             
             <div className="grid grid-cols-2 gap-4 mb-4">
-              <div>
+              <div className="bg-gray-50 p-3 rounded-lg">
                 <p className="text-xs text-gray-500">Price</p>
                 <p className="text-xl font-bold text-gray-800">{formatPrice(product.price)}</p>
               </div>
-              <div>
+              <div className="bg-gray-50 p-3 rounded-lg">
                 <p className="text-xs text-gray-500">Stock</p>
                 <p className="text-xl font-bold text-gray-800">{product.stock}</p>
               </div>
@@ -215,7 +271,13 @@ export default function ProductDetailPage() {
               </div>
             )}
             
-            <div className="text-xs text-gray-400">
+            {/* Image Count */}
+            <div className="text-xs text-gray-400 flex items-center space-x-2">
+              <HiOutlinePhotograph className="w-4 h-4" />
+              <span>{images.length} image{images.length !== 1 ? 's' : ''}</span>
+            </div>
+            
+            <div className="text-xs text-gray-400 mt-2">
               <p>Created: {product.createdAt ? new Date(product.createdAt).toLocaleDateString() : 'N/A'}</p>
             </div>
           </div>

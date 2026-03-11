@@ -5,10 +5,27 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
 import { HiOutlineArrowLeft, HiOutlinePhotograph, HiOutlineX } from 'react-icons/hi';
-import { FiDollarSign, FiPackage, FiShoppingBag } from 'react-icons/fi';
+import { FiDollarSign, FiPackage } from 'react-icons/fi';
 import { createProduct, CreateProductInput } from '@/lib/services/productService';
 import Link from 'next/link';
 import Image from 'next/image';
+
+// Helper function to convert blob URL to base64
+const blobToBase64 = (blobUrl: string): Promise<string> => {
+  return new Promise((resolve, reject) => {
+    const xhr = new XMLHttpRequest();
+    xhr.onload = function() {
+      const reader = new FileReader();
+      reader.onloadend = () => resolve(reader.result as string);
+      reader.onerror = reject;
+      reader.readAsDataURL(xhr.response);
+    };
+    xhr.onerror = reject;
+    xhr.open('GET', blobUrl);
+    xhr.responseType = 'blob';
+    xhr.send();
+  });
+};
 
 export default function AddProductPage() {
   const router = useRouter();
@@ -20,7 +37,7 @@ export default function AddProductPage() {
     description: '',
     images: []
   });
-  const [imagePreview, setImagePreview] = useState<string | null>(null);
+  const [imagePreviews, setImagePreviews] = useState<string[]>([]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -35,15 +52,50 @@ export default function AddProductPage() {
     }
   };
 
-  const handleImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (file) {
-      // In a real app, you'd upload to cloud storage and get URL
-      // For now, we'll create a local preview
-      const url = URL.createObjectURL(file);
-      setImagePreview(url);
-      setFormData({ ...formData, images: [url] });
+  const handleImageUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const files = e.target.files;
+    if (!files || files.length === 0) return;
+
+    const newPreviews: string[] = [];
+    const newImages: string[] = [];
+
+    for (let i = 0; i < files.length; i++) {
+      const file = files[i];
+      
+      // Create preview URL
+      const previewUrl = URL.createObjectURL(file);
+      newPreviews.push(previewUrl);
+      
+      // Convert blob to base64 for sending to backend
+      try {
+        const base64 = await blobToBase64(previewUrl);
+        newImages.push(base64);
+      } catch (error) {
+        console.error('Failed to convert image:', error);
+      }
     }
+
+    setImagePreviews([...imagePreviews, ...newPreviews]);
+    setFormData({ 
+      ...formData, 
+      images: [...(formData.images || []), ...newImages] 
+    });
+  };
+
+  const removeImage = (index: number) => {
+    // Revoke the blob URL to free memory
+    URL.revokeObjectURL(imagePreviews[index]);
+    
+    const newPreviews = imagePreviews.filter((_, i) => i !== index);
+    const newImages = (formData.images || []).filter((_, i: number) => i !== index);
+    
+    setImagePreviews(newPreviews);
+    setFormData({ ...formData, images: newImages });
+  };
+
+  // Clean up blob URLs when component unmounts
+  const cleanup = () => {
+    imagePreviews.forEach(preview => URL.revokeObjectURL(preview));
   };
 
   return (
@@ -156,41 +208,59 @@ export default function AddProductPage() {
               Product Images
             </label>
             <div className="border-2 border-dashed border-gray-200 rounded-lg p-6">
-              {imagePreview ? (
-                <div className="relative">
-                  <div className="relative aspect-square w-48 mx-auto">
-                    <Image
-                      src={imagePreview}
-                      alt="Preview"
-                      fill
-                      className="object-cover rounded-lg"
+              {imagePreviews.length > 0 ? (
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                  {imagePreviews.map((preview, index) => (
+                    <div key={index} className="relative aspect-square">
+                      <Image
+                        src={preview}
+                        alt={`Preview ${index + 1}`}
+                        fill
+                        className="object-cover rounded-lg"
+                      />
+                      <button
+                        type="button"
+                        onClick={() => removeImage(index)}
+                        className="absolute -top-2 -right-2 p-1 bg-red-500 text-white rounded-full hover:bg-red-600 shadow-md"
+                      >
+                        <HiOutlineX className="w-4 h-4" />
+                      </button>
+                    </div>
+                  ))}
+                  
+                  {/* Add more images button */}
+                  <label className="aspect-square border-2 border-dashed border-gray-200 rounded-lg flex flex-col items-center justify-center cursor-pointer hover:border-blue-400 transition-colors">
+                    <HiOutlinePhotograph className="w-8 h-8 text-gray-300" />
+                    <span className="text-xs text-gray-400 mt-1">Add More</span>
+                    <input
+                      type="file"
+                      accept="image/*"
+                      onChange={handleImageUpload}
+                      className="hidden"
+                      multiple
                     />
-                  </div>
-                  <button
-                    type="button"
-                    onClick={() => {
-                      setImagePreview(null);
-                      setFormData({ ...formData, images: [] });
-                    }}
-                    className="absolute top-2 right-2 p-1 bg-red-500 text-white rounded-full hover:bg-red-600"
-                  >
-                    <HiOutlineX className="w-4 h-4" />
-                  </button>
+                  </label>
                 </div>
               ) : (
                 <label className="flex flex-col items-center cursor-pointer">
                   <HiOutlinePhotograph className="w-12 h-12 text-gray-300 mb-2" />
                   <span className="text-sm text-gray-500 mb-1">Click to upload images</span>
-                  <span className="text-xs text-gray-400">PNG, JPG up to 5MB</span>
+                  <span className="text-xs text-gray-400">PNG, JPG up to 5MB (multiple allowed)</span>
                   <input
                     type="file"
                     accept="image/*"
                     onChange={handleImageUpload}
                     className="hidden"
+                    multiple
                   />
                 </label>
               )}
             </div>
+            {imagePreviews.length > 0 && (
+              <p className="text-xs text-gray-400 mt-2">
+                {imagePreviews.length} image(s) selected. Click on X to remove.
+              </p>
+            )}
           </div>
 
           {/* Submit Buttons */}
@@ -200,6 +270,7 @@ export default function AddProductPage() {
                 type="button"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
+                onClick={cleanup}
                 className="px-6 py-2 border border-gray-200 rounded-lg text-gray-600 hover:bg-gray-50 transition-colors"
               >
                 Cancel

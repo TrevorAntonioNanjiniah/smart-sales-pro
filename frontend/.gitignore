@@ -4,4 +4,4 @@ dist/
 // Ignore environment variable files
 .env.local
 // all of .next folder
-.next/
+.next/dev/
