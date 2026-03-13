@@ -11,7 +11,7 @@ import {
   HiOutlineX
 } from 'react-icons/hi';
 import { FiDollarSign, FiPackage } from 'react-icons/fi';
-import { getProductById, updateProduct, Product } from '@/lib/services/productService';
+import { getProductById, updateProduct } from '@/lib/services/productService';
 import Image from 'next/image';
 
 export default function EditProductPage() {
@@ -20,6 +20,7 @@ export default function EditProductPage() {
   const [isLoading, setIsLoading] = useState(true);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isUploading, setIsUploading] = useState(false);
+  const [uploadError, setUploadError] = useState<string | null>(null);
   const [formData, setFormData] = useState({
     name: '',
     price: 0,
@@ -37,14 +38,14 @@ export default function EditProductPage() {
   const fetchProduct = async () => {
     try {
       setIsLoading(true);
-      // ✅ Fixed: was getProduct(), now getProductById()
       const product = await getProductById(params.id as string);
       setFormData({
         name: product.name,
         price: product.price,
         stock: product.stock,
         description: product.description || '',
-        images: product.images || []
+        // ✅ Filter out any empty strings from old MongoDB data
+        images: (product.images || []).filter((img: string) => img && img.trim() !== '')
       });
     } catch (error) {
       console.error('Failed to fetch product:', error);
@@ -72,6 +73,8 @@ export default function EditProductPage() {
 
     try {
       setIsUploading(true);
+      setUploadError(null);
+
       const uploadData = new FormData();
       uploadData.append('image', file);
 
@@ -80,13 +83,25 @@ export default function EditProductPage() {
         body: uploadData,
       });
 
+      // ✅ Handle non-200 responses properly
+      if (!res.ok) {
+        const errorData = await res.json();
+        throw new Error(errorData.error || 'Upload failed');
+      }
+
       const data = await res.json();
-      setFormData({
-        ...formData,
-        images: [...formData.images, data.url]
-      });
+
+      // ✅ Guard against missing URL
+      if (!data.url) throw new Error('No URL returned from upload');
+
+      setFormData(prev => ({
+        ...prev,
+        images: [...prev.images, data.url]
+      }));
+
     } catch (error) {
       console.error('Image upload failed:', error);
+      setUploadError(error instanceof Error ? error.message : 'Image upload failed');
     } finally {
       setIsUploading(false);
     }
@@ -132,6 +147,7 @@ export default function EditProductPage() {
       {/* Form */}
       <form onSubmit={handleSubmit} className="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
         <div className="space-y-4">
+
           {/* Product Name */}
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">
@@ -206,24 +222,35 @@ export default function EditProductPage() {
             <label className="block text-sm font-medium text-gray-700 mb-2">
               Product Images
             </label>
+
+            {/* ✅ Show upload error if any */}
+            {uploadError && (
+              <div className="mb-2 p-2 bg-red-50 border border-red-200 rounded-lg">
+                <p className="text-xs text-red-600">{uploadError}</p>
+              </div>
+            )}
+
             <div className="grid grid-cols-4 gap-2 mb-3">
-              {formData.images.map((image, index) => (
-                <div key={index} className="relative aspect-square">
-                  <Image
-                    src={image}
-                    alt={`Product ${index + 1}`}
-                    fill
-                    className="object-cover rounded-lg"
-                  />
-                  <button
-                    type="button"
-                    onClick={() => removeImage(index)}
-                    className="absolute -top-1 -right-1 p-1 bg-red-500 text-white rounded-full hover:bg-red-600"
-                  >
-                    <HiOutlineX className="w-3 h-3" />
-                  </button>
-                </div>
-              ))}
+              {/* ✅ Filter empty strings before rendering */}
+              {formData.images
+                .filter(image => image && image.trim() !== '')
+                .map((image, index) => (
+                  <div key={index} className="relative aspect-square">
+                    <Image
+                      src={image}
+                      alt={`Product ${index + 1}`}
+                      fill
+                      className="object-cover rounded-lg"
+                    />
+                    <button
+                      type="button"
+                      onClick={() => removeImage(index)}
+                      className="absolute -top-1 -right-1 p-1 bg-red-500 text-white rounded-full hover:bg-red-600"
+                    >
+                      <HiOutlineX className="w-3 h-3" />
+                    </button>
+                  </div>
+                ))}
 
               {/* Upload Button */}
               <label className="aspect-square border-2 border-dashed border-gray-200 rounded-lg flex flex-col items-center justify-center cursor-pointer hover:border-blue-400 transition-colors">

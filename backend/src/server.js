@@ -7,73 +7,88 @@ import dotenv from 'dotenv';
 import cors from 'cors';
 import { clerkMiddleware } from '@clerk/express';
 import connectDB from './config/database.js';
-import path from 'path';
-import { fileURLToPath } from 'url';
 
 // Routes
-import webhookRoutes from './routes/webhook.js';
-import productRoutes from './routes/products.js';
-import leadRoutes from './routes/leads.js';
-import orderRoutes from './routes/orders.js';
-import paymentRoutes from './routes/payments.js';
-import uploadRoutes from './routes/upload.js'; // ✅ NEW: upload route
+import webhookRoutes  from './routes/webhook.js';
+import productRoutes  from './routes/products.js';
+import leadRoutes     from './routes/leads.js';
+import orderRoutes    from './routes/orders.js';
+import paymentRoutes  from './routes/payments.js';
+import uploadRoutes   from './routes/upload.js';
+import n8nRoutes      from './routes/n8n.js';
+import sellerRoutes   from './routes/sellers.js'; 
 
 dotenv.config();
 
-// Needed for __dirname in ES Modules
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-// Check environment variables
-console.log("CLERK_SECRET_KEY:", process.env.CLERK_SECRET_KEY ? "loaded" : "missing");
-console.log("CLERK_WEBHOOK_SECRET:", process.env.CLERK_WEBHOOK_SECRET ? "loaded" : "missing");
-console.log("Mongo URI:", process.env.MONGODB_URI ? "loaded" : "missing");
+// Environment Variable Checks
+console.log("CLERK_SECRET_KEY:",        process.env.CLERK_SECRET_KEY        ? "✅ loaded" : "❌ missing");
+console.log("CLERK_WEBHOOK_SECRET:",    process.env.CLERK_WEBHOOK_SECRET    ? "✅ loaded" : "❌ missing");
+console.log("Mongo URI:",               process.env.MONGODB_URI             ? "✅ loaded" : "❌ missing");
+console.log("CLOUDINARY_CLOUD_NAME:",   process.env.CLOUDINARY_CLOUD_NAME   ? "✅ loaded" : "❌ missing");
+console.log("CLOUDINARY_API_KEY:",      process.env.CLOUDINARY_API_KEY      ? "✅ loaded" : "❌ missing");
+console.log("CLOUDINARY_API_SECRET:",   process.env.CLOUDINARY_API_SECRET   ? "✅ loaded" : "❌ missing");
+console.log("N8N_WEBHOOK_URL:",         process.env.N8N_WEBHOOK_URL         ? "✅ loaded" : "❌ missing");
 
 // Connect to MongoDB
 connectDB()
-  .then(() => console.log("MongoDB connected"))
-  .catch(err => console.error("MongoDB connection error:", err));
+  .then(() => console.log("✅ MongoDB connected"))
+  .catch(err => console.error("❌ MongoDB connection error:", err));
 
 const app = express();
 const port = process.env.PORT || 8080;
 
-// CORS — allow Next.js frontend
+// CORS - Updated to allow multiple frontend ports
+const allowedOrigins = [
+  'http://localhost:3000',
+  'http://localhost:3001',
+  process.env.FRONTEND_URL,
+].filter(Boolean); // Remove any undefined values
+
 app.use(cors({
-  origin: process.env.FRONTEND_URL || 'http://localhost:3000',
+  origin: (origin, callback) => {
+    // Allow requests with no origin (like mobile apps, curl, etc)
+    if (!origin) return callback(null, true);
+    
+    if (allowedOrigins.includes(origin) || allowedOrigins.includes('*')) {
+      callback(null, true);
+    } else {
+      console.log('Blocked origin:', origin);
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
   credentials: true,
 }));
 
-// ✅ NEW: Serve uploaded images as static files
-// e.g. http://localhost:8080/uploads/filename.jpg
-app.use('/uploads', express.static(path.join(__dirname, '..', 'uploads')));
-
-// Webhooks FIRST — raw body required
+// Webhooks FIRST (raw body required, before express.json())
 app.use('/api/webhooks', webhookRoutes);
 
-// JSON middleware
+// JSON Middleware
 app.use(express.json());
 
-// Clerk auth middleware
+// Clerk Auth Middleware
 try {
   app.use(clerkMiddleware());
-  console.log("Clerk middleware initialized");
+  console.log("✅ Clerk middleware initialized");
 } catch (err) {
-  console.error("Error initializing Clerk middleware:", err);
+  console.error("❌ Error initializing Clerk middleware:", err);
 }
 
 // API Routes
-app.use('/api/products', productRoutes);
-app.use('/api/leads', leadRoutes);
-app.use('/api/orders', orderRoutes);
-app.use('/api/payments', paymentRoutes);
-app.use('/api/upload', uploadRoutes); // ✅ NEW: register upload route
+app.use('/api/products',  productRoutes);
+app.use('/api/leads',     leadRoutes);
+app.use('/api/orders',    orderRoutes);
+app.use('/api/payments',  paymentRoutes);
+app.use('/api/upload',    uploadRoutes);
+app.use('/api/n8n',       n8nRoutes);
+app.use('/api/sellers',   sellerRoutes);  
 
-// Test route
+// Test Route
 app.get('/api/test', (req, res) => {
   res.json({
     message: 'Backend is working!',
     timestamp: new Date().toISOString(),
     port,
+    allowedFrontends: allowedOrigins,
   });
 });
 
@@ -82,17 +97,23 @@ app.get('/', (req, res) => {
   res.json({
     message: 'Smart Sales Assistant API',
     status: 'running',
+    port,
+    frontendUrls: allowedOrigins,
     endpoints: [
       '/api/products',
       '/api/leads',
       '/api/orders',
       '/api/payments',
       '/api/webhooks/clerk',
-      '/api/upload', // ✅ NEW
+      '/api/upload',
+      '/api/n8n',
+      '/api/sellers',       
     ],
   });
 });
 
+// Start Server
 app.listen(port, () => {
   console.log(`🚀 Server running on port ${port}`);
+  console.log(`✅ Allowed frontend origins:`, allowedOrigins);
 });

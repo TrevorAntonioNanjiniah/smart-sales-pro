@@ -1,3 +1,6 @@
+// use api.ts which is in my lib folder to make API calls
+// write  a functions to perform all crud operations for products
+
 // lib/services/productService.ts
 import api from '../api';
 
@@ -17,7 +20,6 @@ export interface Product {
 }
 
 export interface CreateProductInput {
-  sellerId: string; 
   name: string;
   price: number;
   stock: number;

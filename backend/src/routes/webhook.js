@@ -12,13 +12,13 @@ router.post('/clerk', express.raw({ type: 'application/json' }), async (req, res
     return res.status(500).json({ error: 'Webhook secret not configured' });
   }
 
-  // Verify the webhook is genuinely from Clerk
+  // STEP 1: Verify the webhook is genuinely from Clerk
   const wh = new Webhook(secret);
   let event;
 
   try {
     event = wh.verify(req.body, {
-      'svix-id': req.headers['svix-id'],
+      'svix-id':        req.headers['svix-id'],
       'svix-timestamp': req.headers['svix-timestamp'],
       'svix-signature': req.headers['svix-signature'],
     });
@@ -27,19 +27,20 @@ router.post('/clerk', express.raw({ type: 'application/json' }), async (req, res
     return res.status(400).json({ error: 'Webhook verification failed' });
   }
 
-  // Handle user.created event
+  // STEP 2: Handle user.created event
   if (event.type === 'user.created') {
-    const { id, email_addresses, first_name, last_name, image_url } = event.data;
+    const { id, email_addresses, first_name, last_name, image_url, phone_numbers } = event.data;
 
     try {
-      // Check if seller already exists
       const existing = await Seller.findOne({ clerkId: id });
+
       if (!existing) {
         await Seller.create({
-          clerkId: id,
-          email: email_addresses[0]?.email_address || '',
-          name: `${first_name || ''} ${last_name || ''}`.trim(),
+          clerkId:  id,
+          email:    email_addresses[0]?.email_address || '',
+          name:     `${first_name || ''} ${last_name || ''}`.trim(),
           imageUrl: image_url || '',
+          phone:    phone_numbers?.[0]?.phone_number || '',  // ✅ save phone
         });
         console.log('✅ Seller created for:', id);
       }
@@ -49,17 +50,18 @@ router.post('/clerk', express.raw({ type: 'application/json' }), async (req, res
     }
   }
 
-  // Handle user.updated event
+  // STEP 3: Handle user.updated event
   if (event.type === 'user.updated') {
-    const { id, email_addresses, first_name, last_name, image_url } = event.data;
+    const { id, email_addresses, first_name, last_name, image_url, phone_numbers } = event.data;
 
     try {
       await Seller.findOneAndUpdate(
         { clerkId: id },
         {
-          email: email_addresses[0]?.email_address || '',
-          name: `${first_name || ''} ${last_name || ''}`.trim(),
+          email:    email_addresses[0]?.email_address || '',
+          name:     `${first_name || ''} ${last_name || ''}`.trim(),
           imageUrl: image_url || '',
+          phone:    phone_numbers?.[0]?.phone_number || '',  // ✅ update phone
         }
       );
       console.log('✅ Seller updated for:', id);
@@ -68,7 +70,7 @@ router.post('/clerk', express.raw({ type: 'application/json' }), async (req, res
     }
   }
 
-  // Handle user.deleted event
+  // STEP 4: Handle user.deleted event
   if (event.type === 'user.deleted') {
     try {
       await Seller.findOneAndDelete({ clerkId: event.data.id });

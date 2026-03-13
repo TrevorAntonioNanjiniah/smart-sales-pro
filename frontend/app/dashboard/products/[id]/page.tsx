@@ -14,7 +14,6 @@ import {
   HiOutlineShare
 } from 'react-icons/hi';
 import { FiPackage } from 'react-icons/fi';
-// ✅ Fixed: getProducts removed, getProductById added
 import { getProductById, deleteProduct, Product } from '@/lib/services/productService';
 
 export default function ProductDetailPage() {
@@ -26,6 +25,7 @@ export default function ProductDetailPage() {
   const [isDeleting, setIsDeleting] = useState(false);
   const [isPosting, setIsPosting] = useState(false);
   const [postSuccess, setPostSuccess] = useState(false);
+  const [postError, setPostError] = useState<string | null>(null);
 
   useEffect(() => {
     if (params.id) {
@@ -36,7 +36,6 @@ export default function ProductDetailPage() {
   const fetchProduct = async () => {
     try {
       setIsLoading(true);
-      // ✅ Fixed: was getProduct(), now getProductById()
       const data = await getProductById(params.id as string);
       setProduct(data);
     } catch (error) {
@@ -64,25 +63,34 @@ export default function ProductDetailPage() {
     try {
       setIsPosting(true);
       setPostSuccess(false);
-      const response = await fetch('http://localhost:8080/api/n8n-webhook', {
+      setPostError(null);
+
+      // Get Clerk auth token
+      const token = await window.Clerk?.session?.getToken();
+      if (!token) throw new Error('Not authenticated');
+
+      const response = await fetch('http://localhost:8080/api/n8n/product', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          productId: product._id,
-          name: product.name,
-          price: product.price,
-          stock: product.stock,
-          description: product.description,
-          images: product.images,
-          timestamp: new Date().toISOString()
-        }),
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${token}`,
+        },
+        body: JSON.stringify({ productId: product._id }),
       });
-      if (response.ok) {
-        setPostSuccess(true);
-        setTimeout(() => setPostSuccess(false), 3000);
+
+      // Handle non-200 responses
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.message || 'Failed to post to n8n');
       }
+
+      setPostSuccess(true);
+      setTimeout(() => setPostSuccess(false), 3000);
+
     } catch (error) {
       console.error('Failed to post to n8n:', error);
+      setPostError(error instanceof Error ? error.message : 'Something went wrong');
+      setTimeout(() => setPostError(null), 4000);
     } finally {
       setIsPosting(false);
     }
@@ -129,6 +137,7 @@ export default function ProductDetailPage() {
 
   return (
     <div className="max-w-4xl mx-auto space-y-4">
+
       {/* Header */}
       <div className="flex items-center justify-between">
         <Link href="/dashboard/products">
@@ -139,19 +148,31 @@ export default function ProductDetailPage() {
         </Link>
 
         <div className="flex items-center space-x-2">
+
+          {/* Post to n8n button */}
           <motion.button
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
             onClick={handlePostToN8n}
             disabled={isPosting}
-            className={`px-4 py-2 rounded-lg text-sm flex items-center space-x-2 ${
+            className={`px-4 py-2 rounded-lg text-sm flex items-center space-x-2 transition-colors ${
               postSuccess
                 ? 'bg-green-600 text-white'
+                : postError
+                ? 'bg-red-600 text-white'
                 : 'bg-purple-600 text-white hover:bg-purple-700'
             }`}
           >
             <HiOutlineShare className="w-4 h-4" />
-            <span>{isPosting ? 'Posting...' : postSuccess ? 'Posted!' : 'Post to social media'}</span>
+            <span>
+              {isPosting
+                ? 'Posting...'
+                : postSuccess
+                ? 'Posted!'
+                : postError
+                ? 'Failed!'
+                : 'Post to social media'}
+            </span>
           </motion.button>
 
           <Link href={`/dashboard/products/edit/${product._id}`}>
@@ -170,6 +191,13 @@ export default function ProductDetailPage() {
           </button>
         </div>
       </div>
+
+      {/* Post error message */}
+      {postError && (
+        <div className="p-3 bg-red-50 border border-red-200 rounded-lg">
+          <p className="text-sm text-red-600">{postError}</p>
+        </div>
+      )}
 
       {/* Product Card */}
       <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">

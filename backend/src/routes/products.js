@@ -1,22 +1,22 @@
-// src/routes/products.js
+// src/routes/products.js (Simplified)
 import express from 'express';
-import { requireAuth } from '@clerk/express';
 import {
   getProducts,
   getProductById,
   createProduct,
   updateProduct,
   deleteProduct,
+  searchProducts
 } from '../controllers/productController.js';
 
 const router = express.Router();
 
-router.use(requireAuth()); // protect all product routes
-
-router.get('/', getProducts);
-router.get('/:id', getProductById);
-router.post('/', createProduct);
-router.put('/:id', updateProduct);
-router.delete('/:id', deleteProduct);
+// Public routes - no authentication required
+router.get('/', getProducts);           // Get all products
+router.get('/search', searchProducts);  // Search products
+router.get('/:id', getProductById);     // Get single product
+router.post('/', createProduct);         // Create product
+router.put('/:id', updateProduct);       // Update product
+router.delete('/:id', deleteProduct);    // Delete product
 
 export default router;

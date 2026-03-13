@@ -1,33 +1,24 @@
 import express from 'express';
 import multer from 'multer';
 import path from 'path';
-import fs from 'fs';
+import { v2 as cloudinary } from 'cloudinary';
+import { Readable } from 'stream';
 
 const router = express.Router();
 
-// Create uploads directory if it doesn't exist
-const uploadsDir = 'uploads';
-if (!fs.existsSync(uploadsDir)) {
-  fs.mkdirSync(uploadsDir, { recursive: true });
-}
-
-// Configure multer storage
-const storage = multer.diskStorage({
-  destination: (req, file, cb) => {
-    cb(null, 'uploads/');
-  },
-  filename: (req, file, cb) => {
-    // e.g. 1712345678901.jpg
-    const uniqueName = Date.now() + path.extname(file.originalname);
-    cb(null, uniqueName);
-  }
+cloudinary.config({
+  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+  api_key:    process.env.CLOUDINARY_API_KEY,
+  api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 
-// File filter — only allow images
+const storage = multer.memoryStorage();
+
 const fileFilter = (req, file, cb) => {
   const allowedTypes = /jpeg|jpg|png|webp/;
-  const isValid = allowedTypes.test(path.extname(file.originalname).toLowerCase())
-    && allowedTypes.test(file.mimetype);
+  const isValid =
+    allowedTypes.test(path.extname(file.originalname).toLowerCase()) &&
+    allowedTypes.test(file.mimetype);
 
   if (isValid) {
     cb(null, true);
@@ -39,20 +30,49 @@ const fileFilter = (req, file, cb) => {
 const upload = multer({
   storage,
   fileFilter,
-  limits: { fileSize: 5 * 1024 * 1024 } // 5MB max
+  limits: { fileSize: 10 * 1024 * 1024 },// 10 MB limit
 });
 
-// POST /api/upload
-router.post('/', upload.single('image'), (req, res) => {
+const uploadToCloudinary = (buffer) => {
+  return new Promise((resolve, reject) => {
+    const uploadStream = cloudinary.uploader.upload_stream(
+      { folder: 'products', resource_type: 'image' },
+      (error, result) => {
+        if (error) reject(error);
+        else resolve(result);
+      }
+    );
+    Readable.from(buffer).pipe(uploadStream);
+  });
+};
+
+router.post('/', upload.single('image'), async (req, res) => {
   if (!req.file) {
     return res.status(400).json({ error: 'No file uploaded' });
   }
 
-  // Build public URL for the uploaded image
-  const baseUrl = process.env.BACKEND_URL || 'http://localhost:8080';
-  const imageUrl = `${baseUrl}/uploads/${req.file.filename}`;
+  try {
+    const result = await uploadToCloudinary(req.file.buffer);
+    res.json({ url: result.secure_url });
+  } catch (error) {
+    console.error('Cloudinary upload error:', error);
+    res.status(500).json({ error: 'Image upload to Cloudinary failed' });
+  }
+});
 
-  res.json({ url: imageUrl });
+// Multer error handler 
+router.use((err, req, res, next) => {
+  if (err.code === 'LIMIT_FILE_SIZE') {
+    return res.status(400).json({
+      error: 'File too large. Maximum size allowed is 10MB.'
+    });
+  }
+  if (err.message.includes('Only image files')) {
+    return res.status(400).json({
+      error: err.message
+    });
+  }
+  next(err);
 });
 
 export default router;

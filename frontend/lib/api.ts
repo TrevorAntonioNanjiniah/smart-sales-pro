@@ -7,6 +7,7 @@ declare global {
       session?: {
         getToken: () => Promise<string | null>;
       };
+      load?: () => Promise<void>;
     };
   }
 }
@@ -18,18 +19,48 @@ const api = axios.create({
   },
 });
 
+// Wait for Clerk to fully load before getting token
+const getClerkToken = async (): Promise<string | null> => {
+  // Not in browser e.g SSR, no token needed
+  if (typeof window === 'undefined') return null;
+
+  // Clerk already loaded and session is ready, use it immediately
+  if (window.Clerk?.session) {
+    return await window.Clerk.session.getToken();
+  }
+
+  // Clerk not ready yet, poll every 100ms until it loads (max 5 seconds)
+  return new Promise((resolve) => {
+    let attempts = 0;
+    const maxAttempts = 50;
+
+    const interval = setInterval(async () => {
+      attempts++;
+
+      if (window.Clerk?.session) {
+        // Clerk is ready, get token and stop polling
+        clearInterval(interval);
+        const token = await window.Clerk.session.getToken();
+        resolve(token);
+        return;
+      }
+
+      // Timed out, user may not be logged in, continue without token
+      if (attempts >= maxAttempts) {
+        clearInterval(interval);
+        resolve(null);
+      }
+    }, 100);
+  });
+};
+
 // Attach Clerk JWT token to every outgoing request
 api.interceptors.request.use(
   async (config: InternalAxiosRequestConfig) => {
     try {
-      if (typeof window !== 'undefined' && window.Clerk?.session) {
-        const token = await window.Clerk.session.getToken();
-        console.log("Clerk token:", token); // Debug token
-
-        if (token) {
-          // Set Authorization header directly
-          config.headers.Authorization = `Bearer ${token}`;
-        }
+      const token = await getClerkToken();
+      if (token) {
+        config.headers.Authorization = `Bearer ${token}`;
       }
     } catch (err) {
       console.warn('Could not attach Clerk token:', err);
@@ -37,7 +68,6 @@ api.interceptors.request.use(
     return config;
   },
   (error) => {
-    // Catch request setup errors
     console.error('Request error:', error);
     return Promise.reject(error);
   }
@@ -49,13 +79,11 @@ api.interceptors.response.use(
   (error) => {
     const status = error.response?.status;
     const data = error.response?.data;
-
     console.error('API Error:', {
       status,
       data,
       message: data?.message || error.message || 'Something went wrong',
     });
-
     return Promise.reject(error);
   }
 );

@@ -6,16 +6,20 @@ import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
 import { HiOutlineArrowLeft, HiOutlinePhotograph, HiOutlineX } from 'react-icons/hi';
 import { FiDollarSign, FiPackage } from 'react-icons/fi';
+import { useUser } from '@clerk/nextjs'; 
 import { createProduct, CreateProductInput } from '@/lib/services/productService';
 import Link from 'next/link';
 import Image from 'next/image';
 
 export default function AddProductPage() {
+  const { user } = useUser(); 
   const router = useRouter();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [imagePreview, setImagePreview] = useState<string | null>(null);
   const [isUploading, setIsUploading] = useState(false);
-  const [formData, setFormData] = useState<CreateProductInput>({
+
+  
+  const [formData, setFormData] = useState<Omit<CreateProductInput, 'sellerId'>>({
     name: '',
     price: 0,
     stock: 0,
@@ -27,7 +31,13 @@ export default function AddProductPage() {
     e.preventDefault();
     try {
       setIsSubmitting(true);
-      await createProduct(formData);
+
+      // ✅ ADDED - attach sellerId from Clerk when submitting, not from form input
+      await createProduct({
+        ...formData,
+        sellerId: user?.id ?? '',
+      });
+
       router.push('/dashboard/products');
     } catch (error) {
       console.error('Failed to create product:', error);
