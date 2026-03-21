@@ -1,23 +1,47 @@
 // src/models/Product.js
-import mongoose from 'mongoose';
+import supabase from '../config/database.js';
 
-const productSchema = new mongoose.Schema(
-  {
-    sellerId: {
-      type: String,       
-      ref: 'Seller',       
-      required: true,      
-    },
-    name: { type: String, required: true, trim: true },
-    price: { type: Number, required: true },
-    stock: { type: Number, required: true, default: 0 },
-    description: { type: String, trim: true },
-    images: [{ type: String }],
-    whatsappLink: { type: String },
-    qrCode: { type: String },
-    isActive: { type: Boolean, default: true },
+const Product = {
+  async findBySellerId(sellerId) {
+    const { data, error } = await supabase
+      .from('products').select('*').eq('seller_id', sellerId);
+    if (error) throw error;
+    return data;
   },
-  { timestamps: true }
-);
+  async findById(id) {
+    const { data, error } = await supabase
+      .from('products').select('*').eq('id', id).single();
+    if (error) return null;
+    return data;
+  },
+  async create(productData) {
+    const { data, error } = await supabase
+      .from('products').insert([{
+        seller_id: productData.sellerId,
+        name: productData.name,
+        price: productData.price,
+        stock: productData.stock || 0,
+        description: productData.description,
+        images: productData.images || [],
+        whatsapp_link: productData.whatsappLink,
+        qr_code: productData.qrCode,
+        is_active: productData.isActive ?? true,
+      }]).select().single();
+    if (error) throw error;
+    return data;
+  },
+  async update(id, updates) {
+    const { data, error } = await supabase
+      .from('products').update({ ...updates, updated_at: new Date() })
+      .eq('id', id).select().single();
+    if (error) throw error;
+    return data;
+  },
+  async delete(id) {
+    const { error } = await supabase.from('products').delete().eq('id', id);
+    if (error) throw error;
+    return true;
+  },
+};
 
-export default mongoose.model('Product', productSchema);
+export default Product;

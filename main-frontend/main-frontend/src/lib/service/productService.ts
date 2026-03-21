@@ -1,22 +1,19 @@
-// use api.ts which is in my lib folder to make API calls
-// write  a functions to perform all crud operations for products
-
 // lib/services/productService.ts
 import api from '../api';
 
 export interface Product {
-  _id: string;
-  sellerId: string;
+  id: string;
+  seller_id: string;
   name: string;
   price: number;
   stock: number;
   description?: string;
   images: string[];
-  whatsappLink?: string;
-  qrCode?: string;
-  isActive: boolean;
-  createdAt: string;
-  updatedAt: string;
+  whatsapp_link?: string;
+  qr_code?: string;
+  is_active: boolean;
+  created_at: string;
+  updated_at: string;
 }
 
 export interface CreateProductInput {
@@ -54,4 +51,10 @@ export const updateProduct = async (id: string, data: Partial<CreateProductInput
 // Delete product
 export const deleteProduct = async (id: string): Promise<void> => {
   await api.delete(`/products/${id}`);
+};
+
+// Share product to n8n 
+export const shareProductToN8n = async (productId: string): Promise<void> => {
+  const res = await api.post(`/n8n/product`, { productId }); 
+  return res.data;
 };

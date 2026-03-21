@@ -7,7 +7,6 @@ import Image from 'next/image';
 import { 
   getProducts, 
   Product,
-  deleteProduct 
 } from '@/lib/service/productService';
 import { 
   Package, 
@@ -16,8 +15,8 @@ import {
   Grid3x3, 
   List, 
   ShoppingBag,
-  PlusCircle
 } from 'lucide-react'; 
+
 export default function ProductsPage() {
   const [products, setProducts] = useState<Product[]>([]);
   const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
@@ -26,9 +25,6 @@ export default function ProductsPage() {
   const [searchTerm, setSearchTerm] = useState('');
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
   const [sortBy, setSortBy] = useState<'newest' | 'price-low' | 'price-high' | 'name'>('newest');
-  
-
- 
 
   useEffect(() => {
     fetchProducts();
@@ -44,11 +40,9 @@ export default function ProductsPage() {
       );
     }
 
-   
-
     switch (sortBy) {
       case 'newest':
-        result.sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
+        result.sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime());
         break;
       case 'price-low':
         result.sort((a, b) => a.price - b.price);
@@ -77,8 +71,6 @@ export default function ProductsPage() {
       setLoading(false);
     }
   };
-
-
 
   const formatPrice = (price: number) => {
     return new Intl.NumberFormat('en-US', {
@@ -142,14 +134,12 @@ export default function ProductsPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        
+
         {/* Header */}
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 gap-4">
           <div>
             <h1 className="text-3xl font-bold text-gray-900 mb-2">Products</h1>
-            
           </div>
-       
         </div>
 
         {/* Filters and Search */}
@@ -178,7 +168,6 @@ export default function ProductsPage() {
             <div className="flex items-center space-x-2">
               <Filter className="h-4 w-4 text-gray-500" />
               <span className="text-sm text-gray-600">Filter by:</span>
-          
               <select
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value as any)}
@@ -228,10 +217,8 @@ export default function ProductsPage() {
                 ? `No products matching "${searchTerm}"` 
                 : "You haven't added any products yet"}
             </p>
-    
           </div>
         ) : (
-
           <div className={
             viewMode === 'grid' 
               ? "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
@@ -239,15 +226,15 @@ export default function ProductsPage() {
           }>
             {filteredProducts.map((product) => {
               const primaryImage = getPrimaryImage(product);
-              
+
               return viewMode === 'grid' ? (
                 // Grid View
                 <div
-                  key={product._id}
+                  key={product.id}
                   className="group bg-white rounded-lg shadow-sm border border-blue-100 overflow-hidden 
                            hover:shadow-md transition-all duration-200"
                 >
-                  <Link href={`/products/${product._id}`} className="block">
+                  <Link href={`/products/${product.id}`} className="block">
                     <div className="aspect-square relative bg-gray-100">
                       {primaryImage ? (
                         <Image
@@ -261,7 +248,6 @@ export default function ProductsPage() {
                           <Package className="h-12 w-12 text-gray-300" />
                         </div>
                       )}
-                    
                       {product.stock === 0 && (
                         <span className="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded">
                           Out of Stock
@@ -285,17 +271,16 @@ export default function ProductsPage() {
                       </div>
                     </div>
                   </Link>
-                
                 </div>
               ) : (
                 // List View
                 <div
-                  key={product._id}
+                  key={product.id}
                   className="bg-white rounded-lg shadow-sm border border-blue-100 p-4 
                            hover:shadow-md transition-all duration-200"
                 >
                   <div className="flex gap-4">
-                    <Link href={`/products/${product._id}`} className="flex-shrink-0">
+                    <Link href={`/products/${product.id}`} className="flex-shrink-0">
                       <div className="w-24 h-24 bg-gray-100 rounded-lg relative">
                         {primaryImage ? (
                           <Image
@@ -314,7 +299,7 @@ export default function ProductsPage() {
                     <div className="flex-1">
                       <div className="flex items-start justify-between mb-2">
                         <div>
-                          <Link href={`/products/${product._id}`}>
+                          <Link href={`/products/${product.id}`}>
                             <h3 className="font-semibold text-gray-800 hover:text-blue-600">
                               {product.name}
                             </h3>
@@ -329,9 +314,9 @@ export default function ProductsPage() {
                       </div>
                       <div className="flex items-center space-x-4">
                         <span className={`text-sm ${
-                          product.isActive ? 'text-green-600' : 'text-gray-500'
+                          product.is_active ? 'text-green-600' : 'text-gray-500'
                         }`}>
-                          {product.isActive ? 'Active' : 'Inactive'}
+                          {product.is_active ? 'Active' : 'Inactive'}
                         </span>
                         <span className={`text-sm ${
                           product.stock > 0 ? 'text-green-600' : 'text-red-500'
@@ -339,7 +324,6 @@ export default function ProductsPage() {
                           Stock: {product.stock}
                         </span>
                       </div>
-                     
                     </div>
                   </div>
                 </div>
