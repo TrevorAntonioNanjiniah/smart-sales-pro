@@ -1,3 +1,4 @@
+// frontend/lib/api.ts
 import axios, { InternalAxiosRequestConfig } from 'axios';
 
 // Tell TypeScript that window.Clerk exists (injected by @clerk/nextjs)

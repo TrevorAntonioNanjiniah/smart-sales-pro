@@ -1,4 +1,3 @@
-// app/dashboard/products/add/page.tsx
 'use client';
 
 import { useState } from 'react';
@@ -6,19 +5,21 @@ import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
 import { HiOutlineArrowLeft, HiOutlinePhotograph, HiOutlineX } from 'react-icons/hi';
 import { FiDollarSign, FiPackage } from 'react-icons/fi';
-import { useUser } from '@clerk/nextjs'; 
+import { useUser } from '@clerk/nextjs';
 import { createProduct, CreateProductInput } from '@/lib/services/productService';
+import imageCompression from 'browser-image-compression';
 import Link from 'next/link';
 import Image from 'next/image';
 
 export default function AddProductPage() {
-  const { user } = useUser(); 
+  const { user } = useUser();
   const router = useRouter();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [imagePreview, setImagePreview] = useState<string | null>(null);
   const [isUploading, setIsUploading] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
+  const [uploadError, setUploadError] = useState<string | null>(null);
 
-  
   const [formData, setFormData] = useState<Omit<CreateProductInput, 'sellerId'>>({
     name: '',
     price: 0,
@@ -29,18 +30,27 @@ export default function AddProductPage() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setSubmitError(null);
+
+    if (!user?.id) {
+      setSubmitError('You must be logged in to create a product.');
+      return;
+    }
+
     try {
       setIsSubmitting(true);
-
-      // ✅ ADDED - attach sellerId from Clerk when submitting, not from form input
       await createProduct({
         ...formData,
-        sellerId: user?.id ?? '',
+        sellerId: user.id,
       });
-
       router.push('/dashboard/products');
-    } catch (error) {
+    } catch (error: any) {
       console.error('Failed to create product:', error);
+      setSubmitError(
+        error?.response?.data?.message ||
+        error?.message ||
+        'Failed to create product. Please try again.'
+      );
     } finally {
       setIsSubmitting(false);
     }
@@ -50,21 +60,46 @@ export default function AddProductPage() {
     const file = e.target.files?.[0];
     if (!file) return;
 
+    setUploadError(null);
+
     try {
       setIsUploading(true);
-      const uploadData = new FormData();
-      uploadData.append('image', file);
 
-      const res = await fetch('http://localhost:8080/api/upload', {
-        method: 'POST',
-        body: uploadData,
+      // Compress image before uploading
+      const compressed = await imageCompression(file, {
+        maxSizeMB: 2,
+        maxWidthOrHeight: 1920,
+        useWebWorker: true,
       });
+
+      // Preserve original filename and mimetype after compression
+      const compressedFile = new File([compressed], file.name, {
+        type: file.type,
+        lastModified: Date.now(),
+      });
+
+      const uploadData = new FormData();
+      uploadData.append('image', compressedFile);
+
+      const res = await fetch(
+        `${process.env.NEXT_PUBLIC_API_URL?.replace('/api', '')}/api/upload`,
+        {
+          method: 'POST',
+          body: uploadData,
+        }
+      );
+
+      if (!res.ok) {
+        const errData = await res.json();
+        throw new Error(errData.error || 'Upload failed');
+      }
 
       const data = await res.json();
       setImagePreview(data.url);
       setFormData({ ...formData, images: [data.url] });
-    } catch (error) {
+    } catch (error: any) {
       console.error('Image upload failed:', error);
+      setUploadError(error?.message || 'Image upload failed. Please try again.');
     } finally {
       setIsUploading(false);
     }
@@ -87,13 +122,22 @@ export default function AddProductPage() {
         <p className="text-sm text-gray-500 mt-1">Create a new product in your inventory</p>
       </div>
 
+      {/* Global submit error */}
+      {submitError && (
+        <div className="mb-4 bg-red-50 border border-red-200 text-red-600 text-sm rounded-lg px-4 py-3">
+          {submitError}
+        </div>
+      )}
+
       {/* Form */}
       <form onSubmit={handleSubmit} className="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
         <div className="space-y-6">
+
           {/* Basic Info */}
           <div>
             <h2 className="text-lg font-medium text-gray-800 mb-4">Basic Information</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+
               {/* Product Name */}
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
@@ -183,11 +227,18 @@ export default function AddProductPage() {
             <label className="block text-sm font-medium text-gray-700 mb-2">
               Product Images
             </label>
+
+            {uploadError && (
+              <div className="mb-2 bg-red-50 border border-red-200 text-red-600 text-sm rounded-lg px-4 py-2">
+                {uploadError}
+              </div>
+            )}
+
             <div className="border-2 border-dashed border-gray-200 rounded-lg p-6">
               {isUploading ? (
                 <div className="flex flex-col items-center justify-center py-4">
                   <div className="w-8 h-8 border-4 border-blue-600 border-t-transparent rounded-full animate-spin mb-2" />
-                  <span className="text-sm text-gray-500">Uploading...</span>
+                  <span className="text-sm text-gray-500">Compressing & uploading...</span>
                 </div>
               ) : imagePreview ? (
                 <div className="relative">
@@ -203,6 +254,7 @@ export default function AddProductPage() {
                     type="button"
                     onClick={() => {
                       setImagePreview(null);
+                      setUploadError(null);
                       setFormData({ ...formData, images: [] });
                     }}
                     className="absolute top-2 right-2 p-1 bg-red-500 text-white rounded-full hover:bg-red-600"
@@ -214,7 +266,7 @@ export default function AddProductPage() {
                 <label className="flex flex-col items-center cursor-pointer">
                   <HiOutlinePhotograph className="w-12 h-12 text-gray-300 mb-2" />
                   <span className="text-sm text-gray-500 mb-1">Click to upload image</span>
-                  <span className="text-xs text-gray-400">PNG, JPG up to 5MB</span>
+                  <span className="text-xs text-gray-400">PNG, JPG — any size (auto compressed)</span>
                   <input
                     type="file"
                     accept="image/*"

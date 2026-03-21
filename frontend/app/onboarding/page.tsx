@@ -1,17 +1,20 @@
+//app/onboarding/page.tsx
 'use client';
-import { useUser }   from '@clerk/nextjs';
-import { useState }  from 'react';
-import { useRouter } from 'next/navigation';
+import { useUser } from '@clerk/nextjs';
+import { useState } from 'react';
+import { useRouter, useSearchParams } from 'next/navigation';
 
 export default function OnboardingPage() {
   const { user, isLoaded } = useUser();
-  const router             = useRouter();
+  const router = useRouter();
+  const searchParams = useSearchParams();
 
-  const [phone, setPhone]     = useState('');
-  const [error, setError]     = useState('');
+  const redirectUrl = searchParams.get('redirect_url') || '/dashboard/products/add';
+
+  const [phone, setPhone] = useState('');
+  const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
-  // NORMALIZE: Convert any Kenyan format → +254XXXXXXXXX
   const normalizePhone = (phone: string): string => {
     const cleaned = phone.trim();
     if (cleaned.startsWith('+254')) return cleaned;
@@ -20,13 +23,11 @@ export default function OnboardingPage() {
     return cleaned;
   };
 
-  // VALIDATE: Check Kenyan phone number format
   const validatePhone = (phone: string): boolean => {
     const normalized = normalizePhone(phone);
     return /^\+254[0-9]\d{8}$/.test(normalized);
   };
 
-  // STEP 1: Save phone number to MongoDB via Express backend
   const handleSubmit = async () => {
     if (!isLoaded || !user) return;
 
@@ -39,29 +40,22 @@ export default function OnboardingPage() {
     setError('');
 
     try {
-      // CALL: Express backend /api/sellers/update-phone
-      // NEXT_PUBLIC_API_URL = http://localhost:8080/api
-      // Final URL           = http://localhost:8080/api/sellers/update-phone
       const response = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/sellers/update-phone`,
+        `${process.env.NEXT_PUBLIC_API_URL}/users/update-phone`,
         {
-          method:  'POST',
+          method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
             clerkId: user.id,
-            phone:   normalizePhone(phone),
-          })
+            phone: normalizePhone(phone),
+          }),
         }
       );
 
       const data = await response.json();
+      if (!response.ok) throw new Error(data.error || 'Failed to save phone');
 
-      if (!response.ok) {
-        throw new Error(data.error || 'Failed to save phone');
-      }
-
-      // STEP 2: Redirect to dashboard after saving
-      router.push('/dashboard');
+      router.push(redirectUrl);
 
     } catch (err: any) {
       setError(err.message || 'Something went wrong. Please try again.');
@@ -70,7 +64,6 @@ export default function OnboardingPage() {
     }
   };
 
-  // SCREEN: Loading state while Clerk loads
   if (!isLoaded) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-indigo-900 flex items-center justify-center">
@@ -79,12 +72,10 @@ export default function OnboardingPage() {
     );
   }
 
-  // SCREEN: Onboarding form
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-indigo-900 flex items-center justify-center px-4">
       <div className="w-full max-w-md">
 
-        {/* HEADER */}
         <div className="text-center mb-8">
           <h1 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
             Smart Ecommerce
@@ -94,18 +85,13 @@ export default function OnboardingPage() {
           </p>
         </div>
 
-        {/* CARD */}
         <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 sm:p-8">
-
-          {/* WELCOME MESSAGE */}
           <p className="text-slate-300 text-sm mb-6">
             Welcome,{' '}
-            <span className="text-white font-semibold">
-              {user?.firstName}
-            </span>! Add your WhatsApp number so buyers can reach you.
+            <span className="text-white font-semibold">{user?.firstName}</span>!
+            Add your WhatsApp number so buyers can reach you.
           </p>
 
-          {/* ERROR MESSAGE */}
           {error && (
             <div className="bg-red-500/10 border border-red-500/30 text-red-400 text-sm rounded-lg px-4 py-3 mb-4">
               {error}
@@ -113,8 +99,6 @@ export default function OnboardingPage() {
           )}
 
           <div className="space-y-4">
-
-            {/* FIELD: Kenyan Phone Number */}
             <div>
               <label className="block text-sm font-medium text-slate-300 mb-1">
                 WhatsApp / Phone Number
@@ -139,25 +123,22 @@ export default function OnboardingPage() {
               </p>
             </div>
 
-            {/* BUTTON: Save and go to dashboard */}
             <button
               type="button"
               onClick={handleSubmit}
               disabled={loading || !phone}
               className="w-full bg-indigo-600 hover:bg-indigo-700 disabled:opacity-50 text-white font-semibold py-2.5 rounded-lg transition-colors"
             >
-              {loading ? 'Saving...' : 'Save & Go to Dashboard →'}
+              {loading ? 'Saving...' : 'Save & Continue →'}
             </button>
 
-            {/* BUTTON: Skip for now */}
             <button
               type="button"
-              onClick={() => router.push('/dashboard')}
+              onClick={() => router.push(redirectUrl)}
               className="w-full text-slate-500 hover:text-slate-300 text-sm py-2 transition-colors"
             >
               Skip for now
             </button>
-
           </div>
         </div>
       </div>

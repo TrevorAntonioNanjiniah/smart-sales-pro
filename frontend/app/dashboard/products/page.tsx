@@ -11,14 +11,11 @@ import {
   HiOutlinePencil,
   HiOutlineTrash,
   HiOutlineEye,
-  HiOutlineSortAscending,
-  HiOutlineSortDescending,
   HiOutlineFilter,
   HiOutlineX,
-  HiOutlineCheck,
   HiOutlineExclamation
 } from 'react-icons/hi';
-import { FiPackage, FiDollarSign, FiShoppingBag } from 'react-icons/fi';
+import { FiPackage } from 'react-icons/fi';
 import { getProducts, deleteProduct, Product } from '@/lib/services/productService';
 
 export default function ProductsPage() {
@@ -26,7 +23,7 @@ export default function ProductsPage() {
   const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [searchQuery, setSearchQuery] = useState('');
-  const [sortField, setSortField] = useState<'name' | 'price' | 'stock' | 'createdAt'>('createdAt');
+  const [sortField, setSortField] = useState<'name' | 'price' | 'stock' | 'created_at'>('created_at');
   const [sortDirection, setSortDirection] = useState<'asc' | 'desc'>('desc');
   const [showDeleteModal, setShowDeleteModal] = useState(false);
   const [productToDelete, setProductToDelete] = useState<Product | null>(null);
@@ -46,7 +43,6 @@ export default function ProductsPage() {
     try {
       setIsLoading(true);
       const data = await getProducts();
-      // Guard: ensure data is always an array before setting state
       setProducts(Array.isArray(data) ? data : []);
     } catch (error) {
       console.error('Failed to fetch products:', error);
@@ -57,10 +53,8 @@ export default function ProductsPage() {
   };
 
   const filterAndSortProducts = () => {
-    // Guard: ensure products is always spread as an array
     let filtered = [...(Array.isArray(products) ? products : [])];
 
-    // Apply search filter
     if (searchQuery) {
       filtered = filtered.filter(product =>
         product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -68,7 +62,6 @@ export default function ProductsPage() {
       );
     }
 
-    // Apply stock filter
     if (stockFilter === 'inStock') {
       filtered = filtered.filter(product => product.stock > 10);
     } else if (stockFilter === 'lowStock') {
@@ -77,14 +70,13 @@ export default function ProductsPage() {
       filtered = filtered.filter(product => product.stock === 0);
     }
 
-    // Apply sorting
     filtered.sort((a, b) => {
-      let aValue = a[sortField];
-      let bValue = b[sortField];
+      let aValue: any = a[sortField];
+      let bValue: any = b[sortField];
 
-      if (sortField === 'createdAt') {
-        aValue = new Date(a.createdAt).getTime();
-        bValue = new Date(b.createdAt).getTime();
+      if (sortField === 'created_at') {
+        aValue = new Date(a.created_at).getTime();
+        bValue = new Date(b.created_at).getTime();
       }
 
       if (sortDirection === 'asc') {
@@ -99,11 +91,10 @@ export default function ProductsPage() {
 
   const handleDelete = async () => {
     if (!productToDelete) return;
-    
     try {
       setIsDeleting(true);
-      await deleteProduct(productToDelete._id);
-      setProducts(products.filter(p => p._id !== productToDelete._id));
+      await deleteProduct(productToDelete.id);
+      setProducts(products.filter(p => p.id !== productToDelete.id));
       setShowDeleteModal(false);
       setProductToDelete(null);
     } catch (error) {
@@ -158,7 +149,6 @@ export default function ProductsPage() {
       {/* Search and Filters */}
       <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-4">
         <div className="flex flex-col sm:flex-row gap-4">
-          {/* Search Bar */}
           <div className="flex-1 relative">
             <HiOutlineSearch className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
             <input
@@ -170,7 +160,6 @@ export default function ProductsPage() {
             />
           </div>
 
-          {/* Sort and Filter Buttons */}
           <div className="flex gap-2">
             <select
               value={`${sortField}-${sortDirection}`}
@@ -181,8 +170,8 @@ export default function ProductsPage() {
               }}
               className="px-3 py-2 rounded-lg border border-gray-200 focus:border-blue-400 focus:ring-2 focus:ring-blue-100 outline-none text-sm"
             >
-              <option value="createdAt-desc">Newest First</option>
-              <option value="createdAt-asc">Oldest First</option>
+              <option value="created_at-desc">Newest First</option>
+              <option value="created_at-asc">Oldest First</option>
               <option value="name-asc">Name A-Z</option>
               <option value="name-desc">Name Z-A</option>
               <option value="price-asc">Price Low-High</option>
@@ -195,8 +184,8 @@ export default function ProductsPage() {
               whileTap={{ scale: 0.95 }}
               onClick={() => setShowFilters(!showFilters)}
               className={`p-2 rounded-lg border transition-colors ${
-                showFilters 
-                  ? 'bg-blue-50 border-blue-300 text-blue-600' 
+                showFilters
+                  ? 'bg-blue-50 border-blue-300 text-blue-600'
                   : 'border-gray-200 text-gray-600 hover:bg-gray-50'
               }`}
             >
@@ -205,7 +194,6 @@ export default function ProductsPage() {
           </div>
         </div>
 
-        {/* Advanced Filters */}
         <AnimatePresence>
           {showFilters && (
             <motion.div
@@ -274,10 +262,10 @@ export default function ProductsPage() {
           {filteredProducts.map((product, index) => {
             const stockStatus = getStockStatus(product.stock);
             const mainImage = product.images?.[0] || 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=80';
-            
+
             return (
               <motion.div
-                key={product._id}
+                key={product.id}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.05 }}
@@ -291,13 +279,13 @@ export default function ProductsPage() {
                     className="object-cover"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   />
-                  {!product.isActive && (
+                  {!product.is_active && (
                     <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
                       <span className="px-2 py-1 bg-red-500 text-white text-xs font-medium rounded">Inactive</span>
                     </div>
                   )}
                 </div>
-                
+
                 <div className="p-4">
                   <div className="flex justify-between items-start mb-2">
                     <h3 className="font-medium text-gray-800 truncate flex-1">{product.name}</h3>
@@ -305,11 +293,11 @@ export default function ProductsPage() {
                       {stockStatus.label}
                     </span>
                   </div>
-                  
+
                   <p className="text-sm text-gray-500 line-clamp-2 mb-3">
                     {product.description || 'No description'}
                   </p>
-                  
+
                   <div className="flex items-center justify-between mb-4">
                     <div>
                       <p className="text-xs text-gray-400">Price</p>
@@ -320,9 +308,9 @@ export default function ProductsPage() {
                       <p className="text-lg font-semibold text-gray-800">{product.stock}</p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-center gap-2">
-                    <Link href={`/dashboard/products/${product._id}`} className="flex-1">
+                    <Link href={`/dashboard/products/${product.id}`} className="flex-1">
                       <motion.button
                         whileHover={{ scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}
@@ -332,8 +320,8 @@ export default function ProductsPage() {
                         <span>View</span>
                       </motion.button>
                     </Link>
-                    
-                    <Link href={`/dashboard/products/edit/${product._id}`} className="flex-1">
+
+                    <Link href={`/dashboard/products/edit/${product.id}`} className="flex-1">
                       <motion.button
                         whileHover={{ scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}
@@ -343,7 +331,7 @@ export default function ProductsPage() {
                         <span>Edit</span>
                       </motion.button>
                     </Link>
-                    
+
                     <motion.button
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
@@ -374,7 +362,7 @@ export default function ProductsPage() {
               onClick={() => setShowDeleteModal(false)}
               className="fixed inset-0 bg-black z-50"
             />
-            
+
             <motion.div
               initial={{ opacity: 0, scale: 0.9, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -387,14 +375,12 @@ export default function ProductsPage() {
                 </div>
                 <h3 className="text-lg font-semibold text-gray-800">Delete Product</h3>
               </div>
-              
+
               <p className="text-gray-600 mb-2">
                 Are you sure you want to delete <span className="font-semibold">{productToDelete.name}</span>?
               </p>
-              <p className="text-sm text-gray-500 mb-6">
-                This action cannot be undone.
-              </p>
-              
+              <p className="text-sm text-gray-500 mb-6">This action cannot be undone.</p>
+
               <div className="flex gap-3">
                 <motion.button
                   whileHover={{ scale: 1.02 }}

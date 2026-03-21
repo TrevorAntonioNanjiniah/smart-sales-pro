@@ -1,23 +1,22 @@
-// lib/services/productService.ts
 import api from '../api';
 
 export interface Product {
-  _id: string;
-  sellerId: string;
+  id: string;
+  seller_id: string;
   name: string;
   price: number;
   stock: number;
   description?: string;
   images: string[];
-  whatsappLink?: string;
-  qrCode?: string;
-  isActive: boolean;
-  createdAt: string;
-  updatedAt: string;
+  whatsapp_link?: string;
+  qr_code?: string;
+  is_active: boolean;
+  created_at: string;
+  updated_at: string;
 }
 
 export interface CreateProductInput {
-  sellerId: string; 
+  sellerId: string;
   name: string;
   price: number;
   stock: number;
